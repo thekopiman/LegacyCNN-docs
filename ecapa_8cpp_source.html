@@ -27,9 +27,9 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">LegacyCNN<span id="projectnumber">&#160;v0.1</span>
+   <div id="projectname">LegacyCNN<span id="projectnumber">&#160;v0.2</span>
    </div>
-   <div id="projectbrief">Toolbox for creating Neurel Networks on CPP</div>
+   <div id="projectbrief">Toolbox for creating Neural Networks in Cpp</div>
   </td>
  </tr>
  </tbody>
@@ -103,7 +103,8 @@ $(function(){initNavTree('ecapa_8cpp_source.html',''); initResizable(true); });
 <a href="ecapa_8cpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &quot;<a class="code" href="ecapa_8h.html">ecapa.h</a>&quot;</span></div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keywordtype">void</span> ECAPA_TDNN::forward(<span class="keywordtype">float</span> (&amp;input)[2][64], <span class="keywordtype">float</span> (&amp;y)[6])</div>
+<div class="foldopen" id="foldopen00013" data-start="{" data-end="}">
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="class_e_c_a_p_a___t_d_n_n.html#adf85156af556c191572e87d8ff13dd96">   13</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="class_e_c_a_p_a___t_d_n_n.html#adf85156af556c191572e87d8ff13dd96">ECAPA_TDNN::forward</a>(<span class="keywordtype">float</span> (&amp;input)[2][64], <span class="keywordtype">float</span> (&amp;y)[6])</div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>{</div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    initiallayer.<a class="code hl_function" href="class_t_d_n_n_block.html#a9264f88964e923fe15f1f5b60052eadc">forward</a>(input, x0);</div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
@@ -136,16 +137,22 @@ $(function(){initNavTree('ecapa_8cpp_source.html',''); initResizable(true); });
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <a class="code hl_function" href="class_activation_functions.html#a87fe74f0fab63bbff7c029a0ba7cb5af">ActivationFunctions::Softmax</a>(y);</div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>};</div>
+</div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>ECAPA_TDNN::ECAPA_TDNN() : asp_BN(1)</div>
+<div class="foldopen" id="foldopen00047" data-start="{" data-end="}">
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="class_e_c_a_p_a___t_d_n_n.html#ad895ea0c68f9db25fbb59f952886e0d2">   47</a></span><a class="code hl_function" href="class_e_c_a_p_a___t_d_n_n.html#ad895ea0c68f9db25fbb59f952886e0d2">ECAPA_TDNN::ECAPA_TDNN</a>() : asp_BN(1)</div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>{</div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;ECAPA TDNN initialised in Eval Mode&quot;</span> &lt;&lt; std::endl;</div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>};</div>
+</div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>ECAPA_TDNN::~ECAPA_TDNN() {</div>
+<div class="foldopen" id="foldopen00052" data-start="{" data-end="}">
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="class_e_c_a_p_a___t_d_n_n.html#a5acaac5c41cac32f8ee161d34037913f">   52</a></span><a class="code hl_function" href="class_e_c_a_p_a___t_d_n_n.html#a5acaac5c41cac32f8ee161d34037913f">ECAPA_TDNN::~ECAPA_TDNN</a>() {</div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>};</div>
+</div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="keywordtype">void</span> ECAPA_TDNN::loadweights(std::string pathname)</div>
+<div class="foldopen" id="foldopen00055" data-start="{" data-end="}">
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="class_e_c_a_p_a___t_d_n_n.html#aa6437bb5640ba12cee11e394f143ddd8">   55</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="class_e_c_a_p_a___t_d_n_n.html#aa6437bb5640ba12cee11e394f143ddd8">ECAPA_TDNN::loadweights</a>(std::string pathname)</div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>{</div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    std::ifstream infile(pathname, std::ios::binary);</div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <span class="keywordflow">if</span> (!infile)</div>
@@ -186,13 +193,18 @@ $(function(){initNavTree('ecapa_8cpp_source.html',''); initResizable(true); });
 <div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span> </div>
 <div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;ECAPA TDNN weights loaded successfully.&quot;</span> &lt;&lt; std::endl;</div>
 <div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>};</div>
+</div>
 <div class="ttc" id="aclass_a_s_p_html_a1b300a45083c3b13aafea6e0a0e47131"><div class="ttname"><a href="class_a_s_p.html#a1b300a45083c3b13aafea6e0a0e47131">ASP::loadweights</a></div><div class="ttdeci">void loadweights(std::string pathname)</div><div class="ttdoc">Loadweights via pathname.</div><div class="ttdef"><b>Definition</b> <a href="asp_8cpp_source.html#l00143">asp.cpp:143</a></div></div>
 <div class="ttc" id="aclass_a_s_p_html_a800fb7c84f0d56060449e0b6c6a911ad"><div class="ttname"><a href="class_a_s_p.html#a800fb7c84f0d56060449e0b6c6a911ad">ASP::forward</a></div><div class="ttdeci">void forward(T(&amp;input)[channels][input_width], T(&amp;output)[channels *2][1])</div><div class="ttdoc">Conputes the forward feed.</div><div class="ttdef"><b>Definition</b> <a href="asp_8cpp_source.html#l00049">asp.cpp:49</a></div></div>
 <div class="ttc" id="aclass_activation_functions_html_a87fe74f0fab63bbff7c029a0ba7cb5af"><div class="ttname"><a href="class_activation_functions.html#a87fe74f0fab63bbff7c029a0ba7cb5af">ActivationFunctions::Softmax</a></div><div class="ttdeci">static void Softmax(T(&amp;input)[rows][cols])</div><div class="ttdoc">Perform Softmax It will edit the pointer content directly.</div><div class="ttdef"><b>Definition</b> <a href="activationfunctions_8cpp_source.html#l00031">activationfunctions.cpp:31</a></div></div>
-<div class="ttc" id="aclass_batch_norm1d_html_a088a8c48c9fa298abe4c0ae5a0be1457"><div class="ttname"><a href="class_batch_norm1d.html#a088a8c48c9fa298abe4c0ae5a0be1457">BatchNorm1d::forward</a></div><div class="ttdeci">void forward(T(&amp;input)[channel][width], T(&amp;output)[channel][width])</div><div class="ttdoc">Performs forward feed in accordance to the mode being set during construction.</div><div class="ttdef"><b>Definition</b> <a href="batchnorm1d_8cpp_source.html#l00406">batchnorm1d.cpp:406</a></div></div>
-<div class="ttc" id="aclass_batch_norm1d_html_afa81a21efc98a6fdee70d39804f55419"><div class="ttname"><a href="class_batch_norm1d.html#afa81a21efc98a6fdee70d39804f55419">BatchNorm1d::loadweights</a></div><div class="ttdeci">void loadweights(std::string pathname)</div><div class="ttdoc">Load the weights via pathname.</div><div class="ttdef"><b>Definition</b> <a href="batchnorm1d_8cpp_source.html#l00314">batchnorm1d.cpp:314</a></div></div>
+<div class="ttc" id="aclass_batch_norm1d_html_a088a8c48c9fa298abe4c0ae5a0be1457"><div class="ttname"><a href="class_batch_norm1d.html#a088a8c48c9fa298abe4c0ae5a0be1457">BatchNorm1d::forward</a></div><div class="ttdeci">void forward(T(&amp;input)[channel][width], T(&amp;output)[channel][width])</div><div class="ttdoc">Performs forward feed in accordance to the mode being set during construction.</div><div class="ttdef"><b>Definition</b> <a href="batchnorm1d_8cpp_source.html#l00426">batchnorm1d.cpp:426</a></div></div>
+<div class="ttc" id="aclass_batch_norm1d_html_afa81a21efc98a6fdee70d39804f55419"><div class="ttname"><a href="class_batch_norm1d.html#afa81a21efc98a6fdee70d39804f55419">BatchNorm1d::loadweights</a></div><div class="ttdeci">void loadweights(std::string pathname)</div><div class="ttdoc">Load the weights via pathname.</div><div class="ttdef"><b>Definition</b> <a href="batchnorm1d_8cpp_source.html#l00332">batchnorm1d.cpp:332</a></div></div>
 <div class="ttc" id="aclass_dense_html_a305b742e35483ecde4e6b8d2656111a0"><div class="ttname"><a href="class_dense.html#a305b742e35483ecde4e6b8d2656111a0">Dense::forward</a></div><div class="ttdeci">void forward(T(&amp;input)[input_dim], T(&amp;output)[output_dim])</div><div class="ttdoc">Performs forward feed.</div><div class="ttdef"><b>Definition</b> <a href="dense_8cpp_source.html#l00185">dense.cpp:185</a></div></div>
 <div class="ttc" id="aclass_dense_html_a39c537680d54d38c395d500e02f8ce45"><div class="ttname"><a href="class_dense.html#a39c537680d54d38c395d500e02f8ce45">Dense::loadweights</a></div><div class="ttdeci">void loadweights(std::ifstream &amp;infile)</div><div class="ttdoc">Load weights via infile.</div><div class="ttdef"><b>Definition</b> <a href="dense_8cpp_source.html#l00226">dense.cpp:226</a></div></div>
+<div class="ttc" id="aclass_e_c_a_p_a___t_d_n_n_html_a5acaac5c41cac32f8ee161d34037913f"><div class="ttname"><a href="class_e_c_a_p_a___t_d_n_n.html#a5acaac5c41cac32f8ee161d34037913f">ECAPA_TDNN::~ECAPA_TDNN</a></div><div class="ttdeci">~ECAPA_TDNN()</div><div class="ttdef"><b>Definition</b> <a href="#l00052">ecapa.cpp:52</a></div></div>
+<div class="ttc" id="aclass_e_c_a_p_a___t_d_n_n_html_aa6437bb5640ba12cee11e394f143ddd8"><div class="ttname"><a href="class_e_c_a_p_a___t_d_n_n.html#aa6437bb5640ba12cee11e394f143ddd8">ECAPA_TDNN::loadweights</a></div><div class="ttdeci">void loadweights(std::string pathname)</div><div class="ttdef"><b>Definition</b> <a href="#l00055">ecapa.cpp:55</a></div></div>
+<div class="ttc" id="aclass_e_c_a_p_a___t_d_n_n_html_ad895ea0c68f9db25fbb59f952886e0d2"><div class="ttname"><a href="class_e_c_a_p_a___t_d_n_n.html#ad895ea0c68f9db25fbb59f952886e0d2">ECAPA_TDNN::ECAPA_TDNN</a></div><div class="ttdeci">ECAPA_TDNN()</div><div class="ttdef"><b>Definition</b> <a href="#l00047">ecapa.cpp:47</a></div></div>
+<div class="ttc" id="aclass_e_c_a_p_a___t_d_n_n_html_adf85156af556c191572e87d8ff13dd96"><div class="ttname"><a href="class_e_c_a_p_a___t_d_n_n.html#adf85156af556c191572e87d8ff13dd96">ECAPA_TDNN::forward</a></div><div class="ttdeci">void forward(float(&amp;input)[2][64], float(&amp;y)[6])</div><div class="ttdef"><b>Definition</b> <a href="#l00013">ecapa.cpp:13</a></div></div>
 <div class="ttc" id="aclass_matrix_functions_html_ac002b9e38882b909d556584e856a9081"><div class="ttname"><a href="class_matrix_functions.html#ac002b9e38882b909d556584e856a9081">MatrixFunctions::Flatten</a></div><div class="ttdeci">static void Flatten(T(&amp;input)[rows][cols], T(&amp;output)[rows *cols])</div><div class="ttdoc">Flattens a 2d Matrix into a 1d Array.</div><div class="ttdef"><b>Definition</b> <a href="matrixfunctions_8cpp_source.html#l00063">matrixfunctions.cpp:63</a></div></div>
 <div class="ttc" id="aclass_s_e_res2_net_block_html_a5c025f527a7462e993e7d7c94cf42deb"><div class="ttname"><a href="class_s_e_res2_net_block.html#a5c025f527a7462e993e7d7c94cf42deb">SERes2NetBlock::loadweights</a></div><div class="ttdeci">void loadweights(std::string pathname)</div><div class="ttdoc">Loadweights via pathname.</div><div class="ttdef"><b>Definition</b> <a href="seres2netblock_8cpp_source.html#l00094">seres2netblock.cpp:94</a></div></div>
 <div class="ttc" id="aclass_s_e_res2_net_block_html_a91eda176ab25d264a76198bf8c7bfede"><div class="ttname"><a href="class_s_e_res2_net_block.html#a91eda176ab25d264a76198bf8c7bfede">SERes2NetBlock::forward</a></div><div class="ttdeci">void forward(T(&amp;input)[channel_in][input_width], T(&amp;output)[channel_out][out_width])</div><div class="ttdoc">Perform forward feed.</div><div class="ttdef"><b>Definition</b> <a href="seres2netblock_8cpp_source.html#l00054">seres2netblock.cpp:54</a></div></div>

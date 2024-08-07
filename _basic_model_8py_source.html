@@ -27,9 +27,9 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">LegacyCNN<span id="projectnumber">&#160;v0.1</span>
+   <div id="projectname">LegacyCNN<span id="projectnumber">&#160;v0.2</span>
    </div>
-   <div id="projectbrief">Toolbox for creating Neurel Networks on CPP</div>
+   <div id="projectbrief">Toolbox for creating Neural Networks in Cpp</div>
   </td>
  </tr>
  </tbody>
@@ -100,7 +100,7 @@ $(function(){initNavTree('_basic_model_8py_source.html',''); initResizable(true)
   <div class="headertitle"><div class="title">BasicModel.py</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="keyword">import</span> torch</div>
+<a href="_basic_model_8py.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno"><a class="line" href="namespace_basic_model.html">    1</a></span><span class="keyword">import</span> torch</div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="keyword">import</span> torch.nn.functional <span class="keyword">as</span> F</div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="keyword">import</span> <a class="code hl_namespace" href="namespacetorch_1_1nn.html">torch.nn</a> <span class="keyword">as</span> nn</div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="keyword">from</span> .saveasfile <span class="keyword">import</span> SaveAsBin</div>
@@ -132,7 +132,8 @@ $(function(){initNavTree('_basic_model_8py_source.html',''); initResizable(true)
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="comment">#         return x_padded</span></div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="keyword">def </span><a class="code hl_class" href="class_basic_block.html">BasicBlock</a>(in_channels, out_channels, kernel, stride=1):</div>
+<div class="foldopen" id="foldopen00033" data-start="" data-end="">
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="namespace_basic_model.html#a1a900d1adbef92e9ea87c25e92e52b5b">   33</a></span><span class="keyword">def </span><a class="code hl_function" href="namespace_basic_model.html#a1a900d1adbef92e9ea87c25e92e52b5b">BasicBlock</a>(in_channels, out_channels, kernel, stride=1):</div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <span class="keywordflow">return</span> nn.Sequential(</div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>        nn.Conv1d(in_channels, out_channels, kernel, stride),</div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>        nn.ReLU(inplace=<span class="keyword">True</span>),</div>
@@ -140,28 +141,32 @@ $(function(){initNavTree('_basic_model_8py_source.html',''); initResizable(true)
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    )</div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+</div>
 <div class="foldopen" id="foldopen00041" data-start="" data-end="">
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="class_basic_model_1_1_basic_model.html">   41</a></span><span class="keyword">class </span><a class="code hl_class" href="class_basic_model_1_1_basic_model.html">BasicModel</a>(torch.nn.Module):</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <span class="keyword">def </span>__init__(self, input_size=2, input_length=64, out_features=6):</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        super().__init__()</div>
+<div class="foldopen" id="foldopen00042" data-start="" data-end="">
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="class_basic_model_1_1_basic_model.html#a874d97130d8a06b0bfaadc09d79f2874">   42</a></span>    <span class="keyword">def </span><a class="code hl_function" href="class_basic_model_1_1_basic_model.html#a874d97130d8a06b0bfaadc09d79f2874">__init__</a>(self, input_size=2, input_length=64, out_features=6):</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        super().<a class="code hl_function" href="class_basic_model_1_1_basic_model.html#a874d97130d8a06b0bfaadc09d79f2874">__init__</a>()</div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>        self.<a class="code hl_variable" href="class_basic_model_1_1_basic_model.html#a6d8e3dec0047ffee4f6ed69e12d25b7d">inputs</a> = input_size</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="class_basic_model_1_1_basic_model.html#a6d8e3dec0047ffee4f6ed69e12d25b7d">   45</a></span>        self.<a class="code hl_variable" href="class_basic_model_1_1_basic_model.html#a6d8e3dec0047ffee4f6ed69e12d25b7d">inputs</a> = input_size</div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        <span class="comment"># self.input_layer = InputTransform(output_size = input_length)</span></div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        self.<a class="code hl_variable" href="class_basic_model_1_1_basic_model.html#a75d250e0d26b9b1168946f732c8d3988">layer0</a> = <a class="code hl_class" href="class_basic_block.html">BasicBlock</a>(self.<a class="code hl_variable" href="class_basic_model_1_1_basic_model.html#a6d8e3dec0047ffee4f6ed69e12d25b7d">inputs</a>, 4, 3)</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        self.<a class="code hl_variable" href="class_basic_model_1_1_basic_model.html#a4ffa338dba9b4e9f01cb9153cf265776">layer1</a> = <a class="code hl_class" href="class_basic_block.html">BasicBlock</a>(4, 4, 3)</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        self.<a class="code hl_variable" href="class_basic_model_1_1_basic_model.html#a7f1abb3128ef44bf3d0268e9af5b6496">layer2</a> = <a class="code hl_class" href="class_basic_block.html">BasicBlock</a>(4, 4, 3)</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        self.<a class="code hl_variable" href="class_basic_model_1_1_basic_model.html#a66228b7d7b710ffef8b1c781a3c9a3f1">layer3</a> = <a class="code hl_class" href="class_basic_block.html">BasicBlock</a>(4, 4, 3)</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>        self.<a class="code hl_variable" href="class_basic_model_1_1_basic_model.html#a49a5b2ed73bfa9f30177cfa71bc60239">layer4</a> = <a class="code hl_class" href="class_basic_block.html">BasicBlock</a>(4, 4, 3)</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="class_basic_model_1_1_basic_model.html#a75d250e0d26b9b1168946f732c8d3988">   49</a></span>        self.<a class="code hl_variable" href="class_basic_model_1_1_basic_model.html#a75d250e0d26b9b1168946f732c8d3988">layer0</a> = <a class="code hl_class" href="class_basic_block.html">BasicBlock</a>(self.<a class="code hl_variable" href="class_basic_model_1_1_basic_model.html#a6d8e3dec0047ffee4f6ed69e12d25b7d">inputs</a>, 4, 3)</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="class_basic_model_1_1_basic_model.html#a4ffa338dba9b4e9f01cb9153cf265776">   50</a></span>        self.<a class="code hl_variable" href="class_basic_model_1_1_basic_model.html#a4ffa338dba9b4e9f01cb9153cf265776">layer1</a> = <a class="code hl_class" href="class_basic_block.html">BasicBlock</a>(4, 4, 3)</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="class_basic_model_1_1_basic_model.html#a7f1abb3128ef44bf3d0268e9af5b6496">   51</a></span>        self.<a class="code hl_variable" href="class_basic_model_1_1_basic_model.html#a7f1abb3128ef44bf3d0268e9af5b6496">layer2</a> = <a class="code hl_class" href="class_basic_block.html">BasicBlock</a>(4, 4, 3)</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="class_basic_model_1_1_basic_model.html#a66228b7d7b710ffef8b1c781a3c9a3f1">   52</a></span>        self.<a class="code hl_variable" href="class_basic_model_1_1_basic_model.html#a66228b7d7b710ffef8b1c781a3c9a3f1">layer3</a> = <a class="code hl_class" href="class_basic_block.html">BasicBlock</a>(4, 4, 3)</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="class_basic_model_1_1_basic_model.html#a49a5b2ed73bfa9f30177cfa71bc60239">   53</a></span>        self.<a class="code hl_variable" href="class_basic_model_1_1_basic_model.html#a49a5b2ed73bfa9f30177cfa71bc60239">layer4</a> = <a class="code hl_class" href="class_basic_block.html">BasicBlock</a>(4, 4, 3)</div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        <span class="comment"># Final Dense Layer</span></div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        self.<a class="code hl_variable" href="class_basic_model_1_1_basic_model.html#a3433b3637f62a79e6eb4248553c88202">final</a> = nn.Sequential(</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="class_basic_model_1_1_basic_model.html#a3433b3637f62a79e6eb4248553c88202">   56</a></span>        self.<a class="code hl_variable" href="class_basic_model_1_1_basic_model.html#a3433b3637f62a79e6eb4248553c88202">final</a> = nn.Sequential(</div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>            nn.Flatten(),</div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>            nn.Linear(in_features=4 * (input_length - 10), out_features=out_features),</div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        )</div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    <span class="keyword">def </span>forward(self, x):</div>
+</div>
+<div class="foldopen" id="foldopen00061" data-start="" data-end="">
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="class_basic_model_1_1_basic_model.html#a93737f2d8d5f47c9cd52a336bd3e515d">   61</a></span>    <span class="keyword">def </span><a class="code hl_function" href="class_basic_model_1_1_basic_model.html#a93737f2d8d5f47c9cd52a336bd3e515d">forward</a>(self, x):</div>
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>        y = self.<a class="code hl_variable" href="class_basic_model_1_1_basic_model.html#a75d250e0d26b9b1168946f732c8d3988">layer0</a>(x)</div>
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        y = self.<a class="code hl_variable" href="class_basic_model_1_1_basic_model.html#a4ffa338dba9b4e9f01cb9153cf265776">layer1</a>(y)</div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        y = self.<a class="code hl_variable" href="class_basic_model_1_1_basic_model.html#a7f1abb3128ef44bf3d0268e9af5b6496">layer2</a>(y)</div>
@@ -173,7 +178,9 @@ $(function(){initNavTree('_basic_model_8py_source.html',''); initResizable(true)
 <div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>        z = F.softmax(y)</div>
 <div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>        <span class="keywordflow">return</span> z</div>
 <div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    <span class="keyword">def </span>return_layers(self):</div>
+</div>
+<div class="foldopen" id="foldopen00073" data-start="" data-end="">
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno"><a class="line" href="class_basic_model_1_1_basic_model.html#a1abe07ea61a25b0758357eb1ad0abb84">   73</a></span>    <span class="keyword">def </span><a class="code hl_function" href="class_basic_model_1_1_basic_model.html#a1abe07ea61a25b0758357eb1ad0abb84">return_layers</a>(self):</div>
 <div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
 <div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>        lst = []</div>
 <div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
@@ -198,8 +205,10 @@ $(function(){initNavTree('_basic_model_8py_source.html',''); initResizable(true)
 <div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span> </div>
 <div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>        <span class="keywordflow">return</span> lst</div>
 </div>
+</div>
 <div class="ttc" id="aclass_basic_block_html"><div class="ttname"><a href="class_basic_block.html">BasicBlock</a></div><div class="ttdoc">This code snippet defines a template class BasicBlock that represents a basic block in a convolutiona...</div><div class="ttdef"><b>Definition</b> <a href="basicblock_8h_source.html#l00038">basicblock.h:39</a></div></div>
 <div class="ttc" id="aclass_basic_model_1_1_basic_model_html"><div class="ttname"><a href="class_basic_model_1_1_basic_model.html">BasicModel.BasicModel</a></div><div class="ttdef"><b>Definition</b> <a href="#l00041">BasicModel.py:41</a></div></div>
+<div class="ttc" id="aclass_basic_model_1_1_basic_model_html_a1abe07ea61a25b0758357eb1ad0abb84"><div class="ttname"><a href="class_basic_model_1_1_basic_model.html#a1abe07ea61a25b0758357eb1ad0abb84">BasicModel.BasicModel.return_layers</a></div><div class="ttdeci">return_layers(self)</div><div class="ttdef"><b>Definition</b> <a href="#l00073">BasicModel.py:73</a></div></div>
 <div class="ttc" id="aclass_basic_model_1_1_basic_model_html_a3433b3637f62a79e6eb4248553c88202"><div class="ttname"><a href="class_basic_model_1_1_basic_model.html#a3433b3637f62a79e6eb4248553c88202">BasicModel.BasicModel.final</a></div><div class="ttdeci">final</div><div class="ttdef"><b>Definition</b> <a href="#l00056">BasicModel.py:56</a></div></div>
 <div class="ttc" id="aclass_basic_model_1_1_basic_model_html_a49a5b2ed73bfa9f30177cfa71bc60239"><div class="ttname"><a href="class_basic_model_1_1_basic_model.html#a49a5b2ed73bfa9f30177cfa71bc60239">BasicModel.BasicModel.layer4</a></div><div class="ttdeci">layer4</div><div class="ttdef"><b>Definition</b> <a href="#l00053">BasicModel.py:53</a></div></div>
 <div class="ttc" id="aclass_basic_model_1_1_basic_model_html_a4ffa338dba9b4e9f01cb9153cf265776"><div class="ttname"><a href="class_basic_model_1_1_basic_model.html#a4ffa338dba9b4e9f01cb9153cf265776">BasicModel.BasicModel.layer1</a></div><div class="ttdeci">layer1</div><div class="ttdef"><b>Definition</b> <a href="#l00050">BasicModel.py:50</a></div></div>
@@ -207,13 +216,16 @@ $(function(){initNavTree('_basic_model_8py_source.html',''); initResizable(true)
 <div class="ttc" id="aclass_basic_model_1_1_basic_model_html_a6d8e3dec0047ffee4f6ed69e12d25b7d"><div class="ttname"><a href="class_basic_model_1_1_basic_model.html#a6d8e3dec0047ffee4f6ed69e12d25b7d">BasicModel.BasicModel.inputs</a></div><div class="ttdeci">inputs</div><div class="ttdef"><b>Definition</b> <a href="#l00045">BasicModel.py:45</a></div></div>
 <div class="ttc" id="aclass_basic_model_1_1_basic_model_html_a75d250e0d26b9b1168946f732c8d3988"><div class="ttname"><a href="class_basic_model_1_1_basic_model.html#a75d250e0d26b9b1168946f732c8d3988">BasicModel.BasicModel.layer0</a></div><div class="ttdeci">layer0</div><div class="ttdef"><b>Definition</b> <a href="#l00049">BasicModel.py:49</a></div></div>
 <div class="ttc" id="aclass_basic_model_1_1_basic_model_html_a7f1abb3128ef44bf3d0268e9af5b6496"><div class="ttname"><a href="class_basic_model_1_1_basic_model.html#a7f1abb3128ef44bf3d0268e9af5b6496">BasicModel.BasicModel.layer2</a></div><div class="ttdeci">layer2</div><div class="ttdef"><b>Definition</b> <a href="#l00051">BasicModel.py:51</a></div></div>
+<div class="ttc" id="aclass_basic_model_1_1_basic_model_html_a874d97130d8a06b0bfaadc09d79f2874"><div class="ttname"><a href="class_basic_model_1_1_basic_model.html#a874d97130d8a06b0bfaadc09d79f2874">BasicModel.BasicModel.__init__</a></div><div class="ttdeci">__init__(self, input_size=2, input_length=64, out_features=6)</div><div class="ttdef"><b>Definition</b> <a href="#l00042">BasicModel.py:42</a></div></div>
+<div class="ttc" id="aclass_basic_model_1_1_basic_model_html_a93737f2d8d5f47c9cd52a336bd3e515d"><div class="ttname"><a href="class_basic_model_1_1_basic_model.html#a93737f2d8d5f47c9cd52a336bd3e515d">BasicModel.BasicModel.forward</a></div><div class="ttdeci">forward(self, x)</div><div class="ttdef"><b>Definition</b> <a href="#l00061">BasicModel.py:61</a></div></div>
+<div class="ttc" id="anamespace_basic_model_html_a1a900d1adbef92e9ea87c25e92e52b5b"><div class="ttname"><a href="namespace_basic_model.html#a1a900d1adbef92e9ea87c25e92e52b5b">BasicModel.BasicBlock</a></div><div class="ttdeci">BasicBlock(in_channels, out_channels, kernel, stride=1)</div><div class="ttdef"><b>Definition</b> <a href="#l00033">BasicModel.py:33</a></div></div>
 <div class="ttc" id="anamespacetorch_1_1nn_html"><div class="ttname"><a href="namespacetorch_1_1nn.html">torch.nn</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_32d7642d91796e6ebfcf36acd9d3ee8e.html">python_lib</a></li><li class="navelem"><b>BasicModel.py</b></li>
+    <li class="navelem"><a class="el" href="dir_32d7642d91796e6ebfcf36acd9d3ee8e.html">python_lib</a></li><li class="navelem"><a class="el" href="_basic_model_8py.html">BasicModel.py</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>

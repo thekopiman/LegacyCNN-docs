@@ -27,9 +27,9 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">LegacyCNN<span id="projectnumber">&#160;v0.1</span>
+   <div id="projectname">LegacyCNN<span id="projectnumber">&#160;v0.2</span>
    </div>
-   <div id="projectbrief">Toolbox for creating Neurel Networks on CPP</div>
+   <div id="projectbrief">Toolbox for creating Neural Networks in Cpp</div>
   </td>
  </tr>
  </tbody>
@@ -117,6 +117,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a58138e84068dba43c8fb9e6d717333fc" id="r_a58138e84068dba43c8fb9e6d717333fc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a58138e84068dba43c8fb9e6d717333fc">forward</a> (T(&amp;input)[channel_in][input_width], T(&amp;output)[channel_out][out_width])</td></tr>
 <tr class="memdesc:a58138e84068dba43c8fb9e6d717333fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform Forward feed.  <br /></td></tr>
 <tr class="separator:a58138e84068dba43c8fb9e6d717333fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af673cc88ca7666883e9685ee91e3615f" id="r_af673cc88ca7666883e9685ee91e3615f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af673cc88ca7666883e9685ee91e3615f">~Res2NetBlock</a> ()</td></tr>
+<tr class="separator:af673cc88ca7666883e9685ee91e3615f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6735a3709f896a64b3321719cda485e0" id="r_a6735a3709f896a64b3321719cda485e0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6735a3709f896a64b3321719cda485e0">loadweights</a> (std::string pathname)</td></tr>
 <tr class="memdesc:a6735a3709f896a64b3321719cda485e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load the weights via pathname.  <br /></td></tr>
 <tr class="separator:a6735a3709f896a64b3321719cda485e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -166,7 +168,7 @@ template&lt;int kernel, int channel_in, int channel_out, int dilation, int input
 </div><div class="memdoc">
 
 <p>Construct a new <a class="el" href="#a609dc5aad0f2db3f57b0c833e2eee735" title="Construct a new Res2NetBlock&lt;kernel, channel_in, channel_out, dilation, input_width,...">Res2NetBlock&lt;kernel, channel_in, channel_out, dilation, input_width, out_width, input_pad, scale, T&gt;::Res2NetBlock</a> object. </p>
-<dl class="tparams"><dt>Template Parameters</dt><dd>
+<p>Make sure that input_width == out_width </p><dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">kernel</td><td></td></tr>
     <tr><td class="paramname">channel_in</td><td></td></tr>
@@ -181,7 +183,7 @@ template&lt;int kernel, int channel_in, int channel_out, int dilation, int input
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="res2netblock_8cpp_source.html#l00027">27</a> of file <a class="el" href="res2netblock_8cpp_source.html">res2netblock.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="res2netblock_8cpp_source.html#l00028">28</a> of file <a class="el" href="res2netblock_8cpp_source.html">res2netblock.cpp</a>.</p>
 
 </div>
 </div>
@@ -202,7 +204,7 @@ template&lt;int kernel, int channel_in, int channel_out, int dilation, int input
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="res2netblock_8cpp_source.html#l00036">36</a> of file <a class="el" href="res2netblock_8cpp_source.html">res2netblock.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="res2netblock_8cpp_source.html#l00038">38</a> of file <a class="el" href="res2netblock_8cpp_source.html">res2netblock.cpp</a>.</p>
 
 </div>
 </div>
@@ -251,7 +253,7 @@ template&lt;int kernel, int channel_in, int channel_out, int dilation, int input
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="res2netblock_8cpp_source.html#l00054">54</a> of file <a class="el" href="res2netblock_8cpp_source.html">res2netblock.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="res2netblock_8cpp_source.html#l00056">56</a> of file <a class="el" href="res2netblock_8cpp_source.html">res2netblock.cpp</a>.</p>
 
 </div>
 </div>
@@ -294,7 +296,7 @@ template&lt;int kernel, int channel_in, int channel_out, int dilation, int input
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="res2netblock_8cpp_source.html#l00188">188</a> of file <a class="el" href="res2netblock_8cpp_source.html">res2netblock.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="res2netblock_8cpp_source.html#l00190">190</a> of file <a class="el" href="res2netblock_8cpp_source.html">res2netblock.cpp</a>.</p>
 
 </div>
 </div>
@@ -337,7 +339,7 @@ template&lt;int kernel, int channel_in, int channel_out, int dilation, int input
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="res2netblock_8cpp_source.html#l00155">155</a> of file <a class="el" href="res2netblock_8cpp_source.html">res2netblock.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="res2netblock_8cpp_source.html#l00157">157</a> of file <a class="el" href="res2netblock_8cpp_source.html">res2netblock.cpp</a>.</p>
 
 </div>
 </div>
@@ -358,7 +360,7 @@ template&lt;int kernel, int channel_in, int channel_out, int dilation, int input
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="res2netblock_8cpp_source.html#l00198">198</a> of file <a class="el" href="res2netblock_8cpp_source.html">res2netblock.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="res2netblock_8cpp_source.html#l00200">200</a> of file <a class="el" href="res2netblock_8cpp_source.html">res2netblock.cpp</a>.</p>
 
 </div>
 </div>
@@ -379,7 +381,7 @@ template&lt;int kernel, int channel_in, int channel_out, int dilation, int input
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="res2netblock_8cpp_source.html#l00128">128</a> of file <a class="el" href="res2netblock_8cpp_source.html">res2netblock.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="res2netblock_8cpp_source.html#l00130">130</a> of file <a class="el" href="res2netblock_8cpp_source.html">res2netblock.cpp</a>.</p>
 
 </div>
 </div>

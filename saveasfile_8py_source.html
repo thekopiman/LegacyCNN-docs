@@ -27,9 +27,9 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">LegacyCNN<span id="projectnumber">&#160;v0.1</span>
+   <div id="projectname">LegacyCNN<span id="projectnumber">&#160;v0.2</span>
    </div>
-   <div id="projectbrief">Toolbox for creating Neurel Networks on CPP</div>
+   <div id="projectbrief">Toolbox for creating Neural Networks in Cpp</div>
   </td>
  </tr>
  </tbody>
@@ -100,22 +100,25 @@ $(function(){initNavTree('saveasfile_8py_source.html',''); initResizable(true); 
   <div class="headertitle"><div class="title">saveasfile.py</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="keyword">import</span> torch</div>
+<a href="saveasfile_8py.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno"><a class="line" href="namespacesaveasfile.html">    1</a></span><span class="keyword">import</span> torch</div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="keyword">import</span> numpy <span class="keyword">as</span> np</div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="keyword">import</span> os</div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
 <div class="foldopen" id="foldopen00006" data-start="" data-end="">
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno"><a class="line" href="classsaveasfile_1_1_save_as_bin.html">    6</a></span><span class="keyword">class </span><a class="code hl_class" href="classsaveasfile_1_1_save_as_bin.html">SaveAsBin</a>:</div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>    <span class="keyword">def </span>__init__(self, layer, layername, dirpath):</div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>        self.<a class="code hl_variable" href="classsaveasfile_1_1_save_as_bin.html#a31f862c6b0e31681b44d7a0bdde9fbd7">layer</a> = layer</div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>        self.<a class="code hl_variable" href="classsaveasfile_1_1_save_as_bin.html#a1013d5041c540799b8f4321e403198f1">layername</a> = layername</div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>        self.<a class="code hl_variable" href="classsaveasfile_1_1_save_as_bin.html#ac5bb3d00069a3c0ba074d54bfe8a213c">dirpath</a> = dirpath</div>
+<div class="foldopen" id="foldopen00007" data-start="" data-end="">
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno"><a class="line" href="classsaveasfile_1_1_save_as_bin.html#a5baa02c980ff88d16bacb05202086924">    7</a></span>    <span class="keyword">def </span><a class="code hl_function" href="classsaveasfile_1_1_save_as_bin.html#a5baa02c980ff88d16bacb05202086924">__init__</a>(self, layer, layername, dirpath):</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno"><a class="line" href="classsaveasfile_1_1_save_as_bin.html#a31f862c6b0e31681b44d7a0bdde9fbd7">    8</a></span>        self.<a class="code hl_variable" href="classsaveasfile_1_1_save_as_bin.html#a31f862c6b0e31681b44d7a0bdde9fbd7">layer</a> = layer</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="classsaveasfile_1_1_save_as_bin.html#a1013d5041c540799b8f4321e403198f1">    9</a></span>        self.<a class="code hl_variable" href="classsaveasfile_1_1_save_as_bin.html#a1013d5041c540799b8f4321e403198f1">layername</a> = layername</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="classsaveasfile_1_1_save_as_bin.html#ac5bb3d00069a3c0ba074d54bfe8a213c">   10</a></span>        self.<a class="code hl_variable" href="classsaveasfile_1_1_save_as_bin.html#ac5bb3d00069a3c0ba074d54bfe8a213c">dirpath</a> = dirpath</div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>        <span class="keywordflow">if</span> <span class="keywordflow">not</span> os.path.exists(dirpath):</div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>            os.makedirs(dirpath)</div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    <span class="keyword">def </span>saveBias(self, transpose=False):</div>
+</div>
+<div class="foldopen" id="foldopen00015" data-start="" data-end="">
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="classsaveasfile_1_1_save_as_bin.html#a8300b392873c96439b4f03b4f4b041a2">   15</a></span>    <span class="keyword">def </span><a class="code hl_function" href="classsaveasfile_1_1_save_as_bin.html#a8300b392873c96439b4f03b4f4b041a2">saveBias</a>(self, transpose=False):</div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>        bias = self.<a class="code hl_variable" href="classsaveasfile_1_1_save_as_bin.html#a31f862c6b0e31681b44d7a0bdde9fbd7">layer</a>.bias.cpu().detach().numpy()</div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>        <span class="keywordflow">if</span> transpose:</div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>            bias = np.transpose(bias)</div>
@@ -129,7 +132,9 @@ $(function(){initNavTree('saveasfile_8py_source.html',''); initResizable(true); 
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>            <span class="comment"># Write the flatten bias down</span></div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>            f.write(flatten_bias.tobytes())</div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <span class="keyword">def </span>saveWeights(self, transpose=False):</div>
+</div>
+<div class="foldopen" id="foldopen00029" data-start="" data-end="">
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="classsaveasfile_1_1_save_as_bin.html#a070c7a857d98fda0d20c205127e0838e">   29</a></span>    <span class="keyword">def </span><a class="code hl_function" href="classsaveasfile_1_1_save_as_bin.html#a070c7a857d98fda0d20c205127e0838e">saveWeights</a>(self, transpose=False):</div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>        weights = self.<a class="code hl_variable" href="classsaveasfile_1_1_save_as_bin.html#a31f862c6b0e31681b44d7a0bdde9fbd7">layer</a>.weight.cpu().detach().numpy()</div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>        <span class="keywordflow">if</span> transpose:</div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>            weights = np.transpose(weights)</div>
@@ -145,24 +150,29 @@ $(function(){initNavTree('saveasfile_8py_source.html',''); initResizable(true); 
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>            <span class="comment"># Write the flatten weights down</span></div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>            f.write(flatten_weights.tobytes())</div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <span class="keyword">def </span>saveBoth(self):</div>
+</div>
+<div class="foldopen" id="foldopen00045" data-start="" data-end="">
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="classsaveasfile_1_1_save_as_bin.html#a7d1cf8f427c291d496571ac80e8cb739">   45</a></span>    <span class="keyword">def </span><a class="code hl_function" href="classsaveasfile_1_1_save_as_bin.html#a7d1cf8f427c291d496571ac80e8cb739">saveBoth</a>(self):</div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>        self.<a class="code hl_function" href="classsaveasfile_1_1_save_as_bin.html#a8300b392873c96439b4f03b4f4b041a2">saveBias</a>()</div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        self.<a class="code hl_function" href="classsaveasfile_1_1_save_as_bin.html#a070c7a857d98fda0d20c205127e0838e">saveWeights</a>()</div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
 </div>
+</div>
 <div class="foldopen" id="foldopen00050" data-start="" data-end="">
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="classsaveasfile_1_1_block_save.html">   50</a></span><span class="keyword">class </span><a class="code hl_class" href="classsaveasfile_1_1_block_save.html">BlockSave</a>:</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <span class="keyword">def </span>__init__(self, layers: list, blockname: str, dirpath):</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        self.<a class="code hl_variable" href="classsaveasfile_1_1_block_save.html#a45cb96fd8e7395f3d06bb3c09b98f358">layers</a> = layers</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>        self.<a class="code hl_variable" href="classsaveasfile_1_1_block_save.html#a239b179fed3aea2d4b8a51e0d509fda5">blockname</a> = blockname</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>        self.<a class="code hl_variable" href="classsaveasfile_1_1_block_save.html#acb34f293154c11135d211510fab25113">dirpath</a> = dirpath</div>
+<div class="foldopen" id="foldopen00051" data-start="" data-end="">
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="classsaveasfile_1_1_block_save.html#a6703b0a4867bd307b5e5554f460fc300">   51</a></span>    <span class="keyword">def </span><a class="code hl_function" href="classsaveasfile_1_1_block_save.html#a6703b0a4867bd307b5e5554f460fc300">__init__</a>(self, layers: list, blockname: str, dirpath):</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="classsaveasfile_1_1_block_save.html#a45cb96fd8e7395f3d06bb3c09b98f358">   52</a></span>        self.<a class="code hl_variable" href="classsaveasfile_1_1_block_save.html#a45cb96fd8e7395f3d06bb3c09b98f358">layers</a> = layers</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="classsaveasfile_1_1_block_save.html#a239b179fed3aea2d4b8a51e0d509fda5">   53</a></span>        self.<a class="code hl_variable" href="classsaveasfile_1_1_block_save.html#a239b179fed3aea2d4b8a51e0d509fda5">blockname</a> = blockname</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="classsaveasfile_1_1_block_save.html#acb34f293154c11135d211510fab25113">   54</a></span>        self.<a class="code hl_variable" href="classsaveasfile_1_1_block_save.html#acb34f293154c11135d211510fab25113">dirpath</a> = dirpath</div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        <span class="keywordflow">if</span> <span class="keywordflow">not</span> os.path.exists(dirpath):</div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>            os.makedirs(dirpath)</div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        self.<a class="code hl_function" href="classsaveasfile_1_1_block_save.html#a94e8249afd38c2228592cbdfedaada71">save</a>()</div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
+</div>
 <div class="foldopen" id="foldopen00061" data-start="" data-end="">
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="classsaveasfile_1_1_block_save.html#a94e8249afd38c2228592cbdfedaada71">   61</a></span>    <span class="keyword">def </span><a class="code hl_function" href="classsaveasfile_1_1_block_save.html#a94e8249afd38c2228592cbdfedaada71">save</a>(self):</div>
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>        <span class="stringliteral">&quot;&quot;&quot;</span></div>
@@ -225,12 +235,15 @@ $(function(){initNavTree('saveasfile_8py_source.html',''); initResizable(true); 
 <div class="ttc" id="aclasssaveasfile_1_1_block_save_html"><div class="ttname"><a href="classsaveasfile_1_1_block_save.html">saveasfile.BlockSave</a></div><div class="ttdef"><b>Definition</b> <a href="#l00050">saveasfile.py:50</a></div></div>
 <div class="ttc" id="aclasssaveasfile_1_1_block_save_html_a239b179fed3aea2d4b8a51e0d509fda5"><div class="ttname"><a href="classsaveasfile_1_1_block_save.html#a239b179fed3aea2d4b8a51e0d509fda5">saveasfile.BlockSave.blockname</a></div><div class="ttdeci">blockname</div><div class="ttdef"><b>Definition</b> <a href="#l00053">saveasfile.py:53</a></div></div>
 <div class="ttc" id="aclasssaveasfile_1_1_block_save_html_a45cb96fd8e7395f3d06bb3c09b98f358"><div class="ttname"><a href="classsaveasfile_1_1_block_save.html#a45cb96fd8e7395f3d06bb3c09b98f358">saveasfile.BlockSave.layers</a></div><div class="ttdeci">layers</div><div class="ttdef"><b>Definition</b> <a href="#l00052">saveasfile.py:52</a></div></div>
+<div class="ttc" id="aclasssaveasfile_1_1_block_save_html_a6703b0a4867bd307b5e5554f460fc300"><div class="ttname"><a href="classsaveasfile_1_1_block_save.html#a6703b0a4867bd307b5e5554f460fc300">saveasfile.BlockSave.__init__</a></div><div class="ttdeci">__init__(self, list layers, str blockname, dirpath)</div><div class="ttdef"><b>Definition</b> <a href="#l00051">saveasfile.py:51</a></div></div>
 <div class="ttc" id="aclasssaveasfile_1_1_block_save_html_a94e8249afd38c2228592cbdfedaada71"><div class="ttname"><a href="classsaveasfile_1_1_block_save.html#a94e8249afd38c2228592cbdfedaada71">saveasfile.BlockSave.save</a></div><div class="ttdeci">save(self)</div><div class="ttdef"><b>Definition</b> <a href="#l00061">saveasfile.py:61</a></div></div>
 <div class="ttc" id="aclasssaveasfile_1_1_block_save_html_acb34f293154c11135d211510fab25113"><div class="ttname"><a href="classsaveasfile_1_1_block_save.html#acb34f293154c11135d211510fab25113">saveasfile.BlockSave.dirpath</a></div><div class="ttdeci">dirpath</div><div class="ttdef"><b>Definition</b> <a href="#l00054">saveasfile.py:54</a></div></div>
 <div class="ttc" id="aclasssaveasfile_1_1_save_as_bin_html"><div class="ttname"><a href="classsaveasfile_1_1_save_as_bin.html">saveasfile.SaveAsBin</a></div><div class="ttdef"><b>Definition</b> <a href="#l00006">saveasfile.py:6</a></div></div>
 <div class="ttc" id="aclasssaveasfile_1_1_save_as_bin_html_a070c7a857d98fda0d20c205127e0838e"><div class="ttname"><a href="classsaveasfile_1_1_save_as_bin.html#a070c7a857d98fda0d20c205127e0838e">saveasfile.SaveAsBin.saveWeights</a></div><div class="ttdeci">saveWeights(self, transpose=False)</div><div class="ttdef"><b>Definition</b> <a href="#l00029">saveasfile.py:29</a></div></div>
 <div class="ttc" id="aclasssaveasfile_1_1_save_as_bin_html_a1013d5041c540799b8f4321e403198f1"><div class="ttname"><a href="classsaveasfile_1_1_save_as_bin.html#a1013d5041c540799b8f4321e403198f1">saveasfile.SaveAsBin.layername</a></div><div class="ttdeci">layername</div><div class="ttdef"><b>Definition</b> <a href="#l00009">saveasfile.py:9</a></div></div>
 <div class="ttc" id="aclasssaveasfile_1_1_save_as_bin_html_a31f862c6b0e31681b44d7a0bdde9fbd7"><div class="ttname"><a href="classsaveasfile_1_1_save_as_bin.html#a31f862c6b0e31681b44d7a0bdde9fbd7">saveasfile.SaveAsBin.layer</a></div><div class="ttdeci">layer</div><div class="ttdef"><b>Definition</b> <a href="#l00008">saveasfile.py:8</a></div></div>
+<div class="ttc" id="aclasssaveasfile_1_1_save_as_bin_html_a5baa02c980ff88d16bacb05202086924"><div class="ttname"><a href="classsaveasfile_1_1_save_as_bin.html#a5baa02c980ff88d16bacb05202086924">saveasfile.SaveAsBin.__init__</a></div><div class="ttdeci">__init__(self, layer, layername, dirpath)</div><div class="ttdef"><b>Definition</b> <a href="#l00007">saveasfile.py:7</a></div></div>
+<div class="ttc" id="aclasssaveasfile_1_1_save_as_bin_html_a7d1cf8f427c291d496571ac80e8cb739"><div class="ttname"><a href="classsaveasfile_1_1_save_as_bin.html#a7d1cf8f427c291d496571ac80e8cb739">saveasfile.SaveAsBin.saveBoth</a></div><div class="ttdeci">saveBoth(self)</div><div class="ttdef"><b>Definition</b> <a href="#l00045">saveasfile.py:45</a></div></div>
 <div class="ttc" id="aclasssaveasfile_1_1_save_as_bin_html_a8300b392873c96439b4f03b4f4b041a2"><div class="ttname"><a href="classsaveasfile_1_1_save_as_bin.html#a8300b392873c96439b4f03b4f4b041a2">saveasfile.SaveAsBin.saveBias</a></div><div class="ttdeci">saveBias(self, transpose=False)</div><div class="ttdef"><b>Definition</b> <a href="#l00015">saveasfile.py:15</a></div></div>
 <div class="ttc" id="aclasssaveasfile_1_1_save_as_bin_html_ac5bb3d00069a3c0ba074d54bfe8a213c"><div class="ttname"><a href="classsaveasfile_1_1_save_as_bin.html#ac5bb3d00069a3c0ba074d54bfe8a213c">saveasfile.SaveAsBin.dirpath</a></div><div class="ttdeci">dirpath</div><div class="ttdef"><b>Definition</b> <a href="#l00010">saveasfile.py:10</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
@@ -238,7 +251,7 @@ $(function(){initNavTree('saveasfile_8py_source.html',''); initResizable(true); 
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_32d7642d91796e6ebfcf36acd9d3ee8e.html">python_lib</a></li><li class="navelem"><b>saveasfile.py</b></li>
+    <li class="navelem"><a class="el" href="dir_32d7642d91796e6ebfcf36acd9d3ee8e.html">python_lib</a></li><li class="navelem"><a class="el" href="saveasfile_8py.html">saveasfile.py</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>

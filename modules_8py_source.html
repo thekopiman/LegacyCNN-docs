@@ -27,9 +27,9 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">LegacyCNN<span id="projectnumber">&#160;v0.1</span>
+   <div id="projectname">LegacyCNN<span id="projectnumber">&#160;v0.2</span>
    </div>
-   <div id="projectbrief">Toolbox for creating Neurel Networks on CPP</div>
+   <div id="projectbrief">Toolbox for creating Neural Networks in Cpp</div>
   </td>
  </tr>
  </tbody>
@@ -100,7 +100,7 @@ $(function(){initNavTree('modules_8py_source.html',''); initResizable(true); });
   <div class="headertitle"><div class="title">modules.py</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno"><a class="line" href="namespacemodules.html">    1</a></span><span class="stringliteral">&quot;&quot;&quot;A popular speaker recognition and diarization model.</span></div>
+<a href="modules_8py.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno"><a class="line" href="namespacemodules.html">    1</a></span><span class="stringliteral">&quot;&quot;&quot;A popular speaker recognition and diarization model.</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="stringliteral"></span> </div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="stringliteral">Authors</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="stringliteral"> * Hwidong Na 2020</span></div>
@@ -123,22 +123,29 @@ $(function(){initNavTree('modules_8py_source.html',''); initResizable(true); });
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="classmodules_1_1_conv1d.html">   20</a></span><span class="keyword">class </span><a class="code hl_class" href="classmodules_1_1_conv1d.html">Conv1d</a>(_Conv1d):</div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <span class="stringliteral">&quot;&quot;&quot;1D convolution. Skip transpose is used to improve efficiency.&quot;&quot;&quot;</span></div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <span class="keyword">def </span>__init__(self, *args, **kwargs):</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>        super().__init__(skip_transpose=<span class="keyword">True</span>, *args, **kwargs)</div>
+<div class="foldopen" id="foldopen00023" data-start="" data-end="">
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="classmodules_1_1_conv1d.html#ae37a613af207dc9fa6f5647f05631500">   23</a></span>    <span class="keyword">def </span><a class="code hl_function" href="classmodules_1_1_conv1d.html#ae37a613af207dc9fa6f5647f05631500">__init__</a>(self, *args, **kwargs):</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>        super().<a class="code hl_function" href="classmodules_1_1_conv1d.html#ae37a613af207dc9fa6f5647f05631500">__init__</a>(skip_transpose=<span class="keyword">True</span>, *args, **kwargs)</div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    <span class="keyword">def </span>return_layers(self) -&gt; list:</div>
+</div>
+<div class="foldopen" id="foldopen00026" data-start="" data-end="">
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="classmodules_1_1_conv1d.html#a8fe931d7fa1887930d76ff70595a7623">   26</a></span>    <span class="keyword">def </span><a class="code hl_function" href="classmodules_1_1_conv1d.html#a8fe931d7fa1887930d76ff70595a7623">return_layers</a>(self) -&gt; list:</div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>        <span class="keywordflow">return</span> [self.conv]</div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+</div>
 </div>
 <div class="foldopen" id="foldopen00030" data-start="" data-end="">
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="classmodules_1_1_batch_norm1d.html">   30</a></span><span class="keyword">class </span><a class="code hl_class" href="classmodules_1_1_batch_norm1d.html">BatchNorm1d</a>(_BatchNorm1d):</div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <span class="stringliteral">&quot;&quot;&quot;1D batch normalization. Skip transpose is used to improve efficiency.&quot;&quot;&quot;</span></div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <span class="keyword">def </span>__init__(self, *args, **kwargs):</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>        super().__init__(skip_transpose=<span class="keyword">True</span>, *args, **kwargs)</div>
+<div class="foldopen" id="foldopen00033" data-start="" data-end="">
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="classmodules_1_1_batch_norm1d.html#ae0643ffbd5ba16ec54729f0493c4e65d">   33</a></span>    <span class="keyword">def </span><a class="code hl_function" href="classmodules_1_1_batch_norm1d.html#ae0643ffbd5ba16ec54729f0493c4e65d">__init__</a>(self, *args, **kwargs):</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>        super().<a class="code hl_function" href="classmodules_1_1_batch_norm1d.html#ae0643ffbd5ba16ec54729f0493c4e65d">__init__</a>(skip_transpose=<span class="keyword">True</span>, *args, **kwargs)</div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <span class="keyword">def </span>return_layers(self) -&gt; list:</div>
+</div>
+<div class="foldopen" id="foldopen00036" data-start="" data-end="">
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="classmodules_1_1_batch_norm1d.html#a2de0f9dd929938e7e3f6248b1fac9d21">   36</a></span>    <span class="keyword">def </span><a class="code hl_function" href="classmodules_1_1_batch_norm1d.html#a2de0f9dd929938e7e3f6248b1fac9d21">return_layers</a>(self) -&gt; list:</div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        <span class="keywordflow">return</span> [self.norm]</div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
@@ -156,6 +163,7 @@ $(function(){initNavTree('modules_8py_source.html',''); initResizable(true); });
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="comment">#         super().__init__(x, dim)</span></div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
+</div>
 </div>
 <div class="foldopen" id="foldopen00054" data-start="" data-end="">
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="classmodules_1_1_t_d_n_n_block.html">   54</a></span><span class="keyword">class </span><a class="code hl_class" href="classmodules_1_1_t_d_n_n_block.html">TDNNBlock</a>(nn.Module):</div>
@@ -185,7 +193,8 @@ $(function(){initNavTree('modules_8py_source.html',''); initResizable(true); });
 <div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span><span class="stringliteral">    torch.Size([8, 120, 64])</span></div>
 <div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span><span class="stringliteral">    &quot;&quot;&quot;</span></div>
 <div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> </div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    <span class="keyword">def </span>__init__(</div>
+<div class="foldopen" id="foldopen00081" data-start="" data-end="">
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno"><a class="line" href="classmodules_1_1_t_d_n_n_block.html#a00dbfb71b36e9b1116550871efbea576">   81</a></span>    <span class="keyword">def </span><a class="code hl_function" href="classmodules_1_1_t_d_n_n_block.html#a00dbfb71b36e9b1116550871efbea576">__init__</a>(</div>
 <div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>        self,</div>
 <div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>        in_channels,</div>
 <div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>        out_channels,</div>
@@ -194,19 +203,20 @@ $(function(){initNavTree('modules_8py_source.html',''); initResizable(true); });
 <div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>        activation=nn.ReLU,</div>
 <div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>        groups=1,</div>
 <div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>    ):</div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>        super().__init__()</div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>        self.<a class="code hl_variable" href="classmodules_1_1_t_d_n_n_block.html#a1abd7c0106f524b27873af3abcb51006">conv</a> = <a class="code hl_class" href="classmodules_1_1_conv1d.html">Conv1d</a>(</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>        super().<a class="code hl_function" href="classmodules_1_1_t_d_n_n_block.html#a00dbfb71b36e9b1116550871efbea576">__init__</a>()</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno"><a class="line" href="classmodules_1_1_t_d_n_n_block.html#a1abd7c0106f524b27873af3abcb51006">   91</a></span>        self.<a class="code hl_variable" href="classmodules_1_1_t_d_n_n_block.html#a1abd7c0106f524b27873af3abcb51006">conv</a> = <a class="code hl_class" href="classmodules_1_1_conv1d.html">Conv1d</a>(</div>
 <div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>            in_channels=in_channels,</div>
 <div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>            out_channels=out_channels,</div>
 <div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>            kernel_size=kernel_size,</div>
 <div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>            dilation=dilation,</div>
 <div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>            groups=groups,</div>
 <div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>        )</div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>        self.<a class="code hl_variable" href="classmodules_1_1_t_d_n_n_block.html#a757c2848bb685aca2a4d3d09063f1ad5">in_channels</a> = in_channels</div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>        self.<a class="code hl_variable" href="classmodules_1_1_t_d_n_n_block.html#a259740322148f259ea52db2904b5ba52">out_channels</a> = out_channels</div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>        self.<a class="code hl_variable" href="classmodules_1_1_t_d_n_n_block.html#a5d4c03ef78eead4bea92ebcbb07e2567">activation</a> = activation()</div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>        self.<a class="code hl_variable" href="classmodules_1_1_t_d_n_n_block.html#a01fdf3036bb5f8e108e7fc6cc833d780">norm</a> = <a class="code hl_class" href="classmodules_1_1_batch_norm1d.html">BatchNorm1d</a>(input_size=out_channels)</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno"><a class="line" href="classmodules_1_1_t_d_n_n_block.html#a757c2848bb685aca2a4d3d09063f1ad5">   98</a></span>        self.<a class="code hl_variable" href="classmodules_1_1_t_d_n_n_block.html#a757c2848bb685aca2a4d3d09063f1ad5">in_channels</a> = in_channels</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno"><a class="line" href="classmodules_1_1_t_d_n_n_block.html#a259740322148f259ea52db2904b5ba52">   99</a></span>        self.<a class="code hl_variable" href="classmodules_1_1_t_d_n_n_block.html#a259740322148f259ea52db2904b5ba52">out_channels</a> = out_channels</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno"><a class="line" href="classmodules_1_1_t_d_n_n_block.html#a5d4c03ef78eead4bea92ebcbb07e2567">  100</a></span>        self.<a class="code hl_variable" href="classmodules_1_1_t_d_n_n_block.html#a5d4c03ef78eead4bea92ebcbb07e2567">activation</a> = <a class="code hl_variable" href="classmodules_1_1_t_d_n_n_block.html#a5d4c03ef78eead4bea92ebcbb07e2567">activation</a>()</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno"><a class="line" href="classmodules_1_1_t_d_n_n_block.html#a01fdf3036bb5f8e108e7fc6cc833d780">  101</a></span>        self.<a class="code hl_variable" href="classmodules_1_1_t_d_n_n_block.html#a01fdf3036bb5f8e108e7fc6cc833d780">norm</a> = <a class="code hl_class" href="classmodules_1_1_batch_norm1d.html">BatchNorm1d</a>(input_size=out_channels)</div>
 <div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span> </div>
+</div>
 <div class="foldopen" id="foldopen00103" data-start="" data-end="">
 <div class="line"><a id="l00103" name="l00103"></a><span class="lineno"><a class="line" href="classmodules_1_1_t_d_n_n_block.html#a402b8ba38eb11e18463cd6b4f47adb0a">  103</a></span>    <span class="keyword">def </span><a class="code hl_function" href="classmodules_1_1_t_d_n_n_block.html#a402b8ba38eb11e18463cd6b4f47adb0a">forward</a>(self, x):</div>
 <div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>        <span class="stringliteral">&quot;&quot;&quot;Processes the input tensor x and returns an output tensor.&quot;&quot;&quot;</span></div>
@@ -217,10 +227,12 @@ $(function(){initNavTree('modules_8py_source.html',''); initResizable(true); });
 <div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span> </div>
 </div>
 <div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>    <span class="comment"># Extract the elementary nn.Modules layers</span></div>
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>    <span class="keyword">def </span>return_layers(self) -&gt; list:</div>
+<div class="foldopen" id="foldopen00111" data-start="" data-end="">
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno"><a class="line" href="classmodules_1_1_t_d_n_n_block.html#adae4975e7be13d5bfe40ec4e07a0f426">  111</a></span>    <span class="keyword">def </span><a class="code hl_function" href="classmodules_1_1_t_d_n_n_block.html#adae4975e7be13d5bfe40ec4e07a0f426">return_layers</a>(self) -&gt; list:</div>
 <div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>        <span class="keywordflow">return</span> [self.<a class="code hl_variable" href="classmodules_1_1_t_d_n_n_block.html#a1abd7c0106f524b27873af3abcb51006">conv</a>.conv, self.<a class="code hl_variable" href="classmodules_1_1_t_d_n_n_block.html#a01fdf3036bb5f8e108e7fc6cc833d780">norm</a>.norm]</div>
 <div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span> </div>
 <div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span> </div>
+</div>
 </div>
 <div class="foldopen" id="foldopen00115" data-start="" data-end="">
 <div class="line"><a id="l00115" name="l00115"></a><span class="lineno"><a class="line" href="classmodules_1_1_res2_net_block.html">  115</a></span><span class="keyword">class </span><a class="code hl_class" href="classmodules_1_1_res2_net_block.html">Res2NetBlock</a>(torch.nn.Module):</div>
@@ -248,15 +260,16 @@ $(function(){initNavTree('modules_8py_source.html',''); initResizable(true); });
 <div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span><span class="stringliteral">    torch.Size([8, 120, 64])</span></div>
 <div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span><span class="stringliteral">    &quot;&quot;&quot;</span></div>
 <div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span> </div>
-<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>    <span class="keyword">def </span>__init__(self, in_channels, out_channels, scale=8, kernel_size=3, dilation=1):</div>
-<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>        super().__init__()</div>
+<div class="foldopen" id="foldopen00140" data-start="" data-end="">
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno"><a class="line" href="classmodules_1_1_res2_net_block.html#a2bc1b4eb0b4ff05d5c6a639de034fe92">  140</a></span>    <span class="keyword">def </span><a class="code hl_function" href="classmodules_1_1_res2_net_block.html#a2bc1b4eb0b4ff05d5c6a639de034fe92">__init__</a>(self, in_channels, out_channels, scale=8, kernel_size=3, dilation=1):</div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>        super().<a class="code hl_function" href="classmodules_1_1_res2_net_block.html#a2bc1b4eb0b4ff05d5c6a639de034fe92">__init__</a>()</div>
 <div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>        <span class="keyword">assert</span> in_channels % scale == 0</div>
 <div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>        <span class="keyword">assert</span> out_channels % scale == 0</div>
 <div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span> </div>
 <div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>        in_channel = in_channels // scale</div>
 <div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>        hidden_channel = out_channels // scale</div>
 <div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span> </div>
-<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>        self.<a class="code hl_variable" href="classmodules_1_1_res2_net_block.html#a130ba972b3d314e99271d1fb4f81cc11">blocks</a> = nn.ModuleList(</div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno"><a class="line" href="classmodules_1_1_res2_net_block.html#a130ba972b3d314e99271d1fb4f81cc11">  148</a></span>        self.<a class="code hl_variable" href="classmodules_1_1_res2_net_block.html#a130ba972b3d314e99271d1fb4f81cc11">blocks</a> = nn.ModuleList(</div>
 <div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>            [</div>
 <div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>                <a class="code hl_class" href="classmodules_1_1_t_d_n_n_block.html">TDNNBlock</a>(</div>
 <div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>                    in_channel,</div>
@@ -267,8 +280,9 @@ $(function(){initNavTree('modules_8py_source.html',''); initResizable(true); });
 <div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>                <span class="keywordflow">for</span> i <span class="keywordflow">in</span> range(scale - 1)</div>
 <div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>            ]</div>
 <div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>        )</div>
-<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>        self.<a class="code hl_variable" href="classmodules_1_1_res2_net_block.html#a25421e25317fd9eb77b36b37896ad53c">scale</a> = scale</div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno"><a class="line" href="classmodules_1_1_res2_net_block.html#a25421e25317fd9eb77b36b37896ad53c">  159</a></span>        self.<a class="code hl_variable" href="classmodules_1_1_res2_net_block.html#a25421e25317fd9eb77b36b37896ad53c">scale</a> = scale</div>
 <div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span> </div>
+</div>
 <div class="foldopen" id="foldopen00161" data-start="" data-end="">
 <div class="line"><a id="l00161" name="l00161"></a><span class="lineno"><a class="line" href="classmodules_1_1_res2_net_block.html#a6053c8abf18e2e436a5918dc2c60d09e">  161</a></span>    <span class="keyword">def </span><a class="code hl_function" href="classmodules_1_1_res2_net_block.html#a6053c8abf18e2e436a5918dc2c60d09e">forward</a>(self, x):</div>
 <div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>        <span class="stringliteral">&quot;&quot;&quot;Processes the input tensor x and returns an output tensor.&quot;&quot;&quot;</span></div>
@@ -285,13 +299,15 @@ $(function(){initNavTree('modules_8py_source.html',''); initResizable(true); });
 <div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>        <span class="keywordflow">return</span> y</div>
 <div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span> </div>
 </div>
-<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>    <span class="keyword">def </span>return_layers(self) -&gt; list:</div>
+<div class="foldopen" id="foldopen00175" data-start="" data-end="">
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno"><a class="line" href="classmodules_1_1_res2_net_block.html#a185ebb60519538df44798ce54611f53d">  175</a></span>    <span class="keyword">def </span><a class="code hl_function" href="classmodules_1_1_res2_net_block.html#a185ebb60519538df44798ce54611f53d">return_layers</a>(self) -&gt; list:</div>
 <div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>        lst = []</div>
 <div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>        <span class="keywordflow">for</span> i <span class="keywordflow">in</span> self.<a class="code hl_variable" href="classmodules_1_1_res2_net_block.html#a130ba972b3d314e99271d1fb4f81cc11">blocks</a>:</div>
 <div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>            lst += i.return_layers()</div>
 <div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>        <span class="keywordflow">return</span> lst</div>
 <div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span> </div>
 <div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span> </div>
+</div>
 </div>
 <div class="foldopen" id="foldopen00182" data-start="" data-end="">
 <div class="line"><a id="l00182" name="l00182"></a><span class="lineno"><a class="line" href="classmodules_1_1_s_e_block.html">  182</a></span><span class="keyword">class </span><a class="code hl_class" href="classmodules_1_1_s_e_block.html">SEBlock</a>(nn.Module):</div>
@@ -316,18 +332,20 @@ $(function(){initNavTree('modules_8py_source.html',''); initResizable(true); });
 <div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span><span class="stringliteral">    torch.Size([8, 120, 64])</span></div>
 <div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span><span class="stringliteral">    &quot;&quot;&quot;</span></div>
 <div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span> </div>
-<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>    <span class="keyword">def </span>__init__(self, in_channels, se_channels, out_channels):</div>
-<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>        super().__init__()</div>
+<div class="foldopen" id="foldopen00204" data-start="" data-end="">
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno"><a class="line" href="classmodules_1_1_s_e_block.html#aabb9aad557a7651fa0ec35511e198a4f">  204</a></span>    <span class="keyword">def </span><a class="code hl_function" href="classmodules_1_1_s_e_block.html#aabb9aad557a7651fa0ec35511e198a4f">__init__</a>(self, in_channels, se_channels, out_channels):</div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>        super().<a class="code hl_function" href="classmodules_1_1_s_e_block.html#aabb9aad557a7651fa0ec35511e198a4f">__init__</a>()</div>
 <div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span> </div>
-<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>        self.<a class="code hl_variable" href="classmodules_1_1_s_e_block.html#ad683848168de5f5b4cb53148683a43e7">conv1</a> = <a class="code hl_class" href="classmodules_1_1_conv1d.html">Conv1d</a>(</div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno"><a class="line" href="classmodules_1_1_s_e_block.html#ad683848168de5f5b4cb53148683a43e7">  207</a></span>        self.<a class="code hl_variable" href="classmodules_1_1_s_e_block.html#ad683848168de5f5b4cb53148683a43e7">conv1</a> = <a class="code hl_class" href="classmodules_1_1_conv1d.html">Conv1d</a>(</div>
 <div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>            in_channels=in_channels, out_channels=se_channels, kernel_size=1</div>
 <div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>        )</div>
-<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>        self.<a class="code hl_variable" href="classmodules_1_1_s_e_block.html#a8297d0add37d2f551532d9cdd5a00678">relu</a> = torch.nn.ReLU(inplace=<span class="keyword">True</span>)</div>
-<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>        self.<a class="code hl_variable" href="classmodules_1_1_s_e_block.html#a1f52cb28dd9cc5ff2429009d868dcb10">conv2</a> = <a class="code hl_class" href="classmodules_1_1_conv1d.html">Conv1d</a>(</div>
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno"><a class="line" href="classmodules_1_1_s_e_block.html#a8297d0add37d2f551532d9cdd5a00678">  210</a></span>        self.<a class="code hl_variable" href="classmodules_1_1_s_e_block.html#a8297d0add37d2f551532d9cdd5a00678">relu</a> = torch.nn.ReLU(inplace=<span class="keyword">True</span>)</div>
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno"><a class="line" href="classmodules_1_1_s_e_block.html#a1f52cb28dd9cc5ff2429009d868dcb10">  211</a></span>        self.<a class="code hl_variable" href="classmodules_1_1_s_e_block.html#a1f52cb28dd9cc5ff2429009d868dcb10">conv2</a> = <a class="code hl_class" href="classmodules_1_1_conv1d.html">Conv1d</a>(</div>
 <div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span>            in_channels=se_channels, out_channels=out_channels, kernel_size=1</div>
 <div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span>        )</div>
-<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span>        self.<a class="code hl_variable" href="classmodules_1_1_s_e_block.html#abf532de56fd923d6061082fd28ce85dc">sigmoid</a> = torch.nn.Sigmoid()</div>
+<div class="line"><a id="l00214" name="l00214"></a><span class="lineno"><a class="line" href="classmodules_1_1_s_e_block.html#abf532de56fd923d6061082fd28ce85dc">  214</a></span>        self.<a class="code hl_variable" href="classmodules_1_1_s_e_block.html#abf532de56fd923d6061082fd28ce85dc">sigmoid</a> = torch.nn.Sigmoid()</div>
 <div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span> </div>
+</div>
 <div class="foldopen" id="foldopen00216" data-start="" data-end="">
 <div class="line"><a id="l00216" name="l00216"></a><span class="lineno"><a class="line" href="classmodules_1_1_s_e_block.html#a6d6f1d4f9ec585efab92674c75bc0e93">  216</a></span>    <span class="keyword">def </span><a class="code hl_function" href="classmodules_1_1_s_e_block.html#a6d6f1d4f9ec585efab92674c75bc0e93">forward</a>(self, x, lengths=None):</div>
 <div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span>        <span class="stringliteral">&quot;&quot;&quot;Processes the input tensor x and returns an output tensor.&quot;&quot;&quot;</span></div>
@@ -346,10 +364,12 @@ $(function(){initNavTree('modules_8py_source.html',''); initResizable(true); });
 <div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>        <span class="keywordflow">return</span> s * x</div>
 <div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span> </div>
 </div>
-<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>    <span class="keyword">def </span>return_layers(self) -&gt; list:</div>
+<div class="foldopen" id="foldopen00232" data-start="" data-end="">
+<div class="line"><a id="l00232" name="l00232"></a><span class="lineno"><a class="line" href="classmodules_1_1_s_e_block.html#a7d6a65cad1ed54adc8735aba26557aa2">  232</a></span>    <span class="keyword">def </span><a class="code hl_function" href="classmodules_1_1_s_e_block.html#a7d6a65cad1ed54adc8735aba26557aa2">return_layers</a>(self) -&gt; list:</div>
 <div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>        <span class="keywordflow">return</span> [self.<a class="code hl_variable" href="classmodules_1_1_s_e_block.html#ad683848168de5f5b4cb53148683a43e7">conv1</a>.conv, self.<a class="code hl_variable" href="classmodules_1_1_s_e_block.html#a1f52cb28dd9cc5ff2429009d868dcb10">conv2</a>.conv]</div>
 <div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span> </div>
 <div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span> </div>
+</div>
 </div>
 <div class="foldopen" id="foldopen00236" data-start="" data-end="">
 <div class="line"><a id="l00236" name="l00236"></a><span class="lineno"><a class="line" href="classmodules_1_1_attentive_statistics_pooling.html">  236</a></span><span class="keyword">class </span><a class="code hl_class" href="classmodules_1_1_attentive_statistics_pooling.html">AttentiveStatisticsPooling</a>(nn.Module):</div>
@@ -375,20 +395,22 @@ $(function(){initNavTree('modules_8py_source.html',''); initResizable(true); });
 <div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span><span class="stringliteral">    torch.Size([8, 1, 128])</span></div>
 <div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span><span class="stringliteral">    &quot;&quot;&quot;</span></div>
 <div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span> </div>
-<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span>    <span class="keyword">def </span>__init__(self, channels, attention_channels=128, global_context=True):</div>
-<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span>        super().__init__()</div>
+<div class="foldopen" id="foldopen00259" data-start="" data-end="">
+<div class="line"><a id="l00259" name="l00259"></a><span class="lineno"><a class="line" href="classmodules_1_1_attentive_statistics_pooling.html#a1fac761724f7e6fb364a665c409c62e5">  259</a></span>    <span class="keyword">def </span><a class="code hl_function" href="classmodules_1_1_attentive_statistics_pooling.html#a1fac761724f7e6fb364a665c409c62e5">__init__</a>(self, channels, attention_channels=128, global_context=True):</div>
+<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span>        super().<a class="code hl_function" href="classmodules_1_1_attentive_statistics_pooling.html#a1fac761724f7e6fb364a665c409c62e5">__init__</a>()</div>
 <div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span> </div>
-<div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span>        self.<a class="code hl_variable" href="classmodules_1_1_attentive_statistics_pooling.html#ad630c7ab0db950542e1ad72d4043a903">eps</a> = 1e-12</div>
-<div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span>        self.<a class="code hl_variable" href="classmodules_1_1_attentive_statistics_pooling.html#a698efbb332f7121f47f24a5e0c52c4c3">global_context</a> = global_context</div>
+<div class="line"><a id="l00262" name="l00262"></a><span class="lineno"><a class="line" href="classmodules_1_1_attentive_statistics_pooling.html#ad630c7ab0db950542e1ad72d4043a903">  262</a></span>        self.<a class="code hl_variable" href="classmodules_1_1_attentive_statistics_pooling.html#ad630c7ab0db950542e1ad72d4043a903">eps</a> = 1e-12</div>
+<div class="line"><a id="l00263" name="l00263"></a><span class="lineno"><a class="line" href="classmodules_1_1_attentive_statistics_pooling.html#a698efbb332f7121f47f24a5e0c52c4c3">  263</a></span>        self.<a class="code hl_variable" href="classmodules_1_1_attentive_statistics_pooling.html#a698efbb332f7121f47f24a5e0c52c4c3">global_context</a> = global_context</div>
 <div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span>        <span class="keywordflow">if</span> global_context:</div>
-<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span>            self.<a class="code hl_variable" href="classmodules_1_1_attentive_statistics_pooling.html#ad9a53b72398a34c1eaccae5e4a79f4e3">tdnn</a> = <a class="code hl_class" href="classmodules_1_1_t_d_n_n_block.html">TDNNBlock</a>(channels * 3, attention_channels, 1, 1)</div>
+<div class="line"><a id="l00265" name="l00265"></a><span class="lineno"><a class="line" href="classmodules_1_1_attentive_statistics_pooling.html#ad9a53b72398a34c1eaccae5e4a79f4e3">  265</a></span>            self.<a class="code hl_variable" href="classmodules_1_1_attentive_statistics_pooling.html#ad9a53b72398a34c1eaccae5e4a79f4e3">tdnn</a> = <a class="code hl_class" href="classmodules_1_1_t_d_n_n_block.html">TDNNBlock</a>(channels * 3, attention_channels, 1, 1)</div>
 <div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span>        <span class="keywordflow">else</span>:</div>
 <div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span>            self.<a class="code hl_variable" href="classmodules_1_1_attentive_statistics_pooling.html#ad9a53b72398a34c1eaccae5e4a79f4e3">tdnn</a> = <a class="code hl_class" href="classmodules_1_1_t_d_n_n_block.html">TDNNBlock</a>(channels, attention_channels, 1, 1)</div>
-<div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span>        self.<a class="code hl_variable" href="classmodules_1_1_attentive_statistics_pooling.html#ae1e9a5bc8d79e2ba27cf96504be42504">tanh</a> = nn.Tanh()</div>
-<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span>        self.<a class="code hl_variable" href="classmodules_1_1_attentive_statistics_pooling.html#ae4c0457f96047216fdb283f6491e6c62">conv</a> = <a class="code hl_class" href="classmodules_1_1_conv1d.html">Conv1d</a>(</div>
+<div class="line"><a id="l00268" name="l00268"></a><span class="lineno"><a class="line" href="classmodules_1_1_attentive_statistics_pooling.html#ae1e9a5bc8d79e2ba27cf96504be42504">  268</a></span>        self.<a class="code hl_variable" href="classmodules_1_1_attentive_statistics_pooling.html#ae1e9a5bc8d79e2ba27cf96504be42504">tanh</a> = nn.Tanh()</div>
+<div class="line"><a id="l00269" name="l00269"></a><span class="lineno"><a class="line" href="classmodules_1_1_attentive_statistics_pooling.html#ae4c0457f96047216fdb283f6491e6c62">  269</a></span>        self.<a class="code hl_variable" href="classmodules_1_1_attentive_statistics_pooling.html#ae4c0457f96047216fdb283f6491e6c62">conv</a> = <a class="code hl_class" href="classmodules_1_1_conv1d.html">Conv1d</a>(</div>
 <div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span>            in_channels=attention_channels, out_channels=channels, kernel_size=1</div>
 <div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span>        )</div>
 <div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span> </div>
+</div>
 <div class="foldopen" id="foldopen00273" data-start="" data-end="">
 <div class="line"><a id="l00273" name="l00273"></a><span class="lineno"><a class="line" href="classmodules_1_1_attentive_statistics_pooling.html#ad5b0bde462d9ce8ab6a4e604cfd5dd86">  273</a></span>    <span class="keyword">def </span><a class="code hl_function" href="classmodules_1_1_attentive_statistics_pooling.html#ad5b0bde462d9ce8ab6a4e604cfd5dd86">forward</a>(self, x, lengths=None):</div>
 <div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span>        <span class="stringliteral">&quot;&quot;&quot;Calculates mean and std for a batch (input tensor).</span></div>
@@ -448,10 +470,12 @@ $(function(){initNavTree('modules_8py_source.html',''); initResizable(true); });
 <div class="line"><a id="l00328" name="l00328"></a><span class="lineno">  328</span>        <span class="keywordflow">return</span> pooled_stats</div>
 <div class="line"><a id="l00329" name="l00329"></a><span class="lineno">  329</span> </div>
 </div>
-<div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span>    <span class="keyword">def </span>return_layers(self) -&gt; list:</div>
-<div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span>        <span class="keywordflow">return</span> self.<a class="code hl_variable" href="classmodules_1_1_attentive_statistics_pooling.html#ad9a53b72398a34c1eaccae5e4a79f4e3">tdnn</a>.return_layers() + [self.<a class="code hl_variable" href="classmodules_1_1_attentive_statistics_pooling.html#ae4c0457f96047216fdb283f6491e6c62">conv</a>.conv]</div>
+<div class="foldopen" id="foldopen00330" data-start="" data-end="">
+<div class="line"><a id="l00330" name="l00330"></a><span class="lineno"><a class="line" href="classmodules_1_1_attentive_statistics_pooling.html#a1f1576e89cead54383f423f539e9f09f">  330</a></span>    <span class="keyword">def </span><a class="code hl_function" href="classmodules_1_1_attentive_statistics_pooling.html#a1f1576e89cead54383f423f539e9f09f">return_layers</a>(self) -&gt; list:</div>
+<div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span>        <span class="keywordflow">return</span> self.<a class="code hl_variable" href="classmodules_1_1_attentive_statistics_pooling.html#ad9a53b72398a34c1eaccae5e4a79f4e3">tdnn</a>.<a class="code hl_function" href="classmodules_1_1_attentive_statistics_pooling.html#a1f1576e89cead54383f423f539e9f09f">return_layers</a>() + [self.<a class="code hl_variable" href="classmodules_1_1_attentive_statistics_pooling.html#ae4c0457f96047216fdb283f6491e6c62">conv</a>.conv]</div>
 <div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span> </div>
 <div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span> </div>
+</div>
 </div>
 <div class="foldopen" id="foldopen00334" data-start="" data-end="">
 <div class="line"><a id="l00334" name="l00334"></a><span class="lineno"><a class="line" href="classmodules_1_1_s_e_res2_net_block.html">  334</a></span><span class="keyword">class </span><a class="code hl_class" href="classmodules_1_1_s_e_res2_net_block.html">SERes2NetBlock</a>(nn.Module):</div>
@@ -486,7 +510,8 @@ $(function(){initNavTree('modules_8py_source.html',''); initResizable(true); });
 <div class="line"><a id="l00363" name="l00363"></a><span class="lineno">  363</span><span class="stringliteral">    torch.Size([8, 120, 64])</span></div>
 <div class="line"><a id="l00364" name="l00364"></a><span class="lineno">  364</span><span class="stringliteral">    &quot;&quot;&quot;</span></div>
 <div class="line"><a id="l00365" name="l00365"></a><span class="lineno">  365</span> </div>
-<div class="line"><a id="l00366" name="l00366"></a><span class="lineno">  366</span>    <span class="keyword">def </span>__init__(</div>
+<div class="foldopen" id="foldopen00366" data-start="" data-end="">
+<div class="line"><a id="l00366" name="l00366"></a><span class="lineno"><a class="line" href="classmodules_1_1_s_e_res2_net_block.html#a58891afd7e2dd02f93aa3a91221c33ed">  366</a></span>    <span class="keyword">def </span><a class="code hl_function" href="classmodules_1_1_s_e_res2_net_block.html#a58891afd7e2dd02f93aa3a91221c33ed">__init__</a>(</div>
 <div class="line"><a id="l00367" name="l00367"></a><span class="lineno">  367</span>        self,</div>
 <div class="line"><a id="l00368" name="l00368"></a><span class="lineno">  368</span>        in_channels,</div>
 <div class="line"><a id="l00369" name="l00369"></a><span class="lineno">  369</span>        out_channels,</div>
@@ -497,9 +522,9 @@ $(function(){initNavTree('modules_8py_source.html',''); initResizable(true); });
 <div class="line"><a id="l00374" name="l00374"></a><span class="lineno">  374</span>        activation=torch.nn.ReLU,</div>
 <div class="line"><a id="l00375" name="l00375"></a><span class="lineno">  375</span>        groups=1,</div>
 <div class="line"><a id="l00376" name="l00376"></a><span class="lineno">  376</span>    ):</div>
-<div class="line"><a id="l00377" name="l00377"></a><span class="lineno">  377</span>        super().__init__()</div>
-<div class="line"><a id="l00378" name="l00378"></a><span class="lineno">  378</span>        self.<a class="code hl_variable" href="classmodules_1_1_s_e_res2_net_block.html#a540d6dd10edaaa56dd0cc20be8e343fc">out_channels</a> = out_channels</div>
-<div class="line"><a id="l00379" name="l00379"></a><span class="lineno">  379</span>        self.<a class="code hl_variable" href="classmodules_1_1_s_e_res2_net_block.html#abd53471042b64ead1d0b7c204cbbc4ee">tdnn1</a> = <a class="code hl_class" href="classmodules_1_1_t_d_n_n_block.html">TDNNBlock</a>(</div>
+<div class="line"><a id="l00377" name="l00377"></a><span class="lineno">  377</span>        super().<a class="code hl_function" href="classmodules_1_1_s_e_res2_net_block.html#a58891afd7e2dd02f93aa3a91221c33ed">__init__</a>()</div>
+<div class="line"><a id="l00378" name="l00378"></a><span class="lineno"><a class="line" href="classmodules_1_1_s_e_res2_net_block.html#a540d6dd10edaaa56dd0cc20be8e343fc">  378</a></span>        self.<a class="code hl_variable" href="classmodules_1_1_s_e_res2_net_block.html#a540d6dd10edaaa56dd0cc20be8e343fc">out_channels</a> = out_channels</div>
+<div class="line"><a id="l00379" name="l00379"></a><span class="lineno"><a class="line" href="classmodules_1_1_s_e_res2_net_block.html#abd53471042b64ead1d0b7c204cbbc4ee">  379</a></span>        self.<a class="code hl_variable" href="classmodules_1_1_s_e_res2_net_block.html#abd53471042b64ead1d0b7c204cbbc4ee">tdnn1</a> = <a class="code hl_class" href="classmodules_1_1_t_d_n_n_block.html">TDNNBlock</a>(</div>
 <div class="line"><a id="l00380" name="l00380"></a><span class="lineno">  380</span>            in_channels,</div>
 <div class="line"><a id="l00381" name="l00381"></a><span class="lineno">  381</span>            out_channels,</div>
 <div class="line"><a id="l00382" name="l00382"></a><span class="lineno">  382</span>            kernel_size=1,</div>
@@ -507,10 +532,10 @@ $(function(){initNavTree('modules_8py_source.html',''); initResizable(true); });
 <div class="line"><a id="l00384" name="l00384"></a><span class="lineno">  384</span>            activation=activation,</div>
 <div class="line"><a id="l00385" name="l00385"></a><span class="lineno">  385</span>            groups=groups,</div>
 <div class="line"><a id="l00386" name="l00386"></a><span class="lineno">  386</span>        )</div>
-<div class="line"><a id="l00387" name="l00387"></a><span class="lineno">  387</span>        self.<a class="code hl_variable" href="classmodules_1_1_s_e_res2_net_block.html#a866def3c49b3f093fda301931f006833">res2net_block</a> = <a class="code hl_class" href="classmodules_1_1_res2_net_block.html">Res2NetBlock</a>(</div>
+<div class="line"><a id="l00387" name="l00387"></a><span class="lineno"><a class="line" href="classmodules_1_1_s_e_res2_net_block.html#a866def3c49b3f093fda301931f006833">  387</a></span>        self.<a class="code hl_variable" href="classmodules_1_1_s_e_res2_net_block.html#a866def3c49b3f093fda301931f006833">res2net_block</a> = <a class="code hl_class" href="classmodules_1_1_res2_net_block.html">Res2NetBlock</a>(</div>
 <div class="line"><a id="l00388" name="l00388"></a><span class="lineno">  388</span>            out_channels, out_channels, res2net_scale, kernel_size, dilation</div>
 <div class="line"><a id="l00389" name="l00389"></a><span class="lineno">  389</span>        )</div>
-<div class="line"><a id="l00390" name="l00390"></a><span class="lineno">  390</span>        self.<a class="code hl_variable" href="classmodules_1_1_s_e_res2_net_block.html#a8895ef35f308fc6b478c21af17a59dde">tdnn2</a> = <a class="code hl_class" href="classmodules_1_1_t_d_n_n_block.html">TDNNBlock</a>(</div>
+<div class="line"><a id="l00390" name="l00390"></a><span class="lineno"><a class="line" href="classmodules_1_1_s_e_res2_net_block.html#a8895ef35f308fc6b478c21af17a59dde">  390</a></span>        self.<a class="code hl_variable" href="classmodules_1_1_s_e_res2_net_block.html#a8895ef35f308fc6b478c21af17a59dde">tdnn2</a> = <a class="code hl_class" href="classmodules_1_1_t_d_n_n_block.html">TDNNBlock</a>(</div>
 <div class="line"><a id="l00391" name="l00391"></a><span class="lineno">  391</span>            out_channels,</div>
 <div class="line"><a id="l00392" name="l00392"></a><span class="lineno">  392</span>            out_channels,</div>
 <div class="line"><a id="l00393" name="l00393"></a><span class="lineno">  393</span>            kernel_size=1,</div>
@@ -518,9 +543,9 @@ $(function(){initNavTree('modules_8py_source.html',''); initResizable(true); });
 <div class="line"><a id="l00395" name="l00395"></a><span class="lineno">  395</span>            activation=activation,</div>
 <div class="line"><a id="l00396" name="l00396"></a><span class="lineno">  396</span>            groups=groups,</div>
 <div class="line"><a id="l00397" name="l00397"></a><span class="lineno">  397</span>        )</div>
-<div class="line"><a id="l00398" name="l00398"></a><span class="lineno">  398</span>        self.<a class="code hl_variable" href="classmodules_1_1_s_e_res2_net_block.html#a0303fd1911ac52cd24bb03afde6aee53">se_block</a> = <a class="code hl_class" href="classmodules_1_1_s_e_block.html">SEBlock</a>(out_channels, se_channels, out_channels)</div>
+<div class="line"><a id="l00398" name="l00398"></a><span class="lineno"><a class="line" href="classmodules_1_1_s_e_res2_net_block.html#a0303fd1911ac52cd24bb03afde6aee53">  398</a></span>        self.<a class="code hl_variable" href="classmodules_1_1_s_e_res2_net_block.html#a0303fd1911ac52cd24bb03afde6aee53">se_block</a> = <a class="code hl_class" href="classmodules_1_1_s_e_block.html">SEBlock</a>(out_channels, se_channels, out_channels)</div>
 <div class="line"><a id="l00399" name="l00399"></a><span class="lineno">  399</span> </div>
-<div class="line"><a id="l00400" name="l00400"></a><span class="lineno">  400</span>        self.<a class="code hl_variable" href="classmodules_1_1_s_e_res2_net_block.html#a4f4a23a58421f26d468f7618fd86ca00">shortcut</a> = <span class="keywordtype">None</span></div>
+<div class="line"><a id="l00400" name="l00400"></a><span class="lineno"><a class="line" href="classmodules_1_1_s_e_res2_net_block.html#a4f4a23a58421f26d468f7618fd86ca00">  400</a></span>        self.<a class="code hl_variable" href="classmodules_1_1_s_e_res2_net_block.html#a4f4a23a58421f26d468f7618fd86ca00">shortcut</a> = <span class="keywordtype">None</span></div>
 <div class="line"><a id="l00401" name="l00401"></a><span class="lineno">  401</span>        <span class="keywordflow">if</span> in_channels != out_channels:</div>
 <div class="line"><a id="l00402" name="l00402"></a><span class="lineno">  402</span>            self.<a class="code hl_variable" href="classmodules_1_1_s_e_res2_net_block.html#a4f4a23a58421f26d468f7618fd86ca00">shortcut</a> = <a class="code hl_class" href="classmodules_1_1_conv1d.html">Conv1d</a>(</div>
 <div class="line"><a id="l00403" name="l00403"></a><span class="lineno">  403</span>                in_channels=in_channels,</div>
@@ -528,6 +553,7 @@ $(function(){initNavTree('modules_8py_source.html',''); initResizable(true); });
 <div class="line"><a id="l00405" name="l00405"></a><span class="lineno">  405</span>                kernel_size=1,</div>
 <div class="line"><a id="l00406" name="l00406"></a><span class="lineno">  406</span>            )</div>
 <div class="line"><a id="l00407" name="l00407"></a><span class="lineno">  407</span> </div>
+</div>
 <div class="foldopen" id="foldopen00408" data-start="" data-end="">
 <div class="line"><a id="l00408" name="l00408"></a><span class="lineno"><a class="line" href="classmodules_1_1_s_e_res2_net_block.html#a3d75cf9eef51b89fc78b629714acf106">  408</a></span>    <span class="keyword">def </span><a class="code hl_function" href="classmodules_1_1_s_e_res2_net_block.html#a3d75cf9eef51b89fc78b629714acf106">forward</a>(self, x, lengths=None):</div>
 <div class="line"><a id="l00409" name="l00409"></a><span class="lineno">  409</span>        <span class="stringliteral">&quot;&quot;&quot;Processes the input tensor x and returns an output tensor.&quot;&quot;&quot;</span></div>
@@ -543,17 +569,19 @@ $(function(){initNavTree('modules_8py_source.html',''); initResizable(true); });
 <div class="line"><a id="l00419" name="l00419"></a><span class="lineno">  419</span>        <span class="keywordflow">return</span> x + residual</div>
 <div class="line"><a id="l00420" name="l00420"></a><span class="lineno">  420</span> </div>
 </div>
-<div class="line"><a id="l00421" name="l00421"></a><span class="lineno">  421</span>    <span class="keyword">def </span>return_layers(self) -&gt; list:</div>
+<div class="foldopen" id="foldopen00421" data-start="" data-end="">
+<div class="line"><a id="l00421" name="l00421"></a><span class="lineno"><a class="line" href="classmodules_1_1_s_e_res2_net_block.html#a2d3cb8decca2d03c43d111c4a5548f21">  421</a></span>    <span class="keyword">def </span><a class="code hl_function" href="classmodules_1_1_s_e_res2_net_block.html#a2d3cb8decca2d03c43d111c4a5548f21">return_layers</a>(self) -&gt; list:</div>
 <div class="line"><a id="l00422" name="l00422"></a><span class="lineno">  422</span>        lst = []</div>
-<div class="line"><a id="l00423" name="l00423"></a><span class="lineno">  423</span>        lst += self.<a class="code hl_variable" href="classmodules_1_1_s_e_res2_net_block.html#abd53471042b64ead1d0b7c204cbbc4ee">tdnn1</a>.return_layers()</div>
-<div class="line"><a id="l00424" name="l00424"></a><span class="lineno">  424</span>        lst += self.<a class="code hl_variable" href="classmodules_1_1_s_e_res2_net_block.html#a866def3c49b3f093fda301931f006833">res2net_block</a>.return_layers()</div>
-<div class="line"><a id="l00425" name="l00425"></a><span class="lineno">  425</span>        lst += self.<a class="code hl_variable" href="classmodules_1_1_s_e_res2_net_block.html#a8895ef35f308fc6b478c21af17a59dde">tdnn2</a>.return_layers()</div>
-<div class="line"><a id="l00426" name="l00426"></a><span class="lineno">  426</span>        lst += self.<a class="code hl_variable" href="classmodules_1_1_s_e_res2_net_block.html#a0303fd1911ac52cd24bb03afde6aee53">se_block</a>.return_layers()</div>
+<div class="line"><a id="l00423" name="l00423"></a><span class="lineno">  423</span>        lst += self.<a class="code hl_variable" href="classmodules_1_1_s_e_res2_net_block.html#abd53471042b64ead1d0b7c204cbbc4ee">tdnn1</a>.<a class="code hl_function" href="classmodules_1_1_s_e_res2_net_block.html#a2d3cb8decca2d03c43d111c4a5548f21">return_layers</a>()</div>
+<div class="line"><a id="l00424" name="l00424"></a><span class="lineno">  424</span>        lst += self.<a class="code hl_variable" href="classmodules_1_1_s_e_res2_net_block.html#a866def3c49b3f093fda301931f006833">res2net_block</a>.<a class="code hl_function" href="classmodules_1_1_s_e_res2_net_block.html#a2d3cb8decca2d03c43d111c4a5548f21">return_layers</a>()</div>
+<div class="line"><a id="l00425" name="l00425"></a><span class="lineno">  425</span>        lst += self.<a class="code hl_variable" href="classmodules_1_1_s_e_res2_net_block.html#a8895ef35f308fc6b478c21af17a59dde">tdnn2</a>.<a class="code hl_function" href="classmodules_1_1_s_e_res2_net_block.html#a2d3cb8decca2d03c43d111c4a5548f21">return_layers</a>()</div>
+<div class="line"><a id="l00426" name="l00426"></a><span class="lineno">  426</span>        lst += self.<a class="code hl_variable" href="classmodules_1_1_s_e_res2_net_block.html#a0303fd1911ac52cd24bb03afde6aee53">se_block</a>.<a class="code hl_function" href="classmodules_1_1_s_e_res2_net_block.html#a2d3cb8decca2d03c43d111c4a5548f21">return_layers</a>()</div>
 <div class="line"><a id="l00427" name="l00427"></a><span class="lineno">  427</span>        <span class="keywordflow">if</span> self.<a class="code hl_variable" href="classmodules_1_1_s_e_res2_net_block.html#a4f4a23a58421f26d468f7618fd86ca00">shortcut</a> <span class="keywordflow">is</span> <span class="keywordflow">not</span> <span class="keywordtype">None</span>:</div>
-<div class="line"><a id="l00428" name="l00428"></a><span class="lineno">  428</span>            lst += self.<a class="code hl_variable" href="classmodules_1_1_s_e_res2_net_block.html#a4f4a23a58421f26d468f7618fd86ca00">shortcut</a>.return_layers()</div>
+<div class="line"><a id="l00428" name="l00428"></a><span class="lineno">  428</span>            lst += self.<a class="code hl_variable" href="classmodules_1_1_s_e_res2_net_block.html#a4f4a23a58421f26d468f7618fd86ca00">shortcut</a>.<a class="code hl_function" href="classmodules_1_1_s_e_res2_net_block.html#a2d3cb8decca2d03c43d111c4a5548f21">return_layers</a>()</div>
 <div class="line"><a id="l00429" name="l00429"></a><span class="lineno">  429</span>        <span class="keywordflow">return</span> lst</div>
 <div class="line"><a id="l00430" name="l00430"></a><span class="lineno">  430</span> </div>
 <div class="line"><a id="l00431" name="l00431"></a><span class="lineno">  431</span> </div>
+</div>
 </div>
 <div class="foldopen" id="foldopen00432" data-start="" data-end="">
 <div class="line"><a id="l00432" name="l00432"></a><span class="lineno"><a class="line" href="classmodules_1_1_e_c_a_p_a___t_d_n_n.html">  432</a></span><span class="keyword">class </span><a class="code hl_class" href="classmodules_1_1_e_c_a_p_a___t_d_n_n.html">ECAPA_TDNN</a>(torch.nn.Module):</div>
@@ -597,7 +625,8 @@ $(function(){initNavTree('modules_8py_source.html',''); initResizable(true); });
 <div class="line"><a id="l00470" name="l00470"></a><span class="lineno">  470</span><span class="stringliteral">    torch.Size([5, 1, 192])</span></div>
 <div class="line"><a id="l00471" name="l00471"></a><span class="lineno">  471</span><span class="stringliteral">    &quot;&quot;&quot;</span></div>
 <div class="line"><a id="l00472" name="l00472"></a><span class="lineno">  472</span> </div>
-<div class="line"><a id="l00473" name="l00473"></a><span class="lineno">  473</span>    <span class="keyword">def </span>__init__(</div>
+<div class="foldopen" id="foldopen00473" data-start="" data-end="">
+<div class="line"><a id="l00473" name="l00473"></a><span class="lineno"><a class="line" href="classmodules_1_1_e_c_a_p_a___t_d_n_n.html#a9199e9e8be0e8066e88365b058bb0aa7">  473</a></span>    <span class="keyword">def </span><a class="code hl_function" href="classmodules_1_1_e_c_a_p_a___t_d_n_n.html#a9199e9e8be0e8066e88365b058bb0aa7">__init__</a>(</div>
 <div class="line"><a id="l00474" name="l00474"></a><span class="lineno">  474</span>        self,</div>
 <div class="line"><a id="l00475" name="l00475"></a><span class="lineno">  475</span>        input_size,</div>
 <div class="line"><a id="l00476" name="l00476"></a><span class="lineno">  476</span>        device=&quot;cpu&quot;,</div>
@@ -612,11 +641,11 @@ $(function(){initNavTree('modules_8py_source.html',''); initResizable(true); });
 <div class="line"><a id="l00485" name="l00485"></a><span class="lineno">  485</span>        global_context=True,</div>
 <div class="line"><a id="l00486" name="l00486"></a><span class="lineno">  486</span>        groups=[1, 1, 1, 1, 1],</div>
 <div class="line"><a id="l00487" name="l00487"></a><span class="lineno">  487</span>    ):</div>
-<div class="line"><a id="l00488" name="l00488"></a><span class="lineno">  488</span>        super().__init__()</div>
+<div class="line"><a id="l00488" name="l00488"></a><span class="lineno">  488</span>        super().<a class="code hl_function" href="classmodules_1_1_e_c_a_p_a___t_d_n_n.html#a9199e9e8be0e8066e88365b058bb0aa7">__init__</a>()</div>
 <div class="line"><a id="l00489" name="l00489"></a><span class="lineno">  489</span>        <span class="keyword">assert</span> len(channels) == len(kernel_sizes)</div>
 <div class="line"><a id="l00490" name="l00490"></a><span class="lineno">  490</span>        <span class="keyword">assert</span> len(channels) == len(dilations)</div>
-<div class="line"><a id="l00491" name="l00491"></a><span class="lineno">  491</span>        self.<a class="code hl_variable" href="classmodules_1_1_e_c_a_p_a___t_d_n_n.html#aabfbe30f208aeba5fa4390aafb38f4a7">channels</a> = channels</div>
-<div class="line"><a id="l00492" name="l00492"></a><span class="lineno">  492</span>        self.<a class="code hl_variable" href="classmodules_1_1_e_c_a_p_a___t_d_n_n.html#a955aa3b6c21bb7d4770f5e212e3d2b60">blocks</a> = nn.ModuleList()</div>
+<div class="line"><a id="l00491" name="l00491"></a><span class="lineno"><a class="line" href="classmodules_1_1_e_c_a_p_a___t_d_n_n.html#aabfbe30f208aeba5fa4390aafb38f4a7">  491</a></span>        self.<a class="code hl_variable" href="classmodules_1_1_e_c_a_p_a___t_d_n_n.html#aabfbe30f208aeba5fa4390aafb38f4a7">channels</a> = channels</div>
+<div class="line"><a id="l00492" name="l00492"></a><span class="lineno"><a class="line" href="classmodules_1_1_e_c_a_p_a___t_d_n_n.html#a955aa3b6c21bb7d4770f5e212e3d2b60">  492</a></span>        self.<a class="code hl_variable" href="classmodules_1_1_e_c_a_p_a___t_d_n_n.html#a955aa3b6c21bb7d4770f5e212e3d2b60">blocks</a> = nn.ModuleList()</div>
 <div class="line"><a id="l00493" name="l00493"></a><span class="lineno">  493</span> </div>
 <div class="line"><a id="l00494" name="l00494"></a><span class="lineno">  494</span>        <span class="comment"># The initial TDNN layer</span></div>
 <div class="line"><a id="l00495" name="l00495"></a><span class="lineno">  495</span>        self.<a class="code hl_variable" href="classmodules_1_1_e_c_a_p_a___t_d_n_n.html#a955aa3b6c21bb7d4770f5e212e3d2b60">blocks</a>.append(</div>
@@ -646,7 +675,7 @@ $(function(){initNavTree('modules_8py_source.html',''); initResizable(true); });
 <div class="line"><a id="l00519" name="l00519"></a><span class="lineno">  519</span>            )</div>
 <div class="line"><a id="l00520" name="l00520"></a><span class="lineno">  520</span> </div>
 <div class="line"><a id="l00521" name="l00521"></a><span class="lineno">  521</span>        <span class="comment"># Multi-layer feature aggregation</span></div>
-<div class="line"><a id="l00522" name="l00522"></a><span class="lineno">  522</span>        self.<a class="code hl_variable" href="classmodules_1_1_e_c_a_p_a___t_d_n_n.html#ac1fe518db9138e24b0fe73d90ac162d7">mfa</a> = <a class="code hl_class" href="classmodules_1_1_t_d_n_n_block.html">TDNNBlock</a>(</div>
+<div class="line"><a id="l00522" name="l00522"></a><span class="lineno"><a class="line" href="classmodules_1_1_e_c_a_p_a___t_d_n_n.html#ac1fe518db9138e24b0fe73d90ac162d7">  522</a></span>        self.<a class="code hl_variable" href="classmodules_1_1_e_c_a_p_a___t_d_n_n.html#ac1fe518db9138e24b0fe73d90ac162d7">mfa</a> = <a class="code hl_class" href="classmodules_1_1_t_d_n_n_block.html">TDNNBlock</a>(</div>
 <div class="line"><a id="l00523" name="l00523"></a><span class="lineno">  523</span>            channels[-2] * (len(channels) - 2),</div>
 <div class="line"><a id="l00524" name="l00524"></a><span class="lineno">  524</span>            channels[-1],</div>
 <div class="line"><a id="l00525" name="l00525"></a><span class="lineno">  525</span>            kernel_sizes[-1],</div>
@@ -656,12 +685,12 @@ $(function(){initNavTree('modules_8py_source.html',''); initResizable(true); });
 <div class="line"><a id="l00529" name="l00529"></a><span class="lineno">  529</span>        )</div>
 <div class="line"><a id="l00530" name="l00530"></a><span class="lineno">  530</span> </div>
 <div class="line"><a id="l00531" name="l00531"></a><span class="lineno">  531</span>        <span class="comment"># Attentive Statistical Pooling</span></div>
-<div class="line"><a id="l00532" name="l00532"></a><span class="lineno">  532</span>        self.<a class="code hl_variable" href="classmodules_1_1_e_c_a_p_a___t_d_n_n.html#a37b2cfdb1726914ae8f3bd175023fa54">asp</a> = <a class="code hl_class" href="classmodules_1_1_attentive_statistics_pooling.html">AttentiveStatisticsPooling</a>(</div>
+<div class="line"><a id="l00532" name="l00532"></a><span class="lineno"><a class="line" href="classmodules_1_1_e_c_a_p_a___t_d_n_n.html#a37b2cfdb1726914ae8f3bd175023fa54">  532</a></span>        self.<a class="code hl_variable" href="classmodules_1_1_e_c_a_p_a___t_d_n_n.html#a37b2cfdb1726914ae8f3bd175023fa54">asp</a> = <a class="code hl_class" href="classmodules_1_1_attentive_statistics_pooling.html">AttentiveStatisticsPooling</a>(</div>
 <div class="line"><a id="l00533" name="l00533"></a><span class="lineno">  533</span>            channels[-1],</div>
 <div class="line"><a id="l00534" name="l00534"></a><span class="lineno">  534</span>            attention_channels=attention_channels,</div>
 <div class="line"><a id="l00535" name="l00535"></a><span class="lineno">  535</span>            global_context=global_context,</div>
 <div class="line"><a id="l00536" name="l00536"></a><span class="lineno">  536</span>        )</div>
-<div class="line"><a id="l00537" name="l00537"></a><span class="lineno">  537</span>        self.<a class="code hl_variable" href="classmodules_1_1_e_c_a_p_a___t_d_n_n.html#a1ba8245b019288f16829b3eb9810a91a">asp_bn</a> = <a class="code hl_class" href="classmodules_1_1_batch_norm1d.html">BatchNorm1d</a>(input_size=channels[-1] * 2)</div>
+<div class="line"><a id="l00537" name="l00537"></a><span class="lineno"><a class="line" href="classmodules_1_1_e_c_a_p_a___t_d_n_n.html#a1ba8245b019288f16829b3eb9810a91a">  537</a></span>        self.<a class="code hl_variable" href="classmodules_1_1_e_c_a_p_a___t_d_n_n.html#a1ba8245b019288f16829b3eb9810a91a">asp_bn</a> = <a class="code hl_class" href="classmodules_1_1_batch_norm1d.html">BatchNorm1d</a>(input_size=channels[-1] * 2)</div>
 <div class="line"><a id="l00538" name="l00538"></a><span class="lineno">  538</span> </div>
 <div class="line"><a id="l00539" name="l00539"></a><span class="lineno">  539</span>        <span class="comment"># # Final linear transformation</span></div>
 <div class="line"><a id="l00540" name="l00540"></a><span class="lineno">  540</span>        <span class="comment"># self.fc = Conv1d(</span></div>
@@ -671,11 +700,12 @@ $(function(){initNavTree('modules_8py_source.html',''); initResizable(true); });
 <div class="line"><a id="l00544" name="l00544"></a><span class="lineno">  544</span>        <span class="comment"># )</span></div>
 <div class="line"><a id="l00545" name="l00545"></a><span class="lineno">  545</span> </div>
 <div class="line"><a id="l00546" name="l00546"></a><span class="lineno">  546</span>        <span class="comment"># Final Dense Layer</span></div>
-<div class="line"><a id="l00547" name="l00547"></a><span class="lineno">  547</span>        self.<a class="code hl_variable" href="classmodules_1_1_e_c_a_p_a___t_d_n_n.html#adae2dd61d84afe2033e1da1eb03940fb">final</a> = nn.Sequential(</div>
+<div class="line"><a id="l00547" name="l00547"></a><span class="lineno"><a class="line" href="classmodules_1_1_e_c_a_p_a___t_d_n_n.html#adae2dd61d84afe2033e1da1eb03940fb">  547</a></span>        self.<a class="code hl_variable" href="classmodules_1_1_e_c_a_p_a___t_d_n_n.html#adae2dd61d84afe2033e1da1eb03940fb">final</a> = nn.Sequential(</div>
 <div class="line"><a id="l00548" name="l00548"></a><span class="lineno">  548</span>            nn.Flatten(),</div>
 <div class="line"><a id="l00549" name="l00549"></a><span class="lineno">  549</span>            nn.Linear(in_features=channels[-1] * 2, out_features=lin_neurons),</div>
 <div class="line"><a id="l00550" name="l00550"></a><span class="lineno">  550</span>        )</div>
 <div class="line"><a id="l00551" name="l00551"></a><span class="lineno">  551</span> </div>
+</div>
 <div class="foldopen" id="foldopen00552" data-start="" data-end="">
 <div class="line"><a id="l00552" name="l00552"></a><span class="lineno"><a class="line" href="classmodules_1_1_e_c_a_p_a___t_d_n_n.html#a6123713d20a61241d25c69903707958e">  552</a></span>    <span class="keyword">def </span><a class="code hl_function" href="classmodules_1_1_e_c_a_p_a___t_d_n_n.html#a6123713d20a61241d25c69903707958e">forward</a>(self, x, lengths=None):</div>
 <div class="line"><a id="l00553" name="l00553"></a><span class="lineno">  553</span>        <span class="stringliteral">&quot;&quot;&quot;Returns the embedding vector.</span></div>
@@ -720,18 +750,20 @@ $(function(){initNavTree('modules_8py_source.html',''); initResizable(true); });
 <div class="line"><a id="l00592" name="l00592"></a><span class="lineno">  592</span>        <span class="keywordflow">return</span> x</div>
 <div class="line"><a id="l00593" name="l00593"></a><span class="lineno">  593</span> </div>
 </div>
-<div class="line"><a id="l00594" name="l00594"></a><span class="lineno">  594</span>    <span class="keyword">def </span>return_layers(self):</div>
+<div class="foldopen" id="foldopen00594" data-start="" data-end="">
+<div class="line"><a id="l00594" name="l00594"></a><span class="lineno"><a class="line" href="classmodules_1_1_e_c_a_p_a___t_d_n_n.html#a58f69c23d29db0bc8a362950e1f31a47">  594</a></span>    <span class="keyword">def </span><a class="code hl_function" href="classmodules_1_1_e_c_a_p_a___t_d_n_n.html#a58f69c23d29db0bc8a362950e1f31a47">return_layers</a>(self):</div>
 <div class="line"><a id="l00595" name="l00595"></a><span class="lineno">  595</span>        lst = []</div>
 <div class="line"><a id="l00596" name="l00596"></a><span class="lineno">  596</span>        <span class="keywordflow">for</span> i <span class="keywordflow">in</span> self.<a class="code hl_variable" href="classmodules_1_1_e_c_a_p_a___t_d_n_n.html#a955aa3b6c21bb7d4770f5e212e3d2b60">blocks</a>:</div>
 <div class="line"><a id="l00597" name="l00597"></a><span class="lineno">  597</span>            lst += i.return_layers()</div>
 <div class="line"><a id="l00598" name="l00598"></a><span class="lineno">  598</span> </div>
-<div class="line"><a id="l00599" name="l00599"></a><span class="lineno">  599</span>        lst += self.<a class="code hl_variable" href="classmodules_1_1_e_c_a_p_a___t_d_n_n.html#ac1fe518db9138e24b0fe73d90ac162d7">mfa</a>.return_layers()</div>
-<div class="line"><a id="l00600" name="l00600"></a><span class="lineno">  600</span>        lst += self.<a class="code hl_variable" href="classmodules_1_1_e_c_a_p_a___t_d_n_n.html#a37b2cfdb1726914ae8f3bd175023fa54">asp</a>.return_layers()</div>
-<div class="line"><a id="l00601" name="l00601"></a><span class="lineno">  601</span>        lst += self.<a class="code hl_variable" href="classmodules_1_1_e_c_a_p_a___t_d_n_n.html#a1ba8245b019288f16829b3eb9810a91a">asp_bn</a>.return_layers()</div>
+<div class="line"><a id="l00599" name="l00599"></a><span class="lineno">  599</span>        lst += self.<a class="code hl_variable" href="classmodules_1_1_e_c_a_p_a___t_d_n_n.html#ac1fe518db9138e24b0fe73d90ac162d7">mfa</a>.<a class="code hl_function" href="classmodules_1_1_e_c_a_p_a___t_d_n_n.html#a58f69c23d29db0bc8a362950e1f31a47">return_layers</a>()</div>
+<div class="line"><a id="l00600" name="l00600"></a><span class="lineno">  600</span>        lst += self.<a class="code hl_variable" href="classmodules_1_1_e_c_a_p_a___t_d_n_n.html#a37b2cfdb1726914ae8f3bd175023fa54">asp</a>.<a class="code hl_function" href="classmodules_1_1_e_c_a_p_a___t_d_n_n.html#a58f69c23d29db0bc8a362950e1f31a47">return_layers</a>()</div>
+<div class="line"><a id="l00601" name="l00601"></a><span class="lineno">  601</span>        lst += self.<a class="code hl_variable" href="classmodules_1_1_e_c_a_p_a___t_d_n_n.html#a1ba8245b019288f16829b3eb9810a91a">asp_bn</a>.<a class="code hl_function" href="classmodules_1_1_e_c_a_p_a___t_d_n_n.html#a58f69c23d29db0bc8a362950e1f31a47">return_layers</a>()</div>
 <div class="line"><a id="l00602" name="l00602"></a><span class="lineno">  602</span>        lst += [self.<a class="code hl_variable" href="classmodules_1_1_e_c_a_p_a___t_d_n_n.html#adae2dd61d84afe2033e1da1eb03940fb">final</a>[1]]</div>
 <div class="line"><a id="l00603" name="l00603"></a><span class="lineno">  603</span>        <span class="keywordflow">return</span> lst</div>
 <div class="line"><a id="l00604" name="l00604"></a><span class="lineno">  604</span> </div>
 <div class="line"><a id="l00605" name="l00605"></a><span class="lineno">  605</span> </div>
+</div>
 </div>
 <div class="foldopen" id="foldopen00606" data-start="" data-end="">
 <div class="line"><a id="l00606" name="l00606"></a><span class="lineno"><a class="line" href="classmodules_1_1_classifier.html">  606</a></span><span class="keyword">class </span><a class="code hl_class" href="classmodules_1_1_classifier.html">Classifier</a>(torch.nn.Module):</div>
@@ -762,7 +794,8 @@ $(function(){initNavTree('modules_8py_source.html',''); initResizable(true); });
 <div class="line"><a id="l00631" name="l00631"></a><span class="lineno">  631</span><span class="stringliteral">    tensor(0)</span></div>
 <div class="line"><a id="l00632" name="l00632"></a><span class="lineno">  632</span><span class="stringliteral">    &quot;&quot;&quot;</span></div>
 <div class="line"><a id="l00633" name="l00633"></a><span class="lineno">  633</span> </div>
-<div class="line"><a id="l00634" name="l00634"></a><span class="lineno">  634</span>    <span class="keyword">def </span>__init__(</div>
+<div class="foldopen" id="foldopen00634" data-start="" data-end="">
+<div class="line"><a id="l00634" name="l00634"></a><span class="lineno"><a class="line" href="classmodules_1_1_classifier.html#a2f39a70537d4d4a3ba5a982be6c04b4d">  634</a></span>    <span class="keyword">def </span><a class="code hl_function" href="classmodules_1_1_classifier.html#a2f39a70537d4d4a3ba5a982be6c04b4d">__init__</a>(</div>
 <div class="line"><a id="l00635" name="l00635"></a><span class="lineno">  635</span>        self,</div>
 <div class="line"><a id="l00636" name="l00636"></a><span class="lineno">  636</span>        input_size,</div>
 <div class="line"><a id="l00637" name="l00637"></a><span class="lineno">  637</span>        device=&quot;cpu&quot;,</div>
@@ -770,8 +803,8 @@ $(function(){initNavTree('modules_8py_source.html',''); initResizable(true); });
 <div class="line"><a id="l00639" name="l00639"></a><span class="lineno">  639</span>        lin_neurons=192,</div>
 <div class="line"><a id="l00640" name="l00640"></a><span class="lineno">  640</span>        out_neurons=1211,</div>
 <div class="line"><a id="l00641" name="l00641"></a><span class="lineno">  641</span>    ):</div>
-<div class="line"><a id="l00642" name="l00642"></a><span class="lineno">  642</span>        super().__init__()</div>
-<div class="line"><a id="l00643" name="l00643"></a><span class="lineno">  643</span>        self.<a class="code hl_variable" href="classmodules_1_1_classifier.html#a19292f7de0ba9e119e0a5d9eae93ac92">blocks</a> = nn.ModuleList()</div>
+<div class="line"><a id="l00642" name="l00642"></a><span class="lineno">  642</span>        super().<a class="code hl_function" href="classmodules_1_1_classifier.html#a2f39a70537d4d4a3ba5a982be6c04b4d">__init__</a>()</div>
+<div class="line"><a id="l00643" name="l00643"></a><span class="lineno"><a class="line" href="classmodules_1_1_classifier.html#a19292f7de0ba9e119e0a5d9eae93ac92">  643</a></span>        self.<a class="code hl_variable" href="classmodules_1_1_classifier.html#a19292f7de0ba9e119e0a5d9eae93ac92">blocks</a> = nn.ModuleList()</div>
 <div class="line"><a id="l00644" name="l00644"></a><span class="lineno">  644</span> </div>
 <div class="line"><a id="l00645" name="l00645"></a><span class="lineno">  645</span>        <span class="keywordflow">for</span> block_index <span class="keywordflow">in</span> range(lin_blocks):</div>
 <div class="line"><a id="l00646" name="l00646"></a><span class="lineno">  646</span>            self.<a class="code hl_variable" href="classmodules_1_1_classifier.html#a19292f7de0ba9e119e0a5d9eae93ac92">blocks</a>.extend(</div>
@@ -783,11 +816,12 @@ $(function(){initNavTree('modules_8py_source.html',''); initResizable(true); });
 <div class="line"><a id="l00652" name="l00652"></a><span class="lineno">  652</span>            input_size = lin_neurons</div>
 <div class="line"><a id="l00653" name="l00653"></a><span class="lineno">  653</span> </div>
 <div class="line"><a id="l00654" name="l00654"></a><span class="lineno">  654</span>        <span class="comment"># Final Layer</span></div>
-<div class="line"><a id="l00655" name="l00655"></a><span class="lineno">  655</span>        self.<a class="code hl_variable" href="classmodules_1_1_classifier.html#ac33a3f759aa618a9aae1fd41690bd964">weight</a> = nn.Parameter(</div>
+<div class="line"><a id="l00655" name="l00655"></a><span class="lineno"><a class="line" href="classmodules_1_1_classifier.html#ac33a3f759aa618a9aae1fd41690bd964">  655</a></span>        self.<a class="code hl_variable" href="classmodules_1_1_classifier.html#ac33a3f759aa618a9aae1fd41690bd964">weight</a> = nn.Parameter(</div>
 <div class="line"><a id="l00656" name="l00656"></a><span class="lineno">  656</span>            torch.FloatTensor(out_neurons, input_size, device=device)</div>
 <div class="line"><a id="l00657" name="l00657"></a><span class="lineno">  657</span>        )</div>
 <div class="line"><a id="l00658" name="l00658"></a><span class="lineno">  658</span>        nn.init.xavier_uniform_(self.<a class="code hl_variable" href="classmodules_1_1_classifier.html#ac33a3f759aa618a9aae1fd41690bd964">weight</a>)</div>
 <div class="line"><a id="l00659" name="l00659"></a><span class="lineno">  659</span> </div>
+</div>
 <div class="foldopen" id="foldopen00660" data-start="" data-end="">
 <div class="line"><a id="l00660" name="l00660"></a><span class="lineno"><a class="line" href="classmodules_1_1_classifier.html#a5899e32519cc6c2dab90256da6ab8182">  660</a></span>    <span class="keyword">def </span><a class="code hl_function" href="classmodules_1_1_classifier.html#a5899e32519cc6c2dab90256da6ab8182">forward</a>(self, x):</div>
 <div class="line"><a id="l00661" name="l00661"></a><span class="lineno">  661</span>        <span class="stringliteral">&quot;&quot;&quot;Returns the output probabilities over speakers.</span></div>
@@ -811,6 +845,8 @@ $(function(){initNavTree('modules_8py_source.html',''); initResizable(true); });
 </div>
 </div>
 <div class="ttc" id="aclassmodules_1_1_attentive_statistics_pooling_html"><div class="ttname"><a href="classmodules_1_1_attentive_statistics_pooling.html">modules.AttentiveStatisticsPooling</a></div><div class="ttdef"><b>Definition</b> <a href="#l00236">modules.py:236</a></div></div>
+<div class="ttc" id="aclassmodules_1_1_attentive_statistics_pooling_html_a1f1576e89cead54383f423f539e9f09f"><div class="ttname"><a href="classmodules_1_1_attentive_statistics_pooling.html#a1f1576e89cead54383f423f539e9f09f">modules.AttentiveStatisticsPooling.return_layers</a></div><div class="ttdeci">list return_layers(self)</div><div class="ttdef"><b>Definition</b> <a href="#l00330">modules.py:330</a></div></div>
+<div class="ttc" id="aclassmodules_1_1_attentive_statistics_pooling_html_a1fac761724f7e6fb364a665c409c62e5"><div class="ttname"><a href="classmodules_1_1_attentive_statistics_pooling.html#a1fac761724f7e6fb364a665c409c62e5">modules.AttentiveStatisticsPooling.__init__</a></div><div class="ttdeci">__init__(self, channels, attention_channels=128, global_context=True)</div><div class="ttdef"><b>Definition</b> <a href="#l00259">modules.py:259</a></div></div>
 <div class="ttc" id="aclassmodules_1_1_attentive_statistics_pooling_html_a698efbb332f7121f47f24a5e0c52c4c3"><div class="ttname"><a href="classmodules_1_1_attentive_statistics_pooling.html#a698efbb332f7121f47f24a5e0c52c4c3">modules.AttentiveStatisticsPooling.global_context</a></div><div class="ttdeci">global_context</div><div class="ttdef"><b>Definition</b> <a href="#l00263">modules.py:263</a></div></div>
 <div class="ttc" id="aclassmodules_1_1_attentive_statistics_pooling_html_ad5b0bde462d9ce8ab6a4e604cfd5dd86"><div class="ttname"><a href="classmodules_1_1_attentive_statistics_pooling.html#ad5b0bde462d9ce8ab6a4e604cfd5dd86">modules.AttentiveStatisticsPooling.forward</a></div><div class="ttdeci">forward(self, x, lengths=None)</div><div class="ttdef"><b>Definition</b> <a href="#l00273">modules.py:273</a></div></div>
 <div class="ttc" id="aclassmodules_1_1_attentive_statistics_pooling_html_ad630c7ab0db950542e1ad72d4043a903"><div class="ttname"><a href="classmodules_1_1_attentive_statistics_pooling.html#ad630c7ab0db950542e1ad72d4043a903">modules.AttentiveStatisticsPooling.eps</a></div><div class="ttdeci">eps</div><div class="ttdef"><b>Definition</b> <a href="#l00262">modules.py:262</a></div></div>
@@ -818,51 +854,66 @@ $(function(){initNavTree('modules_8py_source.html',''); initResizable(true); });
 <div class="ttc" id="aclassmodules_1_1_attentive_statistics_pooling_html_ae1e9a5bc8d79e2ba27cf96504be42504"><div class="ttname"><a href="classmodules_1_1_attentive_statistics_pooling.html#ae1e9a5bc8d79e2ba27cf96504be42504">modules.AttentiveStatisticsPooling.tanh</a></div><div class="ttdeci">tanh</div><div class="ttdef"><b>Definition</b> <a href="#l00268">modules.py:268</a></div></div>
 <div class="ttc" id="aclassmodules_1_1_attentive_statistics_pooling_html_ae4c0457f96047216fdb283f6491e6c62"><div class="ttname"><a href="classmodules_1_1_attentive_statistics_pooling.html#ae4c0457f96047216fdb283f6491e6c62">modules.AttentiveStatisticsPooling.conv</a></div><div class="ttdeci">conv</div><div class="ttdef"><b>Definition</b> <a href="#l00269">modules.py:269</a></div></div>
 <div class="ttc" id="aclassmodules_1_1_batch_norm1d_html"><div class="ttname"><a href="classmodules_1_1_batch_norm1d.html">modules.BatchNorm1d</a></div><div class="ttdef"><b>Definition</b> <a href="#l00030">modules.py:30</a></div></div>
+<div class="ttc" id="aclassmodules_1_1_batch_norm1d_html_a2de0f9dd929938e7e3f6248b1fac9d21"><div class="ttname"><a href="classmodules_1_1_batch_norm1d.html#a2de0f9dd929938e7e3f6248b1fac9d21">modules.BatchNorm1d.return_layers</a></div><div class="ttdeci">list return_layers(self)</div><div class="ttdef"><b>Definition</b> <a href="#l00036">modules.py:36</a></div></div>
+<div class="ttc" id="aclassmodules_1_1_batch_norm1d_html_ae0643ffbd5ba16ec54729f0493c4e65d"><div class="ttname"><a href="classmodules_1_1_batch_norm1d.html#ae0643ffbd5ba16ec54729f0493c4e65d">modules.BatchNorm1d.__init__</a></div><div class="ttdeci">__init__(self, *args, **kwargs)</div><div class="ttdef"><b>Definition</b> <a href="#l00033">modules.py:33</a></div></div>
 <div class="ttc" id="aclassmodules_1_1_classifier_html"><div class="ttname"><a href="classmodules_1_1_classifier.html">modules.Classifier</a></div><div class="ttdef"><b>Definition</b> <a href="#l00606">modules.py:606</a></div></div>
 <div class="ttc" id="aclassmodules_1_1_classifier_html_a19292f7de0ba9e119e0a5d9eae93ac92"><div class="ttname"><a href="classmodules_1_1_classifier.html#a19292f7de0ba9e119e0a5d9eae93ac92">modules.Classifier.blocks</a></div><div class="ttdeci">blocks</div><div class="ttdef"><b>Definition</b> <a href="#l00643">modules.py:643</a></div></div>
+<div class="ttc" id="aclassmodules_1_1_classifier_html_a2f39a70537d4d4a3ba5a982be6c04b4d"><div class="ttname"><a href="classmodules_1_1_classifier.html#a2f39a70537d4d4a3ba5a982be6c04b4d">modules.Classifier.__init__</a></div><div class="ttdeci">__init__(self, input_size, device=&quot;cpu&quot;, lin_blocks=0, lin_neurons=192, out_neurons=1211)</div><div class="ttdef"><b>Definition</b> <a href="#l00634">modules.py:641</a></div></div>
 <div class="ttc" id="aclassmodules_1_1_classifier_html_a5899e32519cc6c2dab90256da6ab8182"><div class="ttname"><a href="classmodules_1_1_classifier.html#a5899e32519cc6c2dab90256da6ab8182">modules.Classifier.forward</a></div><div class="ttdeci">forward(self, x)</div><div class="ttdef"><b>Definition</b> <a href="#l00660">modules.py:660</a></div></div>
 <div class="ttc" id="aclassmodules_1_1_classifier_html_ac33a3f759aa618a9aae1fd41690bd964"><div class="ttname"><a href="classmodules_1_1_classifier.html#ac33a3f759aa618a9aae1fd41690bd964">modules.Classifier.weight</a></div><div class="ttdeci">weight</div><div class="ttdef"><b>Definition</b> <a href="#l00655">modules.py:655</a></div></div>
 <div class="ttc" id="aclassmodules_1_1_conv1d_html"><div class="ttname"><a href="classmodules_1_1_conv1d.html">modules.Conv1d</a></div><div class="ttdef"><b>Definition</b> <a href="#l00020">modules.py:20</a></div></div>
+<div class="ttc" id="aclassmodules_1_1_conv1d_html_a8fe931d7fa1887930d76ff70595a7623"><div class="ttname"><a href="classmodules_1_1_conv1d.html#a8fe931d7fa1887930d76ff70595a7623">modules.Conv1d.return_layers</a></div><div class="ttdeci">list return_layers(self)</div><div class="ttdef"><b>Definition</b> <a href="#l00026">modules.py:26</a></div></div>
+<div class="ttc" id="aclassmodules_1_1_conv1d_html_ae37a613af207dc9fa6f5647f05631500"><div class="ttname"><a href="classmodules_1_1_conv1d.html#ae37a613af207dc9fa6f5647f05631500">modules.Conv1d.__init__</a></div><div class="ttdeci">__init__(self, *args, **kwargs)</div><div class="ttdef"><b>Definition</b> <a href="#l00023">modules.py:23</a></div></div>
 <div class="ttc" id="aclassmodules_1_1_e_c_a_p_a___t_d_n_n_html"><div class="ttname"><a href="classmodules_1_1_e_c_a_p_a___t_d_n_n.html">modules.ECAPA_TDNN</a></div><div class="ttdef"><b>Definition</b> <a href="#l00432">modules.py:432</a></div></div>
 <div class="ttc" id="aclassmodules_1_1_e_c_a_p_a___t_d_n_n_html_a1ba8245b019288f16829b3eb9810a91a"><div class="ttname"><a href="classmodules_1_1_e_c_a_p_a___t_d_n_n.html#a1ba8245b019288f16829b3eb9810a91a">modules.ECAPA_TDNN.asp_bn</a></div><div class="ttdeci">asp_bn</div><div class="ttdef"><b>Definition</b> <a href="#l00537">modules.py:537</a></div></div>
 <div class="ttc" id="aclassmodules_1_1_e_c_a_p_a___t_d_n_n_html_a37b2cfdb1726914ae8f3bd175023fa54"><div class="ttname"><a href="classmodules_1_1_e_c_a_p_a___t_d_n_n.html#a37b2cfdb1726914ae8f3bd175023fa54">modules.ECAPA_TDNN.asp</a></div><div class="ttdeci">asp</div><div class="ttdef"><b>Definition</b> <a href="#l00532">modules.py:532</a></div></div>
+<div class="ttc" id="aclassmodules_1_1_e_c_a_p_a___t_d_n_n_html_a58f69c23d29db0bc8a362950e1f31a47"><div class="ttname"><a href="classmodules_1_1_e_c_a_p_a___t_d_n_n.html#a58f69c23d29db0bc8a362950e1f31a47">modules.ECAPA_TDNN.return_layers</a></div><div class="ttdeci">return_layers(self)</div><div class="ttdef"><b>Definition</b> <a href="#l00594">modules.py:594</a></div></div>
 <div class="ttc" id="aclassmodules_1_1_e_c_a_p_a___t_d_n_n_html_a6123713d20a61241d25c69903707958e"><div class="ttname"><a href="classmodules_1_1_e_c_a_p_a___t_d_n_n.html#a6123713d20a61241d25c69903707958e">modules.ECAPA_TDNN.forward</a></div><div class="ttdeci">forward(self, x, lengths=None)</div><div class="ttdef"><b>Definition</b> <a href="#l00552">modules.py:552</a></div></div>
+<div class="ttc" id="aclassmodules_1_1_e_c_a_p_a___t_d_n_n_html_a9199e9e8be0e8066e88365b058bb0aa7"><div class="ttname"><a href="classmodules_1_1_e_c_a_p_a___t_d_n_n.html#a9199e9e8be0e8066e88365b058bb0aa7">modules.ECAPA_TDNN.__init__</a></div><div class="ttdeci">__init__(self, input_size, device=&quot;cpu&quot;, lin_neurons=192, activation=torch.nn.ReLU, channels=[512, 512, 512, 512, 1536], kernel_sizes=[5, 3, 3, 3, 1], dilations=[1, 2, 3, 4, 1], attention_channels=128, res2net_scale=8, se_channels=128, global_context=True, groups=[1, 1, 1, 1, 1])</div><div class="ttdef"><b>Definition</b> <a href="#l00473">modules.py:487</a></div></div>
 <div class="ttc" id="aclassmodules_1_1_e_c_a_p_a___t_d_n_n_html_a955aa3b6c21bb7d4770f5e212e3d2b60"><div class="ttname"><a href="classmodules_1_1_e_c_a_p_a___t_d_n_n.html#a955aa3b6c21bb7d4770f5e212e3d2b60">modules.ECAPA_TDNN.blocks</a></div><div class="ttdeci">blocks</div><div class="ttdef"><b>Definition</b> <a href="#l00492">modules.py:492</a></div></div>
 <div class="ttc" id="aclassmodules_1_1_e_c_a_p_a___t_d_n_n_html_aabfbe30f208aeba5fa4390aafb38f4a7"><div class="ttname"><a href="classmodules_1_1_e_c_a_p_a___t_d_n_n.html#aabfbe30f208aeba5fa4390aafb38f4a7">modules.ECAPA_TDNN.channels</a></div><div class="ttdeci">channels</div><div class="ttdef"><b>Definition</b> <a href="#l00491">modules.py:491</a></div></div>
 <div class="ttc" id="aclassmodules_1_1_e_c_a_p_a___t_d_n_n_html_ac1fe518db9138e24b0fe73d90ac162d7"><div class="ttname"><a href="classmodules_1_1_e_c_a_p_a___t_d_n_n.html#ac1fe518db9138e24b0fe73d90ac162d7">modules.ECAPA_TDNN.mfa</a></div><div class="ttdeci">mfa</div><div class="ttdef"><b>Definition</b> <a href="#l00522">modules.py:522</a></div></div>
 <div class="ttc" id="aclassmodules_1_1_e_c_a_p_a___t_d_n_n_html_adae2dd61d84afe2033e1da1eb03940fb"><div class="ttname"><a href="classmodules_1_1_e_c_a_p_a___t_d_n_n.html#adae2dd61d84afe2033e1da1eb03940fb">modules.ECAPA_TDNN.final</a></div><div class="ttdeci">final</div><div class="ttdef"><b>Definition</b> <a href="#l00547">modules.py:547</a></div></div>
 <div class="ttc" id="aclassmodules_1_1_res2_net_block_html"><div class="ttname"><a href="classmodules_1_1_res2_net_block.html">modules.Res2NetBlock</a></div><div class="ttdef"><b>Definition</b> <a href="#l00115">modules.py:115</a></div></div>
 <div class="ttc" id="aclassmodules_1_1_res2_net_block_html_a130ba972b3d314e99271d1fb4f81cc11"><div class="ttname"><a href="classmodules_1_1_res2_net_block.html#a130ba972b3d314e99271d1fb4f81cc11">modules.Res2NetBlock.blocks</a></div><div class="ttdeci">blocks</div><div class="ttdef"><b>Definition</b> <a href="#l00148">modules.py:148</a></div></div>
+<div class="ttc" id="aclassmodules_1_1_res2_net_block_html_a185ebb60519538df44798ce54611f53d"><div class="ttname"><a href="classmodules_1_1_res2_net_block.html#a185ebb60519538df44798ce54611f53d">modules.Res2NetBlock.return_layers</a></div><div class="ttdeci">list return_layers(self)</div><div class="ttdef"><b>Definition</b> <a href="#l00175">modules.py:175</a></div></div>
 <div class="ttc" id="aclassmodules_1_1_res2_net_block_html_a25421e25317fd9eb77b36b37896ad53c"><div class="ttname"><a href="classmodules_1_1_res2_net_block.html#a25421e25317fd9eb77b36b37896ad53c">modules.Res2NetBlock.scale</a></div><div class="ttdeci">scale</div><div class="ttdef"><b>Definition</b> <a href="#l00159">modules.py:159</a></div></div>
+<div class="ttc" id="aclassmodules_1_1_res2_net_block_html_a2bc1b4eb0b4ff05d5c6a639de034fe92"><div class="ttname"><a href="classmodules_1_1_res2_net_block.html#a2bc1b4eb0b4ff05d5c6a639de034fe92">modules.Res2NetBlock.__init__</a></div><div class="ttdeci">__init__(self, in_channels, out_channels, scale=8, kernel_size=3, dilation=1)</div><div class="ttdef"><b>Definition</b> <a href="#l00140">modules.py:140</a></div></div>
 <div class="ttc" id="aclassmodules_1_1_res2_net_block_html_a6053c8abf18e2e436a5918dc2c60d09e"><div class="ttname"><a href="classmodules_1_1_res2_net_block.html#a6053c8abf18e2e436a5918dc2c60d09e">modules.Res2NetBlock.forward</a></div><div class="ttdeci">forward(self, x)</div><div class="ttdef"><b>Definition</b> <a href="#l00161">modules.py:161</a></div></div>
 <div class="ttc" id="aclassmodules_1_1_s_e_block_html"><div class="ttname"><a href="classmodules_1_1_s_e_block.html">modules.SEBlock</a></div><div class="ttdef"><b>Definition</b> <a href="#l00182">modules.py:182</a></div></div>
 <div class="ttc" id="aclassmodules_1_1_s_e_block_html_a1f52cb28dd9cc5ff2429009d868dcb10"><div class="ttname"><a href="classmodules_1_1_s_e_block.html#a1f52cb28dd9cc5ff2429009d868dcb10">modules.SEBlock.conv2</a></div><div class="ttdeci">conv2</div><div class="ttdef"><b>Definition</b> <a href="#l00211">modules.py:211</a></div></div>
 <div class="ttc" id="aclassmodules_1_1_s_e_block_html_a6d6f1d4f9ec585efab92674c75bc0e93"><div class="ttname"><a href="classmodules_1_1_s_e_block.html#a6d6f1d4f9ec585efab92674c75bc0e93">modules.SEBlock.forward</a></div><div class="ttdeci">forward(self, x, lengths=None)</div><div class="ttdef"><b>Definition</b> <a href="#l00216">modules.py:216</a></div></div>
+<div class="ttc" id="aclassmodules_1_1_s_e_block_html_a7d6a65cad1ed54adc8735aba26557aa2"><div class="ttname"><a href="classmodules_1_1_s_e_block.html#a7d6a65cad1ed54adc8735aba26557aa2">modules.SEBlock.return_layers</a></div><div class="ttdeci">list return_layers(self)</div><div class="ttdef"><b>Definition</b> <a href="#l00232">modules.py:232</a></div></div>
 <div class="ttc" id="aclassmodules_1_1_s_e_block_html_a8297d0add37d2f551532d9cdd5a00678"><div class="ttname"><a href="classmodules_1_1_s_e_block.html#a8297d0add37d2f551532d9cdd5a00678">modules.SEBlock.relu</a></div><div class="ttdeci">relu</div><div class="ttdef"><b>Definition</b> <a href="#l00210">modules.py:210</a></div></div>
+<div class="ttc" id="aclassmodules_1_1_s_e_block_html_aabb9aad557a7651fa0ec35511e198a4f"><div class="ttname"><a href="classmodules_1_1_s_e_block.html#aabb9aad557a7651fa0ec35511e198a4f">modules.SEBlock.__init__</a></div><div class="ttdeci">__init__(self, in_channels, se_channels, out_channels)</div><div class="ttdef"><b>Definition</b> <a href="#l00204">modules.py:204</a></div></div>
 <div class="ttc" id="aclassmodules_1_1_s_e_block_html_abf532de56fd923d6061082fd28ce85dc"><div class="ttname"><a href="classmodules_1_1_s_e_block.html#abf532de56fd923d6061082fd28ce85dc">modules.SEBlock.sigmoid</a></div><div class="ttdeci">sigmoid</div><div class="ttdef"><b>Definition</b> <a href="#l00214">modules.py:214</a></div></div>
 <div class="ttc" id="aclassmodules_1_1_s_e_block_html_ad683848168de5f5b4cb53148683a43e7"><div class="ttname"><a href="classmodules_1_1_s_e_block.html#ad683848168de5f5b4cb53148683a43e7">modules.SEBlock.conv1</a></div><div class="ttdeci">conv1</div><div class="ttdef"><b>Definition</b> <a href="#l00207">modules.py:207</a></div></div>
 <div class="ttc" id="aclassmodules_1_1_s_e_res2_net_block_html"><div class="ttname"><a href="classmodules_1_1_s_e_res2_net_block.html">modules.SERes2NetBlock</a></div><div class="ttdef"><b>Definition</b> <a href="#l00334">modules.py:334</a></div></div>
 <div class="ttc" id="aclassmodules_1_1_s_e_res2_net_block_html_a0303fd1911ac52cd24bb03afde6aee53"><div class="ttname"><a href="classmodules_1_1_s_e_res2_net_block.html#a0303fd1911ac52cd24bb03afde6aee53">modules.SERes2NetBlock.se_block</a></div><div class="ttdeci">se_block</div><div class="ttdef"><b>Definition</b> <a href="#l00398">modules.py:398</a></div></div>
+<div class="ttc" id="aclassmodules_1_1_s_e_res2_net_block_html_a2d3cb8decca2d03c43d111c4a5548f21"><div class="ttname"><a href="classmodules_1_1_s_e_res2_net_block.html#a2d3cb8decca2d03c43d111c4a5548f21">modules.SERes2NetBlock.return_layers</a></div><div class="ttdeci">list return_layers(self)</div><div class="ttdef"><b>Definition</b> <a href="#l00421">modules.py:421</a></div></div>
 <div class="ttc" id="aclassmodules_1_1_s_e_res2_net_block_html_a3d75cf9eef51b89fc78b629714acf106"><div class="ttname"><a href="classmodules_1_1_s_e_res2_net_block.html#a3d75cf9eef51b89fc78b629714acf106">modules.SERes2NetBlock.forward</a></div><div class="ttdeci">forward(self, x, lengths=None)</div><div class="ttdef"><b>Definition</b> <a href="#l00408">modules.py:408</a></div></div>
 <div class="ttc" id="aclassmodules_1_1_s_e_res2_net_block_html_a4f4a23a58421f26d468f7618fd86ca00"><div class="ttname"><a href="classmodules_1_1_s_e_res2_net_block.html#a4f4a23a58421f26d468f7618fd86ca00">modules.SERes2NetBlock.shortcut</a></div><div class="ttdeci">shortcut</div><div class="ttdef"><b>Definition</b> <a href="#l00400">modules.py:400</a></div></div>
 <div class="ttc" id="aclassmodules_1_1_s_e_res2_net_block_html_a540d6dd10edaaa56dd0cc20be8e343fc"><div class="ttname"><a href="classmodules_1_1_s_e_res2_net_block.html#a540d6dd10edaaa56dd0cc20be8e343fc">modules.SERes2NetBlock.out_channels</a></div><div class="ttdeci">out_channels</div><div class="ttdef"><b>Definition</b> <a href="#l00378">modules.py:378</a></div></div>
+<div class="ttc" id="aclassmodules_1_1_s_e_res2_net_block_html_a58891afd7e2dd02f93aa3a91221c33ed"><div class="ttname"><a href="classmodules_1_1_s_e_res2_net_block.html#a58891afd7e2dd02f93aa3a91221c33ed">modules.SERes2NetBlock.__init__</a></div><div class="ttdeci">__init__(self, in_channels, out_channels, res2net_scale=8, se_channels=128, kernel_size=1, dilation=1, activation=torch.nn.ReLU, groups=1)</div><div class="ttdef"><b>Definition</b> <a href="#l00366">modules.py:376</a></div></div>
 <div class="ttc" id="aclassmodules_1_1_s_e_res2_net_block_html_a866def3c49b3f093fda301931f006833"><div class="ttname"><a href="classmodules_1_1_s_e_res2_net_block.html#a866def3c49b3f093fda301931f006833">modules.SERes2NetBlock.res2net_block</a></div><div class="ttdeci">res2net_block</div><div class="ttdef"><b>Definition</b> <a href="#l00387">modules.py:387</a></div></div>
 <div class="ttc" id="aclassmodules_1_1_s_e_res2_net_block_html_a8895ef35f308fc6b478c21af17a59dde"><div class="ttname"><a href="classmodules_1_1_s_e_res2_net_block.html#a8895ef35f308fc6b478c21af17a59dde">modules.SERes2NetBlock.tdnn2</a></div><div class="ttdeci">tdnn2</div><div class="ttdef"><b>Definition</b> <a href="#l00390">modules.py:390</a></div></div>
 <div class="ttc" id="aclassmodules_1_1_s_e_res2_net_block_html_abd53471042b64ead1d0b7c204cbbc4ee"><div class="ttname"><a href="classmodules_1_1_s_e_res2_net_block.html#abd53471042b64ead1d0b7c204cbbc4ee">modules.SERes2NetBlock.tdnn1</a></div><div class="ttdeci">tdnn1</div><div class="ttdef"><b>Definition</b> <a href="#l00379">modules.py:379</a></div></div>
 <div class="ttc" id="aclassmodules_1_1_t_d_n_n_block_html"><div class="ttname"><a href="classmodules_1_1_t_d_n_n_block.html">modules.TDNNBlock</a></div><div class="ttdef"><b>Definition</b> <a href="#l00054">modules.py:54</a></div></div>
+<div class="ttc" id="aclassmodules_1_1_t_d_n_n_block_html_a00dbfb71b36e9b1116550871efbea576"><div class="ttname"><a href="classmodules_1_1_t_d_n_n_block.html#a00dbfb71b36e9b1116550871efbea576">modules.TDNNBlock.__init__</a></div><div class="ttdeci">__init__(self, in_channels, out_channels, kernel_size, dilation, activation=nn.ReLU, groups=1)</div><div class="ttdef"><b>Definition</b> <a href="#l00081">modules.py:89</a></div></div>
 <div class="ttc" id="aclassmodules_1_1_t_d_n_n_block_html_a01fdf3036bb5f8e108e7fc6cc833d780"><div class="ttname"><a href="classmodules_1_1_t_d_n_n_block.html#a01fdf3036bb5f8e108e7fc6cc833d780">modules.TDNNBlock.norm</a></div><div class="ttdeci">norm</div><div class="ttdef"><b>Definition</b> <a href="#l00101">modules.py:101</a></div></div>
 <div class="ttc" id="aclassmodules_1_1_t_d_n_n_block_html_a1abd7c0106f524b27873af3abcb51006"><div class="ttname"><a href="classmodules_1_1_t_d_n_n_block.html#a1abd7c0106f524b27873af3abcb51006">modules.TDNNBlock.conv</a></div><div class="ttdeci">conv</div><div class="ttdef"><b>Definition</b> <a href="#l00091">modules.py:91</a></div></div>
 <div class="ttc" id="aclassmodules_1_1_t_d_n_n_block_html_a259740322148f259ea52db2904b5ba52"><div class="ttname"><a href="classmodules_1_1_t_d_n_n_block.html#a259740322148f259ea52db2904b5ba52">modules.TDNNBlock.out_channels</a></div><div class="ttdeci">out_channels</div><div class="ttdef"><b>Definition</b> <a href="#l00099">modules.py:99</a></div></div>
 <div class="ttc" id="aclassmodules_1_1_t_d_n_n_block_html_a402b8ba38eb11e18463cd6b4f47adb0a"><div class="ttname"><a href="classmodules_1_1_t_d_n_n_block.html#a402b8ba38eb11e18463cd6b4f47adb0a">modules.TDNNBlock.forward</a></div><div class="ttdeci">forward(self, x)</div><div class="ttdef"><b>Definition</b> <a href="#l00103">modules.py:103</a></div></div>
 <div class="ttc" id="aclassmodules_1_1_t_d_n_n_block_html_a5d4c03ef78eead4bea92ebcbb07e2567"><div class="ttname"><a href="classmodules_1_1_t_d_n_n_block.html#a5d4c03ef78eead4bea92ebcbb07e2567">modules.TDNNBlock.activation</a></div><div class="ttdeci">activation</div><div class="ttdef"><b>Definition</b> <a href="#l00100">modules.py:100</a></div></div>
 <div class="ttc" id="aclassmodules_1_1_t_d_n_n_block_html_a757c2848bb685aca2a4d3d09063f1ad5"><div class="ttname"><a href="classmodules_1_1_t_d_n_n_block.html#a757c2848bb685aca2a4d3d09063f1ad5">modules.TDNNBlock.in_channels</a></div><div class="ttdeci">in_channels</div><div class="ttdef"><b>Definition</b> <a href="#l00098">modules.py:98</a></div></div>
+<div class="ttc" id="aclassmodules_1_1_t_d_n_n_block_html_adae4975e7be13d5bfe40ec4e07a0f426"><div class="ttname"><a href="classmodules_1_1_t_d_n_n_block.html#adae4975e7be13d5bfe40ec4e07a0f426">modules.TDNNBlock.return_layers</a></div><div class="ttdeci">list return_layers(self)</div><div class="ttdef"><b>Definition</b> <a href="#l00111">modules.py:111</a></div></div>
 <div class="ttc" id="anamespacetorch_1_1nn_html"><div class="ttname"><a href="namespacetorch_1_1nn.html">torch.nn</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_32d7642d91796e6ebfcf36acd9d3ee8e.html">python_lib</a></li><li class="navelem"><b>modules.py</b></li>
+    <li class="navelem"><a class="el" href="dir_32d7642d91796e6ebfcf36acd9d3ee8e.html">python_lib</a></li><li class="navelem"><a class="el" href="modules_8py.html">modules.py</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>

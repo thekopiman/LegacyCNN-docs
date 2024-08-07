@@ -1,13 +1,18 @@
 var searchData=
 [
-  ['radchar_5fdataset_0',['RadChar_Dataset',['../classloaders_1_1_rad_char___dataset.html',1,'loaders']]],
-  ['readinputs_1',['readInputs',['../class_helper.html#a3a5b4bf18da40e3a47abfa7106b1a9b9',1,'Helper']]],
-  ['relu_2',['ReLU',['../class_activation_functions.html#a522f3397e702f75c1cce9e09533e15a1',1,'ActivationFunctions']]],
-  ['res2netblock_3',['Res2NetBlock',['../classmodules_1_1_res2_net_block.html',1,'modules.Res2NetBlock'],['../class_res2_net_block.html',1,'Res2NetBlock&lt; kernel, channel_in, channel_out, dilation, input_width, out_width, input_pad, scale, T &gt;'],['../class_res2_net_block.html#a609dc5aad0f2db3f57b0c833e2eee735',1,'Res2NetBlock::Res2NetBlock()']]],
-  ['res2netblock_2ecpp_4',['res2netblock.cpp',['../res2netblock_8cpp.html',1,'']]],
-  ['res2netblock_2eh_5',['res2netblock.h',['../res2netblock_8h.html',1,'']]],
-  ['res2netblock_3c_20kernel_2c_20channel_5fout_2c_20channel_5fout_2c_20dilation_2c_20input_5fwidth_2c_20out_5fwidth_2c_20input_5fpad_2c_20res2net_5fscale_2c_20float_20_3e_6',['Res2NetBlock&lt; kernel, channel_out, channel_out, dilation, input_width, out_width, input_pad, res2net_scale, float &gt;',['../class_res2_net_block.html',1,'']]],
-  ['res2netblock_3c_20kernel_2c_20channel_5fout_2c_20channel_5fout_2c_20dilation_2c_20input_5fwidth_2c_20out_5fwidth_2c_20input_5fpad_2c_20res2net_5fscale_2c_20t_20_3e_7',['Res2NetBlock&lt; kernel, channel_out, channel_out, dilation, input_width, out_width, input_pad, res2net_scale, T &gt;',['../class_res2_net_block.html',1,'']]],
-  ['reshape_8',['Reshape',['../class_matrix_functions.html#af5f8e06d1d253b49802ccff7a75d5dc2',1,'MatrixFunctions']]],
-  ['run_20as_20follows_9',['Compile &amp; Run as follows',['../md__r_e_a_d_m_e.html#autotoc_md8',1,'']]]
+  ['main_0',['main',['../main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4',1,'main.cpp']]],
+  ['main_2ecpp_1',['main.cpp',['../main_8cpp.html',1,'']]],
+  ['matrixadd_2',['matrixAdd',['../class_matrix_functions.html#a040032409b42f13af754e7c9ffea195c',1,'MatrixFunctions::matrixAdd(T(&amp;mat1)[dim1][dim2][dim3], T(&amp;mat2)[dim1][dim2][dim3])'],['../class_matrix_functions.html#a3fd21025c72c6af0cc297513137503b3',1,'MatrixFunctions::matrixAdd(T(&amp;mat1)[dim1][dim2], T(&amp;mat2)[dim1][dim2])'],['../class_matrix_functions.html#ab30c7fd78c40b529d50b606a4155425f',1,'MatrixFunctions::matrixAdd(T(&amp;mat1)[dim1], T(&amp;mat2)[dim1])']]],
+  ['matrixfunctions_3',['MatrixFunctions',['../class_matrix_functions.html',1,'']]],
+  ['matrixfunctions_2ecpp_4',['matrixfunctions.cpp',['../matrixfunctions_8cpp.html',1,'']]],
+  ['matrixfunctions_2eh_5',['matrixfunctions.h',['../matrixfunctions_8h.html',1,'']]],
+  ['mean_6',['Mean',['../class_matrix_functions.html#a7c16622175c414528a40ed3b85d59054',1,'MatrixFunctions::Mean(T(&amp;input)[dim1][dim2], T(&amp;output)[dim1])'],['../class_matrix_functions.html#a41e6c0fa3dab42661f4ae7ac76da80fa',1,'MatrixFunctions::Mean(T(&amp;input)[dim1][dim2], T(&amp;output)[dim1][dim3])']]],
+  ['mfa_7',['mfa',['../classmodules_1_1_e_c_a_p_a___t_d_n_n.html#ac1fe518db9138e24b0fe73d90ac162d7',1,'modules::ECAPA_TDNN']]],
+  ['mode_8',['mode',['../class_model_generator_1_1_basic_layer.html#ada647959c270c40e2337e2d05630f204',1,'ModelGenerator.BasicLayer.mode'],['../class_model_generator_1_1_conv1d.html#ad4da469e88d9afc1da85b7e9d84629ce',1,'ModelGenerator.Conv1d.mode']]],
+  ['model_9',['model',['../classtrainers_1_1_base_trainer.html#abd10a1210ef6a657c1c48c25c4a01f06',1,'trainers::BaseTrainer']]],
+  ['model_20creation_10',['Pytorch: Model creation',['../md__r_e_a_d_m_e.html#autotoc_md4',1,'']]],
+  ['modelgenerator_11',['ModelGenerator',['../namespace_model_generator.html',1,'']]],
+  ['modelgenerator_2epy_12',['ModelGenerator.py',['../_model_generator_8py.html',1,'']]],
+  ['modules_13',['modules',['../namespacemodules.html',1,'']]],
+  ['modules_2epy_14',['modules.py',['../modules_8py.html',1,'']]]
 ];

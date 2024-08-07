@@ -27,9 +27,9 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">LegacyCNN<span id="projectnumber">&#160;v0.1</span>
+   <div id="projectname">LegacyCNN<span id="projectnumber">&#160;v0.2</span>
    </div>
-   <div id="projectbrief">Toolbox for creating Neurel Networks on CPP</div>
+   <div id="projectbrief">Toolbox for creating Neural Networks in Cpp</div>
   </td>
  </tr>
  </tbody>
@@ -100,25 +100,62 @@ $(function(){initNavTree('main_8cpp_source.html',''); initResizable(true); });
   <div class="headertitle"><div class="title">main.cpp</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#include &lt;iostream&gt;</span></div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &quot;tests/time.h&quot;</span></div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="keywordtype">int</span> main()</div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span>{</div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Running program&quot;</span> &lt;&lt; std::endl;</div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>    Time::TestEcapa(100);</div>
+<a href="main_8cpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &quot;<a class="code" href="time_8h.html">tests/time.h</a>&quot;</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &quot;<a class="code" href="matrixfunctions_8h.html">utils/matrixfunctions.h</a>&quot;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &quot;<a class="code" href="helper_8h.html">utils/helper.h</a>&quot;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
+<div class="foldopen" id="foldopen00006" data-start="{" data-end="}">
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno"><a class="line" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">    6</a></span><span class="keywordtype">int</span> <a class="code hl_function" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a>()</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>{</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Running program&quot;</span> &lt;&lt; std::endl;</div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>    Time::TestBasic(100);</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>    <span class="comment">// Time::TestEcapa(100);</span></div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>}</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    <span class="comment">// Time::TestBasic(100);</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Testing Ecapa&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    <span class="comment">// Initialise model</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <a class="code hl_class" href="class_e_c_a_p_a___t_d_n_n.html">ECAPA_TDNN</a> ecapamodel;</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    <span class="keywordtype">float</span> y[6];</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    <span class="comment">// Load weights</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    ecapamodel.<a class="code hl_function" href="class_e_c_a_p_a___t_d_n_n.html#aa6437bb5640ba12cee11e394f143ddd8">loadweights</a>(<span class="stringliteral">&quot;ECAPAweights/fullecapa.bin&quot;</span>);</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <span class="comment">// Metrics on Read Input will not be tested</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <span class="keywordtype">float</span> input_full[100][2][64];</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <span class="keywordtype">float</span> input[2][64];</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Before Loading&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <a class="code hl_function" href="class_helper.html#a3a5b4bf18da40e3a47abfa7106b1a9b9">Helper::readInputs</a>(<span class="stringliteral">&quot;ECAPAweights/ecapainput_2x64_100.bin&quot;</span>, input_full);</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Complete Loading&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; 100; i++)</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    {</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>        <a class="code hl_function" href="class_matrix_functions.html#a62e2cebb86dc04b78d8de07d2af6059e">MatrixFunctions::Copy</a>(input_full[i], input);</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>        ecapamodel.<a class="code hl_function" href="class_e_c_a_p_a___t_d_n_n.html#adf85156af556c191572e87d8ff13dd96">forward</a>(input, y);</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>        <a class="code hl_function" href="class_helper.html#ab797ac22b2c14eca040ca9c317945368">Helper::print</a>(y);</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    }</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>}</div>
+</div>
+<div class="ttc" id="aclass_e_c_a_p_a___t_d_n_n_html"><div class="ttname"><a href="class_e_c_a_p_a___t_d_n_n.html">ECAPA_TDNN</a></div><div class="ttdef"><b>Definition</b> <a href="ecapa_8h_source.html#l00031">ecapa.h:32</a></div></div>
+<div class="ttc" id="aclass_e_c_a_p_a___t_d_n_n_html_aa6437bb5640ba12cee11e394f143ddd8"><div class="ttname"><a href="class_e_c_a_p_a___t_d_n_n.html#aa6437bb5640ba12cee11e394f143ddd8">ECAPA_TDNN::loadweights</a></div><div class="ttdeci">void loadweights(std::string pathname)</div><div class="ttdef"><b>Definition</b> <a href="ecapa_8cpp_source.html#l00055">ecapa.cpp:55</a></div></div>
+<div class="ttc" id="aclass_e_c_a_p_a___t_d_n_n_html_adf85156af556c191572e87d8ff13dd96"><div class="ttname"><a href="class_e_c_a_p_a___t_d_n_n.html#adf85156af556c191572e87d8ff13dd96">ECAPA_TDNN::forward</a></div><div class="ttdeci">void forward(float(&amp;input)[2][64], float(&amp;y)[6])</div><div class="ttdef"><b>Definition</b> <a href="ecapa_8cpp_source.html#l00013">ecapa.cpp:13</a></div></div>
+<div class="ttc" id="aclass_helper_html_a3a5b4bf18da40e3a47abfa7106b1a9b9"><div class="ttname"><a href="class_helper.html#a3a5b4bf18da40e3a47abfa7106b1a9b9">Helper::readInputs</a></div><div class="ttdeci">static void readInputs(std::string pathname, T(&amp;inputs)[rows][cols])</div><div class="ttdoc">Read the .bin file and returns it to input.</div><div class="ttdef"><b>Definition</b> <a href="helper_8cpp_source.html#l00024">helper.cpp:24</a></div></div>
+<div class="ttc" id="aclass_helper_html_ab797ac22b2c14eca040ca9c317945368"><div class="ttname"><a href="class_helper.html#ab797ac22b2c14eca040ca9c317945368">Helper::print</a></div><div class="ttdeci">static void print(T(&amp;input)[dim1])</div><div class="ttdoc">Prints all the elements in a 1d array.</div><div class="ttdef"><b>Definition</b> <a href="helper_8cpp_source.html#l00121">helper.cpp:121</a></div></div>
+<div class="ttc" id="aclass_matrix_functions_html_a62e2cebb86dc04b78d8de07d2af6059e"><div class="ttname"><a href="class_matrix_functions.html#a62e2cebb86dc04b78d8de07d2af6059e">MatrixFunctions::Copy</a></div><div class="ttdeci">static void Copy(T(&amp;input)[dim1][dim2][dim3], T(&amp;output)[dim1][dim2][dim3])</div><div class="ttdoc">Deep Copy where.</div><div class="ttdef"><b>Definition</b> <a href="matrixfunctions_8cpp_source.html#l00203">matrixfunctions.cpp:203</a></div></div>
+<div class="ttc" id="ahelper_8h_html"><div class="ttname"><a href="helper_8h.html">helper.h</a></div><div class="ttdoc">Extra functions.</div></div>
+<div class="ttc" id="amain_8cpp_html_ae66f6b31b5ad750f1fe042a706a4e3d4"><div class="ttname"><a href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a></div><div class="ttdeci">int main()</div><div class="ttdef"><b>Definition</b> <a href="#l00006">main.cpp:6</a></div></div>
+<div class="ttc" id="amatrixfunctions_8h_html"><div class="ttname"><a href="matrixfunctions_8h.html">matrixfunctions.h</a></div><div class="ttdoc">Matrix Functions.</div></div>
+<div class="ttc" id="atime_8h_html"><div class="ttname"><a href="time_8h.html">time.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>main.cpp</b></li>
+    <li class="navelem"><a class="el" href="main_8cpp.html">main.cpp</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>

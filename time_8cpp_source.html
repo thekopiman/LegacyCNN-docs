@@ -27,9 +27,9 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">LegacyCNN<span id="projectnumber">&#160;v0.1</span>
+   <div id="projectname">LegacyCNN<span id="projectnumber">&#160;v0.2</span>
    </div>
-   <div id="projectbrief">Toolbox for creating Neurel Networks on CPP</div>
+   <div id="projectbrief">Toolbox for creating Neural Networks in Cpp</div>
   </td>
  </tr>
  </tbody>
@@ -100,9 +100,10 @@ $(function(){initNavTree('time_8cpp_source.html',''); initResizable(true); });
   <div class="headertitle"><div class="title">time.cpp</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#include &quot;time.h&quot;</span></div>
+<a href="time_8cpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#include &quot;<a class="code" href="time_8h.html">time.h</a>&quot;</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="keywordtype">void</span> Time::TestEcapa(<span class="keywordtype">int</span> iter)</div>
+<div class="foldopen" id="foldopen00003" data-start="{" data-end="}">
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno"><a class="line" href="class_time.html#a5e7d53488b8edb66c907308c59b6f727">    3</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="class_time.html#a5e7d53488b8edb66c907308c59b6f727">Time::TestEcapa</a>(<span class="keywordtype">int</span> iter)</div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span>{</div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span>    assert(iter &gt; 0);</div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
@@ -118,7 +119,7 @@ $(function(){initNavTree('time_8cpp_source.html',''); initResizable(true); });
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <span class="comment">// Load weights</span></div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    start = std::chrono::high_resolution_clock::now();</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    ecapamodel.loadweights(<span class="stringliteral">&quot;ECAPAweights/fullecapa.bin&quot;</span>);</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    ecapamodel.<a class="code hl_function" href="class_e_c_a_p_a___t_d_n_n.html#aa6437bb5640ba12cee11e394f143ddd8">loadweights</a>(<span class="stringliteral">&quot;ECAPAweights/fullecapa.bin&quot;</span>);</div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    end = std::chrono::high_resolution_clock::now();</div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    duration = end - start;</div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Load weights: &quot;</span> &lt;&lt; duration.count() * 1000 &lt;&lt; <span class="stringliteral">&quot;ms&quot;</span> &lt;&lt; std::endl;</div>
@@ -131,7 +132,7 @@ $(function(){initNavTree('time_8cpp_source.html',''); initResizable(true); });
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    start = std::chrono::high_resolution_clock::now();</div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; iter; i++)</div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    {</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>        ecapamodel.forward(input, y);</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>        ecapamodel.<a class="code hl_function" href="class_e_c_a_p_a___t_d_n_n.html#adf85156af556c191572e87d8ff13dd96">forward</a>(input, y);</div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    }</div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    end = std::chrono::high_resolution_clock::now();</div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    duration = (end - start) / iter;</div>
@@ -139,8 +140,10 @@ $(function(){initNavTree('time_8cpp_source.html',''); initResizable(true); });
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    std::cout &lt;&lt; std::endl;</div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>}</div>
+</div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="keywordtype">void</span> Time::TestBasic(<span class="keywordtype">int</span> iter)</div>
+<div class="foldopen" id="foldopen00041" data-start="{" data-end="}">
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="class_time.html#a311208dd9c17c7d7e47c2ec91e6ab986">   41</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="class_time.html#a311208dd9c17c7d7e47c2ec91e6ab986">Time::TestBasic</a>(<span class="keywordtype">int</span> iter)</div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>{</div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Testing Basic Model&quot;</span> &lt;&lt; std::endl;</div>
@@ -157,7 +160,7 @@ $(function(){initNavTree('time_8cpp_source.html',''); initResizable(true); });
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    <span class="comment">// Load weights</span></div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    start = std::chrono::high_resolution_clock::now();</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    basicmodel.loadweights(<span class="stringliteral">&quot;BasicModelWeights/fullbasicmodel.bin&quot;</span>);</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    basicmodel.<a class="code hl_function" href="class_basic_c_n_n_model.html#acacce0947747255e895fe9eabfd43ce1">loadweights</a>(<span class="stringliteral">&quot;BasicModelWeights/fullbasicmodel.bin&quot;</span>);</div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    end = std::chrono::high_resolution_clock::now();</div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    duration = end - start;</div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Load weights: &quot;</span> &lt;&lt; duration.count() * 1000 &lt;&lt; <span class="stringliteral">&quot;ms&quot;</span> &lt;&lt; std::endl;</div>
@@ -170,7 +173,7 @@ $(function(){initNavTree('time_8cpp_source.html',''); initResizable(true); });
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    start = std::chrono::high_resolution_clock::now();</div>
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; iter; i++)</div>
 <div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    {</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>        basicmodel.forward(input, y);</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>        basicmodel.<a class="code hl_function" href="class_basic_c_n_n_model.html#a9d9568951b2a0698becb417c7790d2e9">forward</a>(input, y);</div>
 <div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    }</div>
 <div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    end = std::chrono::high_resolution_clock::now();</div>
 <div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    duration = (end - start) / iter;</div>
@@ -178,15 +181,23 @@ $(function(){initNavTree('time_8cpp_source.html',''); initResizable(true); });
 <div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
 <div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    std::cout &lt;&lt; std::endl;</div>
 <div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>}</div>
+</div>
 <div class="ttc" id="aclass_basic_c_n_n_model_html"><div class="ttname"><a href="class_basic_c_n_n_model.html">BasicCNNModel</a></div><div class="ttdef"><b>Definition</b> <a href="basiccnn_8h_source.html#l00024">basiccnn.h:25</a></div></div>
+<div class="ttc" id="aclass_basic_c_n_n_model_html_a9d9568951b2a0698becb417c7790d2e9"><div class="ttname"><a href="class_basic_c_n_n_model.html#a9d9568951b2a0698becb417c7790d2e9">BasicCNNModel::forward</a></div><div class="ttdeci">void forward(float(&amp;input)[2][16], float(&amp;y)[6])</div><div class="ttdef"><b>Definition</b> <a href="basiccnn_8cpp_source.html#l00013">basiccnn.cpp:13</a></div></div>
+<div class="ttc" id="aclass_basic_c_n_n_model_html_acacce0947747255e895fe9eabfd43ce1"><div class="ttname"><a href="class_basic_c_n_n_model.html#acacce0947747255e895fe9eabfd43ce1">BasicCNNModel::loadweights</a></div><div class="ttdeci">void loadweights(std::string pathname)</div><div class="ttdef"><b>Definition</b> <a href="basiccnn_8cpp_source.html#l00034">basiccnn.cpp:34</a></div></div>
 <div class="ttc" id="aclass_e_c_a_p_a___t_d_n_n_html"><div class="ttname"><a href="class_e_c_a_p_a___t_d_n_n.html">ECAPA_TDNN</a></div><div class="ttdef"><b>Definition</b> <a href="ecapa_8h_source.html#l00031">ecapa.h:32</a></div></div>
+<div class="ttc" id="aclass_e_c_a_p_a___t_d_n_n_html_aa6437bb5640ba12cee11e394f143ddd8"><div class="ttname"><a href="class_e_c_a_p_a___t_d_n_n.html#aa6437bb5640ba12cee11e394f143ddd8">ECAPA_TDNN::loadweights</a></div><div class="ttdeci">void loadweights(std::string pathname)</div><div class="ttdef"><b>Definition</b> <a href="ecapa_8cpp_source.html#l00055">ecapa.cpp:55</a></div></div>
+<div class="ttc" id="aclass_e_c_a_p_a___t_d_n_n_html_adf85156af556c191572e87d8ff13dd96"><div class="ttname"><a href="class_e_c_a_p_a___t_d_n_n.html#adf85156af556c191572e87d8ff13dd96">ECAPA_TDNN::forward</a></div><div class="ttdeci">void forward(float(&amp;input)[2][64], float(&amp;y)[6])</div><div class="ttdef"><b>Definition</b> <a href="ecapa_8cpp_source.html#l00013">ecapa.cpp:13</a></div></div>
 <div class="ttc" id="aclass_helper_html_a3a5b4bf18da40e3a47abfa7106b1a9b9"><div class="ttname"><a href="class_helper.html#a3a5b4bf18da40e3a47abfa7106b1a9b9">Helper::readInputs</a></div><div class="ttdeci">static void readInputs(std::string pathname, T(&amp;inputs)[rows][cols])</div><div class="ttdoc">Read the .bin file and returns it to input.</div><div class="ttdef"><b>Definition</b> <a href="helper_8cpp_source.html#l00024">helper.cpp:24</a></div></div>
+<div class="ttc" id="aclass_time_html_a311208dd9c17c7d7e47c2ec91e6ab986"><div class="ttname"><a href="class_time.html#a311208dd9c17c7d7e47c2ec91e6ab986">Time::TestBasic</a></div><div class="ttdeci">static void TestBasic(int iter)</div><div class="ttdef"><b>Definition</b> <a href="#l00041">time.cpp:41</a></div></div>
+<div class="ttc" id="aclass_time_html_a5e7d53488b8edb66c907308c59b6f727"><div class="ttname"><a href="class_time.html#a5e7d53488b8edb66c907308c59b6f727">Time::TestEcapa</a></div><div class="ttdeci">static void TestEcapa(int iter)</div><div class="ttdef"><b>Definition</b> <a href="#l00003">time.cpp:3</a></div></div>
+<div class="ttc" id="atime_8h_html"><div class="ttname"><a href="time_8h.html">time.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_59425e443f801f1f2fd8bbe4959a3ccf.html">tests</a></li><li class="navelem"><b>time.cpp</b></li>
+    <li class="navelem"><a class="el" href="dir_59425e443f801f1f2fd8bbe4959a3ccf.html">tests</a></li><li class="navelem"><a class="el" href="time_8cpp.html">time.cpp</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>

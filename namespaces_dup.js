@@ -1,4 +1,9 @@
 var namespaces_dup =
 [
-    [ "modules", "namespacemodules.html", "namespacemodules" ]
+    [ "BasicModel", "namespace_basic_model.html", "namespace_basic_model" ],
+    [ "loaders", "namespaceloaders.html", "namespaceloaders" ],
+    [ "ModelGenerator", "namespace_model_generator.html", "namespace_model_generator" ],
+    [ "modules", "namespacemodules.html", "namespacemodules" ],
+    [ "saveasfile", "namespacesaveasfile.html", "namespacesaveasfile" ],
+    [ "trainers", "namespacetrainers.html", "namespacetrainers" ]
 ];

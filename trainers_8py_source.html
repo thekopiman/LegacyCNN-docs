@@ -27,9 +27,9 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">LegacyCNN<span id="projectnumber">&#160;v0.1</span>
+   <div id="projectname">LegacyCNN<span id="projectnumber">&#160;v0.2</span>
    </div>
-   <div id="projectbrief">Toolbox for creating Neurel Networks on CPP</div>
+   <div id="projectbrief">Toolbox for creating Neural Networks in Cpp</div>
   </td>
  </tr>
  </tbody>
@@ -100,7 +100,7 @@ $(function(){initNavTree('trainers_8py_source.html',''); initResizable(true); })
   <div class="headertitle"><div class="title">trainers.py</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="keyword">import</span> torch</div>
+<a href="trainers_8py.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno"><a class="line" href="namespacetrainers.html">    1</a></span><span class="keyword">import</span> torch</div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="keyword">import</span> torch.optim <span class="keyword">as</span> optim</div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="keyword">from</span> torch.optim <span class="keyword">import</span> lr_scheduler</div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="keyword">import</span> time</div>
@@ -112,17 +112,20 @@ $(function(){initNavTree('trainers_8py_source.html',''); initResizable(true); })
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
 <div class="foldopen" id="foldopen00011" data-start="" data-end="">
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="classtrainers_1_1_base_trainer.html">   11</a></span><span class="keyword">class </span><a class="code hl_class" href="classtrainers_1_1_base_trainer.html">BaseTrainer</a>:</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    <span class="keyword">def </span>__init__(self, model, optimiser = &quot;adam&quot;):</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>        self.<a class="code hl_variable" href="classtrainers_1_1_base_trainer.html#abd10a1210ef6a657c1c48c25c4a01f06">model</a> = model</div>
+<div class="foldopen" id="foldopen00012" data-start="" data-end="">
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="classtrainers_1_1_base_trainer.html#a6f5bf94c230711ad87b69d5a8cb406e4">   12</a></span>    <span class="keyword">def </span><a class="code hl_function" href="classtrainers_1_1_base_trainer.html#a6f5bf94c230711ad87b69d5a8cb406e4">__init__</a>(self, model, optimiser = &quot;adam&quot;):</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="classtrainers_1_1_base_trainer.html#abd10a1210ef6a657c1c48c25c4a01f06">   13</a></span>        self.<a class="code hl_variable" href="classtrainers_1_1_base_trainer.html#abd10a1210ef6a657c1c48c25c4a01f06">model</a> = model</div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>        <span class="keywordflow">if</span> optimiser == <span class="stringliteral">&quot;adam&quot;</span>:</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>            self.<a class="code hl_variable" href="classtrainers_1_1_base_trainer.html#aa8fb006933649241b07ea278e0fa6684">optimiser</a> = optim.Adam(</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="classtrainers_1_1_base_trainer.html#aa8fb006933649241b07ea278e0fa6684">   16</a></span>            self.<a class="code hl_variable" href="classtrainers_1_1_base_trainer.html#aa8fb006933649241b07ea278e0fa6684">optimiser</a> = optim.Adam(</div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>                self.<a class="code hl_variable" href="classtrainers_1_1_base_trainer.html#abd10a1210ef6a657c1c48c25c4a01f06">model</a>.parameters(), lr=0.0005,</div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>            )</div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>        <span class="keywordflow">else</span>:</div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>            self.<a class="code hl_variable" href="classtrainers_1_1_base_trainer.html#aa8fb006933649241b07ea278e0fa6684">optimiser</a> = optim.SGD(self.<a class="code hl_variable" href="classtrainers_1_1_base_trainer.html#abd10a1210ef6a657c1c48c25c4a01f06">model</a>.parameters(), lr=0.0005, momentum=0.9)</div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <span class="keyword">def </span>_train(</div>
+</div>
+<div class="foldopen" id="foldopen00022" data-start="" data-end="">
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="classtrainers_1_1_base_trainer.html#a44b63cd054b5a95c4edf4f1e52b95ff9">   22</a></span>    <span class="keyword">def </span><a class="code hl_function" href="classtrainers_1_1_base_trainer.html#a44b63cd054b5a95c4edf4f1e52b95ff9">_train</a>(</div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>        self,</div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>        train_loader,</div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>        loss_function=torch.nn.NLLLoss(),</div>
@@ -144,7 +147,7 @@ $(function(){initNavTree('trainers_8py_source.html',''); initResizable(true); })
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>                target = Variable(label.to(device))</div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>                optimiser.zero_grad()</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>                preds = model(data)</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>                preds = <a class="code hl_variable" href="classtrainers_1_1_base_trainer.html#abd10a1210ef6a657c1c48c25c4a01f06">model</a>(data)</div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>                <span class="comment"># print(&quot;preds: &quot;,preds)</span></div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>                <span class="comment"># print(&quot;target: &quot;, target)</span></div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>                loss = loss_function(preds, target)</div>
@@ -160,7 +163,9 @@ $(function(){initNavTree('trainers_8py_source.html',''); initResizable(true); })
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        self.<a class="code hl_variable" href="classtrainers_1_1_base_trainer.html#abd10a1210ef6a657c1c48c25c4a01f06">model</a> = model</div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>        <span class="keywordflow">return</span> model</div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    <span class="keyword">def </span>_test(</div>
+</div>
+<div class="foldopen" id="foldopen00060" data-start="" data-end="">
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno"><a class="line" href="classtrainers_1_1_base_trainer.html#a233ddb1a38a7eb6ab72387d5426cc39a">   60</a></span>    <span class="keyword">def </span><a class="code hl_function" href="classtrainers_1_1_base_trainer.html#a233ddb1a38a7eb6ab72387d5426cc39a">_test</a>(</div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        self,</div>
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>        test_loader,</div>
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        loss_function=torch.nn.NLLLoss(),</div>
@@ -181,7 +186,7 @@ $(function(){initNavTree('trainers_8py_source.html',''); initResizable(true); })
 <div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>            target = label.to(device)</div>
 <div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span> </div>
 <div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>            <span class="comment"># print(data.shape)</span></div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>            output = model(data)</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>            output = <a class="code hl_variable" href="classtrainers_1_1_base_trainer.html#abd10a1210ef6a657c1c48c25c4a01f06">model</a>(data)</div>
 <div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>            test_loss += loss_function(output, target).data.item()</div>
 <div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>            pred = output.data.max(1)[1]</div>
 <div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>            correct += pred.eq(target.data).cpu().sum()</div>
@@ -205,8 +210,10 @@ $(function(){initNavTree('trainers_8py_source.html',''); initResizable(true); })
 <div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>        <span class="keywordflow">return</span> confusion_matrix</div>
 <div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span> </div>
 <div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span> </div>
+</div>
 <div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>    <span class="preprocessor">@classmethod</span></div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>    <span class="keyword">def </span>_debugTest(</div>
+<div class="foldopen" id="foldopen00106" data-start="" data-end="">
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno"><a class="line" href="classtrainers_1_1_base_trainer.html#aa75dcf27f000a06d27f5985bd1efa4c4">  106</a></span>    <span class="keyword">def </span><a class="code hl_function" href="classtrainers_1_1_base_trainer.html#aa75dcf27f000a06d27f5985bd1efa4c4">_debugTest</a>(</div>
 <div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>        self,</div>
 <div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>        test_loader,</div>
 <div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>        loss_function=torch.nn.CrossEntropyLoss(),</div>
@@ -234,6 +241,7 @@ $(function(){initNavTree('trainers_8py_source.html',''); initResizable(true); })
 <div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span> </div>
 <div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>        <span class="keywordflow">return</span> model1_mid, model2_mid, output1, output2</div>
 <div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span> </div>
+</div>
 <div class="foldopen" id="foldopen00134" data-start="" data-end="">
 <div class="line"><a id="l00134" name="l00134"></a><span class="lineno"><a class="line" href="classtrainers_1_1_base_trainer.html#a1eadc21f71de414da79b5a82f4b70618">  134</a></span>    <span class="keyword">def </span><a class="code hl_function" href="classtrainers_1_1_base_trainer.html#a1eadc21f71de414da79b5a82f4b70618">save_model</a>(</div>
 <div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>        self,</div>
@@ -251,6 +259,10 @@ $(function(){initNavTree('trainers_8py_source.html',''); initResizable(true); })
 </div>
 <div class="ttc" id="aclasstrainers_1_1_base_trainer_html"><div class="ttname"><a href="classtrainers_1_1_base_trainer.html">trainers.BaseTrainer</a></div><div class="ttdef"><b>Definition</b> <a href="#l00011">trainers.py:11</a></div></div>
 <div class="ttc" id="aclasstrainers_1_1_base_trainer_html_a1eadc21f71de414da79b5a82f4b70618"><div class="ttname"><a href="classtrainers_1_1_base_trainer.html#a1eadc21f71de414da79b5a82f4b70618">trainers.BaseTrainer.save_model</a></div><div class="ttdeci">None save_model(self, str file_path, model)</div><div class="ttdef"><b>Definition</b> <a href="#l00134">trainers.py:138</a></div></div>
+<div class="ttc" id="aclasstrainers_1_1_base_trainer_html_a233ddb1a38a7eb6ab72387d5426cc39a"><div class="ttname"><a href="classtrainers_1_1_base_trainer.html#a233ddb1a38a7eb6ab72387d5426cc39a">trainers.BaseTrainer._test</a></div><div class="ttdeci">None _test(self, test_loader, loss_function=torch.nn.NLLLoss(), device=torch.device(&quot;cuda:0&quot; if torch.cuda.is_available() else &quot;cpu&quot;), y_dim=6)</div><div class="ttdef"><b>Definition</b> <a href="#l00060">trainers.py:66</a></div></div>
+<div class="ttc" id="aclasstrainers_1_1_base_trainer_html_a44b63cd054b5a95c4edf4f1e52b95ff9"><div class="ttname"><a href="classtrainers_1_1_base_trainer.html#a44b63cd054b5a95c4edf4f1e52b95ff9">trainers.BaseTrainer._train</a></div><div class="ttdeci">_train(self, train_loader, loss_function=torch.nn.NLLLoss(), num_epochs=50, device=torch.device(&quot;cuda&quot; if torch.cuda.is_available() else &quot;cpu&quot;))</div><div class="ttdef"><b>Definition</b> <a href="#l00022">trainers.py:28</a></div></div>
+<div class="ttc" id="aclasstrainers_1_1_base_trainer_html_a6f5bf94c230711ad87b69d5a8cb406e4"><div class="ttname"><a href="classtrainers_1_1_base_trainer.html#a6f5bf94c230711ad87b69d5a8cb406e4">trainers.BaseTrainer.__init__</a></div><div class="ttdeci">__init__(self, model, optimiser=&quot;adam&quot;)</div><div class="ttdef"><b>Definition</b> <a href="#l00012">trainers.py:12</a></div></div>
+<div class="ttc" id="aclasstrainers_1_1_base_trainer_html_aa75dcf27f000a06d27f5985bd1efa4c4"><div class="ttname"><a href="classtrainers_1_1_base_trainer.html#aa75dcf27f000a06d27f5985bd1efa4c4">trainers.BaseTrainer._debugTest</a></div><div class="ttdeci">_debugTest(self, test_loader, loss_function=torch.nn.CrossEntropyLoss(), device=torch.device(&quot;cuda:0&quot; if torch.cuda.is_available() else &quot;cpu&quot;), model1=None, model2=None)</div><div class="ttdef"><b>Definition</b> <a href="#l00106">trainers.py:113</a></div></div>
 <div class="ttc" id="aclasstrainers_1_1_base_trainer_html_aa8fb006933649241b07ea278e0fa6684"><div class="ttname"><a href="classtrainers_1_1_base_trainer.html#aa8fb006933649241b07ea278e0fa6684">trainers.BaseTrainer.optimiser</a></div><div class="ttdeci">optimiser</div><div class="ttdef"><b>Definition</b> <a href="#l00016">trainers.py:16</a></div></div>
 <div class="ttc" id="aclasstrainers_1_1_base_trainer_html_abd10a1210ef6a657c1c48c25c4a01f06"><div class="ttname"><a href="classtrainers_1_1_base_trainer.html#abd10a1210ef6a657c1c48c25c4a01f06">trainers.BaseTrainer.model</a></div><div class="ttdeci">model</div><div class="ttdef"><b>Definition</b> <a href="#l00013">trainers.py:13</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
@@ -258,7 +270,7 @@ $(function(){initNavTree('trainers_8py_source.html',''); initResizable(true); })
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_32d7642d91796e6ebfcf36acd9d3ee8e.html">python_lib</a></li><li class="navelem"><b>trainers.py</b></li>
+    <li class="navelem"><a class="el" href="dir_32d7642d91796e6ebfcf36acd9d3ee8e.html">python_lib</a></li><li class="navelem"><a class="el" href="trainers_8py.html">trainers.py</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>

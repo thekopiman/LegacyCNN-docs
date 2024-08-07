@@ -27,9 +27,9 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">LegacyCNN<span id="projectnumber">&#160;v0.1</span>
+   <div id="projectname">LegacyCNN<span id="projectnumber">&#160;v0.2</span>
    </div>
-   <div id="projectbrief">Toolbox for creating Neurel Networks on CPP</div>
+   <div id="projectbrief">Toolbox for creating Neural Networks in Cpp</div>
   </td>
  </tr>
  </tbody>
@@ -108,13 +108,13 @@ $(function(){initNavTree('tdnnblock_8cpp_source.html',''); initResizable(true); 
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="class_t_d_n_n_block.html#a1936b934f575160e97c1e3c6e5474aa0">   40</a></span><a class="code hl_function" href="class_t_d_n_n_block.html#a1936b934f575160e97c1e3c6e5474aa0">TDNNBlock&lt;kernel, stride, channel_in, channel_out, dilation, input_width, out_width, input_pad, T&gt;::TDNNBlock</a>() : layer0(3), layer1(1){};</div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="keyword">template</span> &lt;<span class="keywordtype">int</span> kernel, <span class="keywordtype">int</span> str<span class="keywordtype">id</span>e, <span class="keywordtype">int</span> channel_in, <span class="keywordtype">int</span> channel_out, <span class="keywordtype">int</span> dilation, <span class="keywordtype">int</span> input_w<span class="keywordtype">id</span>th, <span class="keywordtype">int</span> out_w<span class="keywordtype">id</span>th, <span class="keywordtype">int</span> input_pad, <span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><a class="code hl_class" href="class_t_d_n_n_block.html">TDNNBlock&lt;kernel, stride, channel_in, channel_out, dilation, input_width, out_width, input_pad, T&gt;::~TDNNBlock</a>(){};</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="class_t_d_n_n_block.html#ad1c362df39d5e11478ba9f2fc5260bd1">   43</a></span><a class="code hl_function" href="class_t_d_n_n_block.html#ad1c362df39d5e11478ba9f2fc5260bd1">TDNNBlock&lt;kernel, stride, channel_in, channel_out, dilation, input_width, out_width, input_pad, T&gt;::~TDNNBlock</a>(){};</div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="keyword">template</span> &lt;<span class="keywordtype">int</span> kernel, <span class="keywordtype">int</span> str<span class="keywordtype">id</span>e, <span class="keywordtype">int</span> channel_in, <span class="keywordtype">int</span> channel_out, <span class="keywordtype">int</span> dilation, <span class="keywordtype">int</span> input_w<span class="keywordtype">id</span>th, <span class="keywordtype">int</span> out_w<span class="keywordtype">id</span>th, <span class="keywordtype">int</span> input_pad, <span class="keyword">typename</span> T&gt;</div>
 <div class="foldopen" id="foldopen00061" data-start="{" data-end="}">
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="class_t_d_n_n_block.html#a9264f88964e923fe15f1f5b60052eadc">   61</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="class_t_d_n_n_block.html#a9264f88964e923fe15f1f5b60052eadc">TDNNBlock&lt;kernel, stride, channel_in, channel_out, dilation, input_width, out_width, input_pad, T&gt;::forward</a>(T (&amp;input)[channel_in][input_width], T (&amp;output)[channel_out][out_width])</div>
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>{</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    layer0.<a class="code hl_function" href="class_t_d_n_n_block.html#a9264f88964e923fe15f1f5b60052eadc">forward</a>(input, output);</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    layer0.forward(input, output);</div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    <a class="code hl_function" href="class_activation_functions.html#a522f3397e702f75c1cce9e09533e15a1">ActivationFunctions::ReLU&lt;channel_out, out_width, T&gt;</a>(output);</div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    layer1.forward(output, output);</div>
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>};</div>
@@ -168,9 +168,11 @@ $(function(){initNavTree('tdnnblock_8cpp_source.html',''); initResizable(true); 
 </div>
 <div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span> </div>
 <div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span><span class="keyword">template</span> &lt;<span class="keywordtype">int</span> kernel, <span class="keywordtype">int</span> str<span class="keywordtype">id</span>e, <span class="keywordtype">int</span> channel_in, <span class="keywordtype">int</span> channel_out, <span class="keywordtype">int</span> dilation, <span class="keywordtype">int</span> input_w<span class="keywordtype">id</span>th, <span class="keywordtype">int</span> out_w<span class="keywordtype">id</span>th, <span class="keywordtype">int</span> input_pad, <span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span><span class="keywordtype">void</span> <a class="code hl_class" href="class_t_d_n_n_block.html">TDNNBlock&lt;kernel, stride, channel_in, channel_out, dilation, input_width, out_width, input_pad, T&gt;::printparameters</a>()</div>
+<div class="foldopen" id="foldopen00138" data-start="{" data-end="}">
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno"><a class="line" href="class_t_d_n_n_block.html#a535b4391a72174700b9d5b1519a0ca44">  138</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="class_t_d_n_n_block.html#a535b4391a72174700b9d5b1519a0ca44">TDNNBlock&lt;kernel, stride, channel_in, channel_out, dilation, input_width, out_width, input_pad, T&gt;::printparameters</a>()</div>
 <div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>{</div>
-<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;kernel &quot;</span> &lt;&lt; kernel &lt;&lt; std::endl;</div>
+<div class="foldopen" id="foldopen00140" data-start="{" data-end="}">
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno"><a class="line" href="class_t_d_n_n_block.html#ad1c362df39d5e11478ba9f2fc5260bd1">  140</a></span>    std::cout &lt;&lt; <span class="stringliteral">&quot;kernel &quot;</span> &lt;&lt; kernel &lt;&lt; std::endl;</div>
 <div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;stride &quot;</span> &lt;&lt; stride &lt;&lt; std::endl;</div>
 <div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;channel_in &quot;</span> &lt;&lt; channel_in &lt;&lt; std::endl;</div>
 <div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;channel_out &quot;</span> &lt;&lt; channel_out &lt;&lt; std::endl;</div>
@@ -178,10 +180,13 @@ $(function(){initNavTree('tdnnblock_8cpp_source.html',''); initResizable(true); 
 <div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;input_pad &quot;</span> &lt;&lt; input_pad &lt;&lt; std::endl;</div>
 <div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>    <span class="comment">// std::cout &lt;&lt; &quot;Kernel &quot; &lt;&lt; kernel &lt;&lt; std::endl;</span></div>
 <div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>}</div>
+</div>
+</div>
 <div class="ttc" id="aclass_activation_functions_html_a522f3397e702f75c1cce9e09533e15a1"><div class="ttname"><a href="class_activation_functions.html#a522f3397e702f75c1cce9e09533e15a1">ActivationFunctions::ReLU</a></div><div class="ttdeci">static void ReLU(T(&amp;input)[rows][cols])</div><div class="ttdoc">Perform ReLU It will edit the pointer content directly.</div><div class="ttdef"><b>Definition</b> <a href="activationfunctions_8cpp_source.html#l00087">activationfunctions.cpp:87</a></div></div>
-<div class="ttc" id="aclass_t_d_n_n_block_html"><div class="ttname"><a href="class_t_d_n_n_block.html">TDNNBlock</a></div><div class="ttdoc">TDNNBlock.</div><div class="ttdef"><b>Definition</b> <a href="tdnnblock_8h_source.html#l00057">tdnnblock.h:58</a></div></div>
 <div class="ttc" id="aclass_t_d_n_n_block_html_a1936b934f575160e97c1e3c6e5474aa0"><div class="ttname"><a href="class_t_d_n_n_block.html#a1936b934f575160e97c1e3c6e5474aa0">TDNNBlock::TDNNBlock</a></div><div class="ttdeci">TDNNBlock()</div><div class="ttdoc">Construct a new tdnnblock&lt;kernel, stride, channel in, channel out, dilation, input width,...</div><div class="ttdef"><b>Definition</b> <a href="#l00040">tdnnblock.cpp:40</a></div></div>
+<div class="ttc" id="aclass_t_d_n_n_block_html_a535b4391a72174700b9d5b1519a0ca44"><div class="ttname"><a href="class_t_d_n_n_block.html#a535b4391a72174700b9d5b1519a0ca44">TDNNBlock::printparameters</a></div><div class="ttdeci">void printparameters()</div><div class="ttdef"><b>Definition</b> <a href="#l00138">tdnnblock.cpp:138</a></div></div>
 <div class="ttc" id="aclass_t_d_n_n_block_html_a9264f88964e923fe15f1f5b60052eadc"><div class="ttname"><a href="class_t_d_n_n_block.html#a9264f88964e923fe15f1f5b60052eadc">TDNNBlock::forward</a></div><div class="ttdeci">void forward(T(&amp;input)[channel_in][input_width], T(&amp;output)[channel_out][out_width])</div><div class="ttdoc">Perform forward feed.</div><div class="ttdef"><b>Definition</b> <a href="#l00061">tdnnblock.cpp:61</a></div></div>
+<div class="ttc" id="aclass_t_d_n_n_block_html_ad1c362df39d5e11478ba9f2fc5260bd1"><div class="ttname"><a href="class_t_d_n_n_block.html#ad1c362df39d5e11478ba9f2fc5260bd1">TDNNBlock::~TDNNBlock</a></div><div class="ttdeci">~TDNNBlock()</div><div class="ttdef"><b>Definition</b> <a href="#l00043">tdnnblock.cpp:43</a></div></div>
 <div class="ttc" id="aclass_t_d_n_n_block_html_ae4791d8d7d90cf83fde58dc638482a99"><div class="ttname"><a href="class_t_d_n_n_block.html#ae4791d8d7d90cf83fde58dc638482a99">TDNNBlock::loadweights</a></div><div class="ttdeci">void loadweights(std::string pathname)</div><div class="ttdoc">Loadweights via pathname.</div><div class="ttdef"><b>Definition</b> <a href="#l00097">tdnnblock.cpp:97</a></div></div>
 <div class="ttc" id="atdnnblock_8h_html"><div class="ttname"><a href="tdnnblock_8h.html">tdnnblock.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->

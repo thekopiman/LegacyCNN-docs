@@ -1,8 +1,9 @@
 var dir_32d7642d91796e6ebfcf36acd9d3ee8e =
 [
-    [ "BasicModel.py", "_basic_model_8py_source.html", null ],
-    [ "loaders.py", "loaders_8py_source.html", null ],
-    [ "modules.py", "modules_8py_source.html", null ],
-    [ "saveasfile.py", "saveasfile_8py_source.html", null ],
-    [ "trainers.py", "trainers_8py_source.html", null ]
+    [ "BasicModel.py", "_basic_model_8py.html", "_basic_model_8py" ],
+    [ "loaders.py", "loaders_8py.html", "loaders_8py" ],
+    [ "ModelGenerator.py", "_model_generator_8py.html", "_model_generator_8py" ],
+    [ "modules.py", "modules_8py.html", "modules_8py" ],
+    [ "saveasfile.py", "saveasfile_8py.html", "saveasfile_8py" ],
+    [ "trainers.py", "trainers_8py.html", "trainers_8py" ]
 ];

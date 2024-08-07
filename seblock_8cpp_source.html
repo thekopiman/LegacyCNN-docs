@@ -27,9 +27,9 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">LegacyCNN<span id="projectnumber">&#160;v0.1</span>
+   <div id="projectname">LegacyCNN<span id="projectnumber">&#160;v0.2</span>
    </div>
-   <div id="projectbrief">Toolbox for creating Neurel Networks on CPP</div>
+   <div id="projectbrief">Toolbox for creating Neural Networks in Cpp</div>
   </td>
  </tr>
  </tbody>
@@ -132,7 +132,7 @@ $(function(){initNavTree('seblock_8cpp_source.html',''); initResizable(true); })
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>}</div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="keyword">template</span> &lt;<span class="keywordtype">int</span> channel_in, <span class="keywordtype">int</span> channel_se, <span class="keywordtype">int</span> channel_out, <span class="keywordtype">int</span> input_w<span class="keywordtype">id</span>th, <span class="keywordtype">int</span> out_w<span class="keywordtype">id</span>th, <span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><a class="code hl_class" href="class_s_e_block.html">SEBlock&lt;channel_in, channel_se, channel_out, input_width, out_width, T&gt;::~SEBlock</a>() {}</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="class_s_e_block.html#ae181af408a49004afd7081c45b146e47">   62</a></span><a class="code hl_function" href="class_s_e_block.html#ae181af408a49004afd7081c45b146e47">SEBlock&lt;channel_in, channel_se, channel_out, input_width, out_width, T&gt;::~SEBlock</a>() {}</div>
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
 <div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span><span class="keyword">template</span> &lt;<span class="keywordtype">int</span> channel_in, <span class="keywordtype">int</span> channel_se, <span class="keywordtype">int</span> channel_out, <span class="keywordtype">int</span> input_w<span class="keywordtype">id</span>th, <span class="keywordtype">int</span> out_w<span class="keywordtype">id</span>th, <span class="keyword">typename</span> T&gt;</div>
 <div class="foldopen" id="foldopen00076" data-start="{" data-end="}">
@@ -167,10 +167,10 @@ $(function(){initNavTree('seblock_8cpp_source.html',''); initResizable(true); })
 <div class="ttc" id="aclass_matrix_functions_html_a7c16622175c414528a40ed3b85d59054"><div class="ttname"><a href="class_matrix_functions.html#a7c16622175c414528a40ed3b85d59054">MatrixFunctions::Mean</a></div><div class="ttdeci">static void Mean(T(&amp;input)[dim1][dim2], T(&amp;output)[dim1])</div><div class="ttdoc">Computes the mean on dim2. Here output has a shape of (dim1)</div><div class="ttdef"><b>Definition</b> <a href="matrixfunctions_8cpp_source.html#l00322">matrixfunctions.cpp:322</a></div></div>
 <div class="ttc" id="aclass_matrix_functions_html_a7f5da89c6c9bb4a6f8f04aeb1757dc41"><div class="ttname"><a href="class_matrix_functions.html#a7f5da89c6c9bb4a6f8f04aeb1757dc41">MatrixFunctions::HadamardProduct</a></div><div class="ttdeci">static void HadamardProduct(T(&amp;mat1)[dim1][dim2], T(&amp;mat2)[dim1][dim2], T(&amp;output)[dim1][dim2])</div><div class="ttdoc">Perform PyTorch default &quot;Product&quot; between 2 matrices. A * B https://en.wikipedia.org/wiki/Hadamard_pr...</div><div class="ttdef"><b>Definition</b> <a href="matrixfunctions_8cpp_source.html#l00273">matrixfunctions.cpp:273</a></div></div>
 <div class="ttc" id="aclass_matrix_functions_html_af5f8e06d1d253b49802ccff7a75d5dc2"><div class="ttname"><a href="class_matrix_functions.html#af5f8e06d1d253b49802ccff7a75d5dc2">MatrixFunctions::Reshape</a></div><div class="ttdeci">static void Reshape(T(&amp;input)[dim1][dim2], T(&amp;output)[dim1])</div><div class="ttdoc">Reshapes a input of size (dim1, 1) into output (dim1)</div><div class="ttdef"><b>Definition</b> <a href="matrixfunctions_8cpp_source.html#l00523">matrixfunctions.cpp:523</a></div></div>
-<div class="ttc" id="aclass_s_e_block_html"><div class="ttname"><a href="class_s_e_block.html">SEBlock</a></div><div class="ttdoc">SEBlock.</div><div class="ttdef"><b>Definition</b> <a href="seblock_8h_source.html#l00036">seblock.h:37</a></div></div>
 <div class="ttc" id="aclass_s_e_block_html_a758373cae1c9bff4af036f04dfd7ec3f"><div class="ttname"><a href="class_s_e_block.html#a758373cae1c9bff4af036f04dfd7ec3f">SEBlock::loadweights</a></div><div class="ttdeci">void loadweights(std::string pathname)</div><div class="ttdoc">Load weights via pathname.</div><div class="ttdef"><b>Definition</b> <a href="#l00076">seblock.cpp:76</a></div></div>
 <div class="ttc" id="aclass_s_e_block_html_ac951ced47ad8b0612098a5ab1e809ebb"><div class="ttname"><a href="class_s_e_block.html#ac951ced47ad8b0612098a5ab1e809ebb">SEBlock::SEBlock</a></div><div class="ttdeci">SEBlock()</div><div class="ttdoc">Construct a new seblock&lt;channel in, channel se, channel out, input width, out width,...</div><div class="ttdef"><b>Definition</b> <a href="#l00026">seblock.cpp:26</a></div></div>
 <div class="ttc" id="aclass_s_e_block_html_ad418609d6fc8a874ec2357e5c39337a1"><div class="ttname"><a href="class_s_e_block.html#ad418609d6fc8a874ec2357e5c39337a1">SEBlock::forward</a></div><div class="ttdeci">void forward(T(&amp;input)[channel_in][input_width], T(&amp;output)[channel_out][out_width])</div><div class="ttdoc">Perform forward feed.</div><div class="ttdef"><b>Definition</b> <a href="#l00048">seblock.cpp:48</a></div></div>
+<div class="ttc" id="aclass_s_e_block_html_ae181af408a49004afd7081c45b146e47"><div class="ttname"><a href="class_s_e_block.html#ae181af408a49004afd7081c45b146e47">SEBlock::~SEBlock</a></div><div class="ttdeci">~SEBlock()</div><div class="ttdef"><b>Definition</b> <a href="#l00062">seblock.cpp:62</a></div></div>
 <div class="ttc" id="aseblock_8h_html"><div class="ttname"><a href="seblock_8h.html">seblock.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

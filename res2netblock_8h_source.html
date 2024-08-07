@@ -27,9 +27,9 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">LegacyCNN<span id="projectnumber">&#160;v0.1</span>
+   <div id="projectname">LegacyCNN<span id="projectnumber">&#160;v0.2</span>
    </div>
-   <div id="projectbrief">Toolbox for creating Neurel Networks on CPP</div>
+   <div id="projectbrief">Toolbox for creating Neural Networks in Cpp</div>
   </td>
  </tr>
  </tbody>
@@ -120,15 +120,15 @@ $(function(){initNavTree('res2netblock_8h_source.html',''); initResizable(true);
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_res2_net_block.html#a58138e84068dba43c8fb9e6d717333fc">forward</a>(T (&amp;input)[channel_in][input_width], T (&amp;output)[channel_out][out_width]);</div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    <a class="code hl_class" href="class_res2_net_block.html">~Res2NetBlock</a>();</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    <a class="code hl_function" href="class_res2_net_block.html#af673cc88ca7666883e9685ee91e3615f">~Res2NetBlock</a>();</div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
 <div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_res2_net_block.html#a6735a3709f896a64b3321719cda485e0">loadweights</a>(std::string pathname);</div>
 <div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
 <div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_res2_net_block.html#a6735a3709f896a64b3321719cda485e0">loadweights</a>(std::ifstream &amp;infile);</div>
 <div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> </div>
 <div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>    <span class="comment">// For debugging purposes</span></div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    <span class="keywordtype">void</span> printBlockParameters();</div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>    <span class="keywordtype">void</span> printTemp();</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_res2_net_block.html#a2b0b3a9b4414989b20739c06a7090461">printBlockParameters</a>();</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_res2_net_block.html#a1fc85adca27ae19207ca0fc4ae863e68">printTemp</a>();</div>
 <div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span> </div>
 <div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span><span class="keyword">private</span>:</div>
 <div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    <a class="code hl_class" href="class_t_d_n_n_block.html">TDNNBlock</a>&lt;kernel, 1, channel_in / scale, channel_out / scale, dilation, input_width, out_width, input_pad, T&gt; blocks[scale - 1];</div>
@@ -147,9 +147,12 @@ $(function(){initNavTree('res2netblock_8h_source.html',''); initResizable(true);
 <div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span> </div>
 <div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span><span class="preprocessor">#endif</span></div>
 <div class="ttc" id="aclass_res2_net_block_html"><div class="ttname"><a href="class_res2_net_block.html">Res2NetBlock</a></div><div class="ttdoc">Res2NetBlock.</div><div class="ttdef"><b>Definition</b> <a href="#l00035">res2netblock.h:36</a></div></div>
-<div class="ttc" id="aclass_res2_net_block_html_a58138e84068dba43c8fb9e6d717333fc"><div class="ttname"><a href="class_res2_net_block.html#a58138e84068dba43c8fb9e6d717333fc">Res2NetBlock::forward</a></div><div class="ttdeci">void forward(T(&amp;input)[channel_in][input_width], T(&amp;output)[channel_out][out_width])</div><div class="ttdoc">Perform Forward feed.</div><div class="ttdef"><b>Definition</b> <a href="res2netblock_8cpp_source.html#l00054">res2netblock.cpp:54</a></div></div>
-<div class="ttc" id="aclass_res2_net_block_html_a609dc5aad0f2db3f57b0c833e2eee735"><div class="ttname"><a href="class_res2_net_block.html#a609dc5aad0f2db3f57b0c833e2eee735">Res2NetBlock::Res2NetBlock</a></div><div class="ttdeci">Res2NetBlock()</div><div class="ttdoc">Construct a new Res2NetBlock&lt;kernel, channel_in, channel_out, dilation, input_width,...</div><div class="ttdef"><b>Definition</b> <a href="res2netblock_8cpp_source.html#l00027">res2netblock.cpp:27</a></div></div>
-<div class="ttc" id="aclass_res2_net_block_html_a6735a3709f896a64b3321719cda485e0"><div class="ttname"><a href="class_res2_net_block.html#a6735a3709f896a64b3321719cda485e0">Res2NetBlock::loadweights</a></div><div class="ttdeci">void loadweights(std::string pathname)</div><div class="ttdoc">Load the weights via pathname.</div><div class="ttdef"><b>Definition</b> <a href="res2netblock_8cpp_source.html#l00155">res2netblock.cpp:155</a></div></div>
+<div class="ttc" id="aclass_res2_net_block_html_a1fc85adca27ae19207ca0fc4ae863e68"><div class="ttname"><a href="class_res2_net_block.html#a1fc85adca27ae19207ca0fc4ae863e68">Res2NetBlock::printTemp</a></div><div class="ttdeci">void printTemp()</div><div class="ttdef"><b>Definition</b> <a href="res2netblock_8cpp_source.html#l00130">res2netblock.cpp:130</a></div></div>
+<div class="ttc" id="aclass_res2_net_block_html_a2b0b3a9b4414989b20739c06a7090461"><div class="ttname"><a href="class_res2_net_block.html#a2b0b3a9b4414989b20739c06a7090461">Res2NetBlock::printBlockParameters</a></div><div class="ttdeci">void printBlockParameters()</div><div class="ttdef"><b>Definition</b> <a href="res2netblock_8cpp_source.html#l00200">res2netblock.cpp:200</a></div></div>
+<div class="ttc" id="aclass_res2_net_block_html_a58138e84068dba43c8fb9e6d717333fc"><div class="ttname"><a href="class_res2_net_block.html#a58138e84068dba43c8fb9e6d717333fc">Res2NetBlock::forward</a></div><div class="ttdeci">void forward(T(&amp;input)[channel_in][input_width], T(&amp;output)[channel_out][out_width])</div><div class="ttdoc">Perform Forward feed.</div><div class="ttdef"><b>Definition</b> <a href="res2netblock_8cpp_source.html#l00056">res2netblock.cpp:56</a></div></div>
+<div class="ttc" id="aclass_res2_net_block_html_a609dc5aad0f2db3f57b0c833e2eee735"><div class="ttname"><a href="class_res2_net_block.html#a609dc5aad0f2db3f57b0c833e2eee735">Res2NetBlock::Res2NetBlock</a></div><div class="ttdeci">Res2NetBlock()</div><div class="ttdoc">Construct a new Res2NetBlock&lt;kernel, channel_in, channel_out, dilation, input_width,...</div><div class="ttdef"><b>Definition</b> <a href="res2netblock_8cpp_source.html#l00028">res2netblock.cpp:28</a></div></div>
+<div class="ttc" id="aclass_res2_net_block_html_a6735a3709f896a64b3321719cda485e0"><div class="ttname"><a href="class_res2_net_block.html#a6735a3709f896a64b3321719cda485e0">Res2NetBlock::loadweights</a></div><div class="ttdeci">void loadweights(std::string pathname)</div><div class="ttdoc">Load the weights via pathname.</div><div class="ttdef"><b>Definition</b> <a href="res2netblock_8cpp_source.html#l00157">res2netblock.cpp:157</a></div></div>
+<div class="ttc" id="aclass_res2_net_block_html_af673cc88ca7666883e9685ee91e3615f"><div class="ttname"><a href="class_res2_net_block.html#af673cc88ca7666883e9685ee91e3615f">Res2NetBlock::~Res2NetBlock</a></div><div class="ttdeci">~Res2NetBlock()</div><div class="ttdef"><b>Definition</b> <a href="res2netblock_8cpp_source.html#l00038">res2netblock.cpp:38</a></div></div>
 <div class="ttc" id="aclass_t_d_n_n_block_html"><div class="ttname"><a href="class_t_d_n_n_block.html">TDNNBlock</a></div><div class="ttdoc">TDNNBlock.</div><div class="ttdef"><b>Definition</b> <a href="tdnnblock_8h_source.html#l00057">tdnnblock.h:58</a></div></div>
 <div class="ttc" id="aconv1d_8h_html"><div class="ttname"><a href="conv1d_8h.html">conv1d.h</a></div></div>
 <div class="ttc" id="ahelper_8h_html"><div class="ttname"><a href="helper_8h.html">helper.h</a></div><div class="ttdoc">Extra functions.</div></div>

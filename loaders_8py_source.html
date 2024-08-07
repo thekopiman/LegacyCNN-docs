@@ -27,9 +27,9 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">LegacyCNN<span id="projectnumber">&#160;v0.1</span>
+   <div id="projectname">LegacyCNN<span id="projectnumber">&#160;v0.2</span>
    </div>
-   <div id="projectbrief">Toolbox for creating Neurel Networks on CPP</div>
+   <div id="projectbrief">Toolbox for creating Neural Networks in Cpp</div>
   </td>
  </tr>
  </tbody>
@@ -100,7 +100,7 @@ $(function(){initNavTree('loaders_8py_source.html',''); initResizable(true); });
   <div class="headertitle"><div class="title">loaders.py</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="keyword">from</span> __future__ <span class="keyword">import</span> print_function, division</div>
+<a href="loaders_8py.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno"><a class="line" href="namespaceloaders.html">    1</a></span><span class="keyword">from</span> __future__ <span class="keyword">import</span> print_function, division</div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="keyword">import</span> os</div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="keyword">import</span> torch</div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</div>
@@ -113,13 +113,16 @@ $(function(){initNavTree('loaders_8py_source.html',''); initResizable(true); });
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="keyword">import</span> random</div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>warnings.filterwarnings(<span class="stringliteral">&quot;ignore&quot;</span>)</div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="keyword">def </span>spill(lst):</div>
+<div class="foldopen" id="foldopen00014" data-start="" data-end="">
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="namespaceloaders.html#ad49860d48ce76aa56229f037ee7c4af7">   14</a></span><span class="keyword">def </span><a class="code hl_function" href="namespaceloaders.html#ad49860d48ce76aa56229f037ee7c4af7">spill</a>(lst):</div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    new = []</div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    <span class="keywordflow">for</span> i <span class="keywordflow">in</span> lst:</div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>        new += i</div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    <span class="keywordflow">return</span> new</div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="keyword">def </span>pad(arr, final_length = 64):</div>
+</div>
+<div class="foldopen" id="foldopen00020" data-start="" data-end="">
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="namespaceloaders.html#a843642bd10ee6ef61c364729f814e5e1">   20</a></span><span class="keyword">def </span><a class="code hl_function" href="namespaceloaders.html#a843642bd10ee6ef61c364729f814e5e1">pad</a>(arr, final_length = 64):</div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    new_arr = []</div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <span class="keywordflow">for</span> i <span class="keywordflow">in</span> arr:</div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>        length = i.shape[0]</div>
@@ -129,13 +132,16 @@ $(function(){initNavTree('loaders_8py_source.html',''); initResizable(true); });
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>        new_arr.append(np.pad(i, (left, right)))</div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <span class="keywordflow">return</span> new_arr</div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="keyword">def </span>index_ascend(arr):</div>
+</div>
+<div class="foldopen" id="foldopen00030" data-start="" data-end="">
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="namespaceloaders.html#aa3b3093409ee833e3d26411903ac352b">   30</a></span><span class="keyword">def </span><a class="code hl_function" href="namespaceloaders.html#aa3b3093409ee833e3d26411903ac352b">index_ascend</a>(arr):</div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    new = [0] * len(arr)</div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <span class="keywordflow">for</span> i <span class="keywordflow">in</span> range(len(arr)):</div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>        new[i] = sum(arr[:i+1])</div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    new.insert(0,0)</div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <span class="keywordflow">return</span> new</div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
+</div>
 <div class="foldopen" id="foldopen00037" data-start="" data-end="">
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="classloaders_1_1_rad_char___dataset.html">   37</a></span><span class="keyword">class </span><a class="code hl_class" href="classloaders_1_1_rad_char___dataset.html">RadChar_Dataset</a>(Dataset):</div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <span class="stringliteral">&quot;&quot;&quot;RadioMapSeer Loader for accurate buildings and no measurements (RadioUNet_c)&quot;&quot;&quot;</span></div>
@@ -158,7 +164,7 @@ $(function(){initNavTree('loaders_8py_source.html',''); initResizable(true); });
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>        <span class="comment"># Set seed for randomisation of IQ samples</span></div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        random.seed(seed)</div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        </div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        self.<a class="code hl_variable" href="classloaders_1_1_rad_char___dataset.html#aaa029ec86a5564a36d0f429a6175b64a">sps</a> = sps</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="classloaders_1_1_rad_char___dataset.html#aaa029ec86a5564a36d0f429a6175b64a">   57</a></span>        self.<a class="code hl_variable" href="classloaders_1_1_rad_char___dataset.html#aaa029ec86a5564a36d0f429a6175b64a">sps</a> = sps</div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>        </div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        </div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>        <span class="keyword">with</span> h5py.File(dir_dataset, <span class="stringliteral">&quot;r&quot;</span>) <span class="keyword">as</span> f:</div>
@@ -168,10 +174,10 @@ $(function(){initNavTree('loaders_8py_source.html',''); initResizable(true); });
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>            ds_idx = [0,1,2,3,4]</div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>            ds_idx = [int(size/5 * i) <span class="keywordflow">for</span> i <span class="keywordflow">in</span> ds_idx]</div>
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>            </div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>            self.<a class="code hl_variable" href="classloaders_1_1_rad_char___dataset.html#a3eeefa39696b922b3d85a594b140d049">input_x</a> = h5_iqs[...]</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>            self.<a class="code hl_variable" href="classloaders_1_1_rad_char___dataset.html#a770657db89154ac971ddeeda3fe3f63c">output_labels</a> = h5_labels[...]</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno"><a class="line" href="classloaders_1_1_rad_char___dataset.html#a3eeefa39696b922b3d85a594b140d049">   67</a></span>            self.<a class="code hl_variable" href="classloaders_1_1_rad_char___dataset.html#a3eeefa39696b922b3d85a594b140d049">input_x</a> = h5_iqs[...]</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno"><a class="line" href="classloaders_1_1_rad_char___dataset.html#a770657db89154ac971ddeeda3fe3f63c">   68</a></span>            self.<a class="code hl_variable" href="classloaders_1_1_rad_char___dataset.html#a770657db89154ac971ddeeda3fe3f63c">output_labels</a> = h5_labels[...]</div>
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>        </div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>        self.<a class="code hl_variable" href="classloaders_1_1_rad_char___dataset.html#a1794ddcd58289a238923f52145ad22d3">segmentation</a> = segmentation</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno"><a class="line" href="classloaders_1_1_rad_char___dataset.html#a1794ddcd58289a238923f52145ad22d3">   70</a></span>        self.<a class="code hl_variable" href="classloaders_1_1_rad_char___dataset.html#a1794ddcd58289a238923f52145ad22d3">segmentation</a> = segmentation</div>
 <div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
 <div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>        </div>
 <div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>        </div>
@@ -202,7 +208,7 @@ $(function(){initNavTree('loaders_8py_source.html',''); initResizable(true); });
 <div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>        </div>
 <div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>        <span class="comment"># Pre Segmentation of Signals</span></div>
 <div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>        <span class="keywordflow">if</span> <span class="keywordflow">not</span> self.<a class="code hl_variable" href="classloaders_1_1_rad_char___dataset.html#a1794ddcd58289a238923f52145ad22d3">segmentation</a>:</div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>            self.<a class="code hl_variable" href="classloaders_1_1_rad_char___dataset.html#a34ff30aa33204dc2f96e6e798fdf59b9">pre_segment_index</a> = []</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno"><a class="line" href="classloaders_1_1_rad_char___dataset.html#a34ff30aa33204dc2f96e6e798fdf59b9">  101</a></span>            self.<a class="code hl_variable" href="classloaders_1_1_rad_char___dataset.html#a34ff30aa33204dc2f96e6e798fdf59b9">pre_segment_index</a> = []</div>
 <div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>            <span class="comment"># 0 to 80</span></div>
 <div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>            <span class="keywordflow">if</span> phase == <span class="stringliteral">&quot;train&quot;</span>:</div>
 <div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>                <span class="keywordflow">for</span> packet_list <span class="keywordflow">in</span> ds_snr_filtered:</div>
@@ -224,7 +230,7 @@ $(function(){initNavTree('loaders_8py_source.html',''); initResizable(true); });
 <div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>            print(ds_segmented_len)</div>
 <div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>    </div>
 <div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>            <span class="comment"># Segmented Y </span></div>
-<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>            self.<a class="code hl_variable" href="classloaders_1_1_rad_char___dataset.html#a9725b9775c48d6bb138790b86ca577ed">segmented_Y</a> = []</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno"><a class="line" href="classloaders_1_1_rad_char___dataset.html#a9725b9775c48d6bb138790b86ca577ed">  123</a></span>            self.<a class="code hl_variable" href="classloaders_1_1_rad_char___dataset.html#a9725b9775c48d6bb138790b86ca577ed">segmented_Y</a> = []</div>
 <div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>            <span class="keywordflow">for</span> idx, i <span class="keywordflow">in</span> enumerate(ds_segmented_len):</div>
 <div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>                self.<a class="code hl_variable" href="classloaders_1_1_rad_char___dataset.html#a9725b9775c48d6bb138790b86ca577ed">segmented_Y</a> += [idx] * i</div>
 <div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>            </div>
@@ -234,7 +240,7 @@ $(function(){initNavTree('loaders_8py_source.html',''); initResizable(true); });
 <div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>            </div>
 <div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>            <span class="comment"># currently ds_segmented_len = [a,b,c,d,e]</span></div>
 <div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>            <span class="comment"># ascending_ds_len = [0, a, a+b, a+b+c, a+b+c+d, a+b+c+d+e]</span></div>
-<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>            ascending_ds_len = index_ascend(ds_segmented_len)</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>            ascending_ds_len = <a class="code hl_function" href="namespaceloaders.html#aa3b3093409ee833e3d26411903ac352b">index_ascend</a>(ds_segmented_len)</div>
 <div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>            </div>
 <div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>            </div>
 <div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>            <span class="comment"># for idx, i in enumerate(ascending_ds_len):</span></div>
@@ -248,9 +254,9 @@ $(function(){initNavTree('loaders_8py_source.html',''); initResizable(true); });
 <div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>                post_segment_index2.append(post_segment_index1[ascending_ds_len[i]:ascending_ds_len[i+1]])</div>
 <div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>                </div>
 <div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>            <span class="comment"># Segmented X</span></div>
-<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>            self.<a class="code hl_variable" href="classloaders_1_1_rad_char___dataset.html#a454e7a3212aa0fc3a71484512de4d089">segmented_X</a> = pad(spill(ds_segmented))</div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno"><a class="line" href="classloaders_1_1_rad_char___dataset.html#a454e7a3212aa0fc3a71484512de4d089">  147</a></span>            self.<a class="code hl_variable" href="classloaders_1_1_rad_char___dataset.html#a454e7a3212aa0fc3a71484512de4d089">segmented_X</a> = <a class="code hl_function" href="namespaceloaders.html#a843642bd10ee6ef61c364729f814e5e1">pad</a>(<a class="code hl_function" href="namespaceloaders.html#ad49860d48ce76aa56229f037ee7c4af7">spill</a>(ds_segmented))</div>
 <div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>            </div>
-<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>            self.<a class="code hl_variable" href="classloaders_1_1_rad_char___dataset.html#a001010258da18efaaf84a06bbbc109da">post_segment_index</a> = []</div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno"><a class="line" href="classloaders_1_1_rad_char___dataset.html#a001010258da18efaaf84a06bbbc109da">  149</a></span>            self.<a class="code hl_variable" href="classloaders_1_1_rad_char___dataset.html#a001010258da18efaaf84a06bbbc109da">post_segment_index</a> = []</div>
 <div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>            </div>
 <div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>            <span class="comment"># 0 to 80</span></div>
 <div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>            <span class="keywordflow">if</span> phase == <span class="stringliteral">&quot;train&quot;</span>:</div>
@@ -265,13 +271,16 @@ $(function(){initNavTree('loaders_8py_source.html',''); initResizable(true); });
 <div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>            </div>
 <div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span> </div>
 </div>
-<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>    <span class="keyword">def </span>__len__(self):</div>
+<div class="foldopen" id="foldopen00163" data-start="" data-end="">
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno"><a class="line" href="classloaders_1_1_rad_char___dataset.html#ac0e3f81bc3a9119cd2b6d24dad3e403a">  163</a></span>    <span class="keyword">def </span><a class="code hl_function" href="classloaders_1_1_rad_char___dataset.html#ac0e3f81bc3a9119cd2b6d24dad3e403a">__len__</a>(self):</div>
 <div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>        <span class="keywordflow">if</span> <span class="keywordflow">not</span> self.<a class="code hl_variable" href="classloaders_1_1_rad_char___dataset.html#a1794ddcd58289a238923f52145ad22d3">segmentation</a>:</div>
 <div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>            <span class="keywordflow">return</span> len(self.<a class="code hl_variable" href="classloaders_1_1_rad_char___dataset.html#a34ff30aa33204dc2f96e6e798fdf59b9">pre_segment_index</a>)</div>
 <div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>        <span class="keywordflow">else</span>:</div>
 <div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>            <span class="keywordflow">return</span> len(self.<a class="code hl_variable" href="classloaders_1_1_rad_char___dataset.html#a001010258da18efaaf84a06bbbc109da">post_segment_index</a>)</div>
 <div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span> </div>
-<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>    <span class="keyword">def </span>__getitem__(self, idx):</div>
+</div>
+<div class="foldopen" id="foldopen00169" data-start="" data-end="">
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno"><a class="line" href="classloaders_1_1_rad_char___dataset.html#adb60fae53c734686395a34605e875958">  169</a></span>    <span class="keyword">def </span><a class="code hl_function" href="classloaders_1_1_rad_char___dataset.html#adb60fae53c734686395a34605e875958">__getitem__</a>(self, idx):</div>
 <div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>        </div>
 <div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>        <span class="keywordflow">if</span> <span class="keywordflow">not</span> self.<a class="code hl_variable" href="classloaders_1_1_rad_char___dataset.html#a1794ddcd58289a238923f52145ad22d3">segmentation</a>:</div>
 <div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>            <span class="comment"># Targets</span></div>
@@ -299,7 +308,9 @@ $(function(){initNavTree('loaders_8py_source.html',''); initResizable(true); });
 <div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>            <span class="keywordflow">return</span> (x.astype(np.float32), np.array(y))</div>
 <div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span> </div>
 <div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>    </div>
-<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>    <span class="keyword">def </span>generate_pulse(self, packet_list, iq_signals, iq_labels):</div>
+</div>
+<div class="foldopen" id="foldopen00197" data-start="" data-end="">
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno"><a class="line" href="classloaders_1_1_rad_char___dataset.html#abdefb97e0d328c27e61da60fbc3a818b">  197</a></span>    <span class="keyword">def </span><a class="code hl_function" href="classloaders_1_1_rad_char___dataset.html#abdefb97e0d328c27e61da60fbc3a818b">generate_pulse</a>(self, packet_list, iq_signals, iq_labels):</div>
 <div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>        pulses_lst = []</div>
 <div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>        noise_lst = []</div>
 <div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>        <span class="keywordflow">for</span> idx <span class="keywordflow">in</span> packet_list:</div>
@@ -315,6 +326,7 @@ $(function(){initNavTree('loaders_8py_source.html',''); initResizable(true); });
 <div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>                </div>
 <div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>        <span class="keywordflow">return</span> (pulses_lst, noise_lst) <span class="comment"># Pulses, noise</span></div>
 </div>
+</div>
 <div class="ttc" id="aclassloaders_1_1_rad_char___dataset_html"><div class="ttname"><a href="classloaders_1_1_rad_char___dataset.html">loaders.RadChar_Dataset</a></div><div class="ttdef"><b>Definition</b> <a href="#l00037">loaders.py:37</a></div></div>
 <div class="ttc" id="aclassloaders_1_1_rad_char___dataset_html_a001010258da18efaaf84a06bbbc109da"><div class="ttname"><a href="classloaders_1_1_rad_char___dataset.html#a001010258da18efaaf84a06bbbc109da">loaders.RadChar_Dataset.post_segment_index</a></div><div class="ttdeci">post_segment_index</div><div class="ttdef"><b>Definition</b> <a href="#l00149">loaders.py:149</a></div></div>
 <div class="ttc" id="aclassloaders_1_1_rad_char___dataset_html_a1794ddcd58289a238923f52145ad22d3"><div class="ttname"><a href="classloaders_1_1_rad_char___dataset.html#a1794ddcd58289a238923f52145ad22d3">loaders.RadChar_Dataset.segmentation</a></div><div class="ttdeci">segmentation</div><div class="ttdef"><b>Definition</b> <a href="#l00070">loaders.py:70</a></div></div>
@@ -325,13 +337,18 @@ $(function(){initNavTree('loaders_8py_source.html',''); initResizable(true); });
 <div class="ttc" id="aclassloaders_1_1_rad_char___dataset_html_a9725b9775c48d6bb138790b86ca577ed"><div class="ttname"><a href="classloaders_1_1_rad_char___dataset.html#a9725b9775c48d6bb138790b86ca577ed">loaders.RadChar_Dataset.segmented_Y</a></div><div class="ttdeci">segmented_Y</div><div class="ttdef"><b>Definition</b> <a href="#l00123">loaders.py:123</a></div></div>
 <div class="ttc" id="aclassloaders_1_1_rad_char___dataset_html_aaa029ec86a5564a36d0f429a6175b64a"><div class="ttname"><a href="classloaders_1_1_rad_char___dataset.html#aaa029ec86a5564a36d0f429a6175b64a">loaders.RadChar_Dataset.sps</a></div><div class="ttdeci">sps</div><div class="ttdef"><b>Definition</b> <a href="#l00057">loaders.py:57</a></div></div>
 <div class="ttc" id="aclassloaders_1_1_rad_char___dataset_html_abdefb97e0d328c27e61da60fbc3a818b"><div class="ttname"><a href="classloaders_1_1_rad_char___dataset.html#abdefb97e0d328c27e61da60fbc3a818b">loaders.RadChar_Dataset.generate_pulse</a></div><div class="ttdeci">generate_pulse(self, packet_list, iq_signals, iq_labels)</div><div class="ttdef"><b>Definition</b> <a href="#l00197">loaders.py:197</a></div></div>
+<div class="ttc" id="aclassloaders_1_1_rad_char___dataset_html_ac0e3f81bc3a9119cd2b6d24dad3e403a"><div class="ttname"><a href="classloaders_1_1_rad_char___dataset.html#ac0e3f81bc3a9119cd2b6d24dad3e403a">loaders.RadChar_Dataset.__len__</a></div><div class="ttdeci">__len__(self)</div><div class="ttdef"><b>Definition</b> <a href="#l00163">loaders.py:163</a></div></div>
+<div class="ttc" id="aclassloaders_1_1_rad_char___dataset_html_adb60fae53c734686395a34605e875958"><div class="ttname"><a href="classloaders_1_1_rad_char___dataset.html#adb60fae53c734686395a34605e875958">loaders.RadChar_Dataset.__getitem__</a></div><div class="ttdeci">__getitem__(self, idx)</div><div class="ttdef"><b>Definition</b> <a href="#l00169">loaders.py:169</a></div></div>
 <div class="ttc" id="aclassloaders_1_1_rad_char___dataset_html_afe4549672edd809ce20494379fa071f5"><div class="ttname"><a href="classloaders_1_1_rad_char___dataset.html#afe4549672edd809ce20494379fa071f5">loaders.RadChar_Dataset.__init__</a></div><div class="ttdeci">__init__(self, phase=&quot;train&quot;, dir_dataset=&quot;RadChar/RadChar-Tiny.h5&quot;, SNR_range=list(range(-20, 20+1)), segmentation=False, seed=100, sps=3.2e6)</div><div class="ttdef"><b>Definition</b> <a href="#l00040">loaders.py:46</a></div></div>
+<div class="ttc" id="anamespaceloaders_html_a843642bd10ee6ef61c364729f814e5e1"><div class="ttname"><a href="namespaceloaders.html#a843642bd10ee6ef61c364729f814e5e1">loaders.pad</a></div><div class="ttdeci">pad(arr, final_length=64)</div><div class="ttdef"><b>Definition</b> <a href="#l00020">loaders.py:20</a></div></div>
+<div class="ttc" id="anamespaceloaders_html_aa3b3093409ee833e3d26411903ac352b"><div class="ttname"><a href="namespaceloaders.html#aa3b3093409ee833e3d26411903ac352b">loaders.index_ascend</a></div><div class="ttdeci">index_ascend(arr)</div><div class="ttdef"><b>Definition</b> <a href="#l00030">loaders.py:30</a></div></div>
+<div class="ttc" id="anamespaceloaders_html_ad49860d48ce76aa56229f037ee7c4af7"><div class="ttname"><a href="namespaceloaders.html#ad49860d48ce76aa56229f037ee7c4af7">loaders.spill</a></div><div class="ttdeci">spill(lst)</div><div class="ttdef"><b>Definition</b> <a href="#l00014">loaders.py:14</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_32d7642d91796e6ebfcf36acd9d3ee8e.html">python_lib</a></li><li class="navelem"><b>loaders.py</b></li>
+    <li class="navelem"><a class="el" href="dir_32d7642d91796e6ebfcf36acd9d3ee8e.html">python_lib</a></li><li class="navelem"><a class="el" href="loaders_8py.html">loaders.py</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>

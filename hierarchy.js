@@ -8,7 +8,7 @@ var hierarchy =
     ] ],
     [ "ActivationFunctions", "class_activation_functions.html", null ],
     [ "ASP< channels, attention_channels, input_width, out_width, T >", "class_a_s_p.html", null ],
-    [ "ASP< 16, 128, 64, 2, float >", "class_a_s_p.html", null ],
+    [ "ASP< 16, 128, 64, 1, float >", "class_a_s_p.html", null ],
     [ "trainers.BaseTrainer", "classtrainers_1_1_base_trainer.html", null ],
     [ "BasicBlock< kernel, stride, channel_in, channel_out, pad, dilation, input_width, out_width, T >", "class_basic_block.html", null ],
     [ "BasicBlock< 3, 1, 2, 4, 0, 1, 16, 14, float >", "class_basic_block.html", null ],
@@ -17,6 +17,18 @@ var hierarchy =
     [ "BasicBlock< 3, 1, 4, 4, 0, 1, 14, 12, float >", "class_basic_block.html", null ],
     [ "BasicBlock< 3, 1, 4, 4, 0, 1, 8, 6, float >", "class_basic_block.html", null ],
     [ "BasicCNNModel", "class_basic_c_n_n_model.html", null ],
+    [ "ModelGenerator.BasicLayer", "class_model_generator_1_1_basic_layer.html", [
+      [ "ModelGenerator.ASP", "class_model_generator_1_1_a_s_p.html", null ],
+      [ "ModelGenerator.BatchNorm1d", "class_model_generator_1_1_batch_norm1d.html", null ],
+      [ "ModelGenerator.Conv1d", "class_model_generator_1_1_conv1d.html", [
+        [ "ModelGenerator.TDNNBlock", "class_model_generator_1_1_t_d_n_n_block.html", [
+          [ "ModelGenerator.Res2NetBlock", "class_model_generator_1_1_res2_net_block.html", [
+            [ "ModelGenerator.SERes2NetBlock", "class_model_generator_1_1_s_e_res2_net_block.html", null ]
+          ] ]
+        ] ]
+      ] ],
+      [ "ModelGenerator.SEBlock", "class_model_generator_1_1_s_e_block.html", null ]
+    ] ],
     [ "BatchNorm1d< channel, width, T >", "class_batch_norm1d.html", null ],
     [ "BatchNorm1d< 16 *2, 1, float >", "class_batch_norm1d.html", null ],
     [ "BatchNorm1d< channel_out, out_width, float >", "class_batch_norm1d.html", null ],
@@ -35,6 +47,7 @@ var hierarchy =
     [ "Conv1d< kernel, stride, channel_in, channel_out, input_pad, dilation, input_width, out_width, T >", "class_conv1d.html", null ],
     [ "Conv1d< kernel, stride, channel_in, channel_out, pad, dilation, input_width, out_width, float >", "class_conv1d.html", null ],
     [ "Dense< input_dim, output_dim, T >", "class_dense.html", null ],
+    [ "ModelGenerator.Dense", "class_model_generator_1_1_dense.html", null ],
     [ "Dense< 16 *2, 6, float >", "class_dense.html", null ],
     [ "Dense< 24, 6, float >", "class_dense.html", null ],
     [ "ECAPA_TDNN", "class_e_c_a_p_a___t_d_n_n.html", null ],
