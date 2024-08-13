@@ -7,12 +7,13 @@ var searchData=
   ['matrixfunctions_2ecpp_4',['matrixfunctions.cpp',['../matrixfunctions_8cpp.html',1,'']]],
   ['matrixfunctions_2eh_5',['matrixfunctions.h',['../matrixfunctions_8h.html',1,'']]],
   ['mean_6',['Mean',['../class_matrix_functions.html#a7c16622175c414528a40ed3b85d59054',1,'MatrixFunctions::Mean(T(&amp;input)[dim1][dim2], T(&amp;output)[dim1])'],['../class_matrix_functions.html#a41e6c0fa3dab42661f4ae7ac76da80fa',1,'MatrixFunctions::Mean(T(&amp;input)[dim1][dim2], T(&amp;output)[dim1][dim3])']]],
-  ['mfa_7',['mfa',['../classmodules_1_1_e_c_a_p_a___t_d_n_n.html#ac1fe518db9138e24b0fe73d90ac162d7',1,'modules::ECAPA_TDNN']]],
-  ['mode_8',['mode',['../class_model_generator_1_1_basic_layer.html#ada647959c270c40e2337e2d05630f204',1,'ModelGenerator.BasicLayer.mode'],['../class_model_generator_1_1_conv1d.html#ad4da469e88d9afc1da85b7e9d84629ce',1,'ModelGenerator.Conv1d.mode']]],
-  ['model_9',['model',['../classtrainers_1_1_base_trainer.html#abd10a1210ef6a657c1c48c25c4a01f06',1,'trainers::BaseTrainer']]],
-  ['model_20creation_10',['Pytorch: Model creation',['../md__r_e_a_d_m_e.html#autotoc_md4',1,'']]],
-  ['modelgenerator_11',['ModelGenerator',['../namespace_model_generator.html',1,'']]],
-  ['modelgenerator_2epy_12',['ModelGenerator.py',['../_model_generator_8py.html',1,'']]],
-  ['modules_13',['modules',['../namespacemodules.html',1,'']]],
-  ['modules_2epy_14',['modules.py',['../modules_8py.html',1,'']]]
+  ['metrics_5ftype_7',['metrics_type',['../classecapa__classifier_1_1_classifier.html#a3a157aa9832419f47a558a18e789f568',1,'ecapa_classifier::Classifier']]],
+  ['mfa_8',['mfa',['../classecapa__classifier_1_1_e_c_a_p_a___t_d_n_n.html#a54dcb46c5a4c0b1008e2bf81f713d018',1,'ecapa_classifier.ECAPA_TDNN.mfa'],['../classmodules_1_1_e_c_a_p_a___t_d_n_n.html#ac1fe518db9138e24b0fe73d90ac162d7',1,'modules.ECAPA_TDNN.mfa']]],
+  ['mode_9',['mode',['../class_model_generator_1_1_basic_layer.html#ada647959c270c40e2337e2d05630f204',1,'ModelGenerator.BasicLayer.mode'],['../class_model_generator_1_1_conv1d.html#ad4da469e88d9afc1da85b7e9d84629ce',1,'ModelGenerator.Conv1d.mode']]],
+  ['model_10',['model',['../classtrainers_1_1_base_trainer.html#abd10a1210ef6a657c1c48c25c4a01f06',1,'trainers::BaseTrainer']]],
+  ['model_20creation_11',['Pytorch: Model creation',['../md__r_e_a_d_m_e.html#autotoc_md4',1,'']]],
+  ['modelgenerator_12',['ModelGenerator',['../namespace_model_generator.html',1,'']]],
+  ['modelgenerator_2epy_13',['ModelGenerator.py',['../_model_generator_8py.html',1,'']]],
+  ['modules_14',['modules',['../namespacemodules.html',1,'']]],
+  ['modules_2epy_15',['modules.py',['../modules_8py.html',1,'']]]
 ];

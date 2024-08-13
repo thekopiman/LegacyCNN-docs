@@ -10,7 +10,7 @@ var searchData=
   ['basiccnnmodel_7',['BasicCNNModel',['../class_basic_c_n_n_model.html',1,'']]],
   ['basiclayer_8',['BasicLayer',['../class_model_generator_1_1_basic_layer.html',1,'ModelGenerator']]],
   ['basicmodel_9',['BasicModel',['../class_basic_model_1_1_basic_model.html',1,'BasicModel']]],
-  ['batchnorm1d_10',['BatchNorm1d',['../class_batch_norm1d.html',1,'BatchNorm1d&lt; channel, width, T &gt;'],['../class_model_generator_1_1_batch_norm1d.html',1,'ModelGenerator.BatchNorm1d'],['../classmodules_1_1_batch_norm1d.html',1,'modules.BatchNorm1d']]],
+  ['batchnorm1d_10',['BatchNorm1d',['../class_batch_norm1d.html',1,'BatchNorm1d&lt; channel, width, T &gt;'],['../classecapa__classifier_1_1_batch_norm1d.html',1,'ecapa_classifier.BatchNorm1d'],['../class_model_generator_1_1_batch_norm1d.html',1,'ModelGenerator.BatchNorm1d'],['../classmodules_1_1_batch_norm1d.html',1,'modules.BatchNorm1d']]],
   ['batchnorm1d_3c_2016_20_2a2_2c_201_2c_20float_20_3e_11',['BatchNorm1d&lt; 16 *2, 1, float &gt;',['../class_batch_norm1d.html',1,'']]],
   ['batchnorm1d_3c_20channel_5fout_2c_20out_5fwidth_2c_20float_20_3e_12',['BatchNorm1d&lt; channel_out, out_width, float &gt;',['../class_batch_norm1d.html',1,'']]],
   ['batchnorm1d_3c_20channel_5fout_2c_20out_5fwidth_2c_20t_20_3e_13',['BatchNorm1d&lt; channel_out, out_width, T &gt;',['../class_batch_norm1d.html',1,'']]],

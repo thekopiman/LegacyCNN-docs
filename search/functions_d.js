@@ -1,9 +1,9 @@
 var searchData=
 [
-  ['readinputs_0',['readInputs',['../class_helper.html#a3a5b4bf18da40e3a47abfa7106b1a9b9',1,'Helper::readInputs(std::string pathname, T(&amp;inputs)[rows][cols])'],['../class_helper.html#a7007731866c9fd9c682822274e5d2af8',1,'Helper::readInputs(std::string pathname, T(&amp;inputs)[batch][rows][cols])']]],
-  ['relu_1',['ReLU',['../class_activation_functions.html#a522f3397e702f75c1cce9e09533e15a1',1,'ActivationFunctions']]],
-  ['res2netblock_2',['Res2NetBlock',['../class_res2_net_block.html#a609dc5aad0f2db3f57b0c833e2eee735',1,'Res2NetBlock']]],
-  ['reshape_3',['Reshape',['../class_matrix_functions.html#af5f8e06d1d253b49802ccff7a75d5dc2',1,'MatrixFunctions']]],
-  ['return_5flayers_4',['return_layers',['../class_basic_model_1_1_basic_model.html#a1abe07ea61a25b0758357eb1ad0abb84',1,'BasicModel.BasicModel.return_layers()'],['../classmodules_1_1_conv1d.html#a8fe931d7fa1887930d76ff70595a7623',1,'modules.Conv1d.return_layers()'],['../classmodules_1_1_batch_norm1d.html#a2de0f9dd929938e7e3f6248b1fac9d21',1,'modules.BatchNorm1d.return_layers()'],['../classmodules_1_1_t_d_n_n_block.html#adae4975e7be13d5bfe40ec4e07a0f426',1,'modules.TDNNBlock.return_layers()'],['../classmodules_1_1_res2_net_block.html#a185ebb60519538df44798ce54611f53d',1,'modules.Res2NetBlock.return_layers()'],['../classmodules_1_1_s_e_block.html#a7d6a65cad1ed54adc8735aba26557aa2',1,'modules.SEBlock.return_layers()'],['../classmodules_1_1_attentive_statistics_pooling.html#a1f1576e89cead54383f423f539e9f09f',1,'modules.AttentiveStatisticsPooling.return_layers()'],['../classmodules_1_1_s_e_res2_net_block.html#a2d3cb8decca2d03c43d111c4a5548f21',1,'modules.SERes2NetBlock.return_layers()'],['../classmodules_1_1_e_c_a_p_a___t_d_n_n.html#a58f69c23d29db0bc8a362950e1f31a47',1,'modules.ECAPA_TDNN.return_layers()']]],
-  ['return_5fmode_5',['return_mode',['../class_model_generator_1_1_basic_layer.html#aa7838ff2720bf287239a771f97acd32d',1,'ModelGenerator::BasicLayer']]]
+  ['pad_0',['pad',['../namespaceloaders.html#a843642bd10ee6ef61c364729f814e5e1',1,'loaders']]],
+  ['print_1',['print',['../class_helper.html#ab797ac22b2c14eca040ca9c317945368',1,'Helper::print(T(&amp;input)[dim1])'],['../class_helper.html#ae11d65e3ee0c27bad2c25207af36d5e1',1,'Helper::print(T(&amp;input)[dim1][dim2])'],['../class_helper.html#a7c9d0a10d0bf6fa68286613d8cdb5c99',1,'Helper::print(T(&amp;input)[dim1][dim2][dim3])']]],
+  ['printblockparameters_2',['printBlockParameters',['../class_res2_net_block.html#a2b0b3a9b4414989b20739c06a7090461',1,'Res2NetBlock']]],
+  ['printempty_5finput_3',['printempty_input',['../class_conv1d.html#a4e1c99a861b6ce651188af779a670706',1,'Conv1d']]],
+  ['printparameters_4',['printparameters',['../class_t_d_n_n_block.html#a535b4391a72174700b9d5b1519a0ca44',1,'TDNNBlock']]],
+  ['printtemp_5',['printTemp',['../class_res2_net_block.html#a1fc85adca27ae19207ca0fc4ae863e68',1,'Res2NetBlock']]]
 ];

@@ -27,7 +27,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">LegacyCNN<span id="projectnumber">&#160;v0.2</span>
+   <div id="projectname">LegacyCNN<span id="projectnumber">&#160;0.3</span>
    </div>
    <div id="projectbrief">Toolbox for creating Neural Networks in Cpp</div>
   </td>
@@ -114,13 +114,12 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a5acaac5c41cac32f8ee161d34037913f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adf85156af556c191572e87d8ff13dd96" id="r_adf85156af556c191572e87d8ff13dd96"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adf85156af556c191572e87d8ff13dd96">forward</a> (float(&amp;input)[2][64], float(&amp;y)[6])</td></tr>
 <tr class="separator:adf85156af556c191572e87d8ff13dd96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae857e5059f2b7b92317addd4b8005703" id="r_ae857e5059f2b7b92317addd4b8005703"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae857e5059f2b7b92317addd4b8005703">forward</a> (float(&amp;input)[2][64], float &amp;lengths, float(&amp;y)[6])</td></tr>
+<tr class="separator:ae857e5059f2b7b92317addd4b8005703"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa6437bb5640ba12cee11e394f143ddd8" id="r_aa6437bb5640ba12cee11e394f143ddd8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa6437bb5640ba12cee11e394f143ddd8">loadweights</a> (std::string pathname)</td></tr>
 <tr class="separator:aa6437bb5640ba12cee11e394f143ddd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="ecapa_8h_source.html#l00031">31</a> of file <a class="el" href="ecapa_8h_source.html">ecapa.h</a>.</p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ad895ea0c68f9db25fbb59f952886e0d2" name="ad895ea0c68f9db25fbb59f952886e0d2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad895ea0c68f9db25fbb59f952886e0d2">&#9670;&#160;</a></span>ECAPA_TDNN()</h2>
 
@@ -135,8 +134,6 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="ecapa_8cpp_source.html#l00047">47</a> of file <a class="el" href="ecapa_8cpp_source.html">ecapa.cpp</a>.</p>
 
 </div>
 </div>
@@ -155,13 +152,37 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ecapa_8cpp_source.html#l00052">52</a> of file <a class="el" href="ecapa_8cpp_source.html">ecapa.cpp</a>.</p>
-
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="ae857e5059f2b7b92317addd4b8005703" name="ae857e5059f2b7b92317addd4b8005703"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae857e5059f2b7b92317addd4b8005703">&#9670;&#160;</a></span>forward() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ECAPA_TDNN::forward </td>
+          <td>(</td>
+          <td class="paramtype">float(&amp;)</td>          <td class="paramname"><span class="paramname"><em>input</em></span>[2][64], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float &amp;</td>          <td class="paramname"><span class="paramname"><em>lengths</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float(&amp;)</td>          <td class="paramname"><span class="paramname"><em>y</em></span>[6]&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="adf85156af556c191572e87d8ff13dd96" name="adf85156af556c191572e87d8ff13dd96"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adf85156af556c191572e87d8ff13dd96">&#9670;&#160;</a></span>forward()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#adf85156af556c191572e87d8ff13dd96">&#9670;&#160;</a></span>forward() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -179,8 +200,6 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ecapa_8cpp_source.html#l00013">13</a> of file <a class="el" href="ecapa_8cpp_source.html">ecapa.cpp</a>.</p>
-
 </div>
 </div>
 <a id="aa6437bb5640ba12cee11e394f143ddd8" name="aa6437bb5640ba12cee11e394f143ddd8"></a>
@@ -197,8 +216,6 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="ecapa_8cpp_source.html#l00055">55</a> of file <a class="el" href="ecapa_8cpp_source.html">ecapa.cpp</a>.</p>
 
 </div>
 </div>

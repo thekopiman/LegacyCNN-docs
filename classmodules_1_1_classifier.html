@@ -27,7 +27,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">LegacyCNN<span id="projectnumber">&#160;v0.2</span>
+   <div id="projectname">LegacyCNN<span id="projectnumber">&#160;0.3</span>
    </div>
    <div id="projectbrief">Toolbox for creating Neural Networks in Cpp</div>
   </td>
@@ -113,8 +113,8 @@ Inheritance diagram for modules.Classifier:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a2f39a70537d4d4a3ba5a982be6c04b4d" id="r_a2f39a70537d4d4a3ba5a982be6c04b4d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2f39a70537d4d4a3ba5a982be6c04b4d">__init__</a> (self, input_size, device=&quot;cpu&quot;, lin_blocks=0, lin_neurons=192, out_neurons=1211)</td></tr>
-<tr class="separator:a2f39a70537d4d4a3ba5a982be6c04b4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55955e8f952b91f95360b6596c4cfd5f" id="r_a55955e8f952b91f95360b6596c4cfd5f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a55955e8f952b91f95360b6596c4cfd5f">__init__</a> (self, input_size, device=&quot;cpu&quot;, out_neurons=1211)</td></tr>
+<tr class="separator:a55955e8f952b91f95360b6596c4cfd5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5899e32519cc6c2dab90256da6ab8182" id="r_a5899e32519cc6c2dab90256da6ab8182"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5899e32519cc6c2dab90256da6ab8182">forward</a> (self, x)</td></tr>
 <tr class="separator:a5899e32519cc6c2dab90256da6ab8182"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -151,11 +151,9 @@ Example
 tensor(0)
 &gt;&gt;&gt; (cos &gt; 1.0).long().sum()
 tensor(0)
-</pre> 
-<p class="definition">Definition at line <a class="el" href="modules_8py_source.html#l00606">606</a> of file <a class="el" href="modules_8py_source.html">modules.py</a>.</p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a2f39a70537d4d4a3ba5a982be6c04b4d" name="a2f39a70537d4d4a3ba5a982be6c04b4d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2f39a70537d4d4a3ba5a982be6c04b4d">&#9670;&#160;</a></span>__init__()</h2>
+</pre> </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a55955e8f952b91f95360b6596c4cfd5f" name="a55955e8f952b91f95360b6596c4cfd5f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a55955e8f952b91f95360b6596c4cfd5f">&#9670;&#160;</a></span>__init__()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -178,22 +176,10 @@ tensor(0)
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>lin_blocks</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>lin_neurons</em></span><span class="paramdefsep"> = </span><span class="paramdefval">192</span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>out_neurons</em></span><span class="paramdefsep"> = </span><span class="paramdefval">1211</span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="modules_8py_source.html#l00634">634</a> of file <a class="el" href="modules_8py_source.html">modules.py</a>.</p>
 
 </div>
 </div>
@@ -228,8 +214,6 @@ Returns
 out : torch.Tensor
     Output probabilities over speakers.
 </pre> 
-<p class="definition">Definition at line <a class="el" href="modules_8py_source.html#l00660">660</a> of file <a class="el" href="modules_8py_source.html">modules.py</a>.</p>
-
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -245,8 +229,6 @@ out : torch.Tensor
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="modules_8py_source.html#l00643">643</a> of file <a class="el" href="modules_8py_source.html">modules.py</a>.</p>
-
 </div>
 </div>
 <a id="ac33a3f759aa618a9aae1fd41690bd964" name="ac33a3f759aa618a9aae1fd41690bd964"></a>
@@ -261,12 +243,10 @@ out : torch.Tensor
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="modules_8py_source.html#l00655">655</a> of file <a class="el" href="modules_8py_source.html">modules.py</a>.</p>
-
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>python_lib/<a class="el" href="modules_8py_source.html">modules.py</a></li>
+<li>python_lib/<a class="el" href="modules_8py.html">modules.py</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

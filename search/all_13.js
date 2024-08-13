@@ -2,11 +2,11 @@ var searchData=
 [
   ['t_0',['T',['../class_model_generator_1_1_basic_layer.html#ade119b3c1e6a54c2cf7f6ee5e0d0e058',1,'ModelGenerator.BasicLayer.T'],['../class_model_generator_1_1_dense.html#a0b1c40a7fe37c24137c8c036752531e2',1,'ModelGenerator.Dense.T']]],
   ['tanh_1',['Tanh',['../class_activation_functions.html#a55c708daa0845dc33e4a8e66e204244a',1,'ActivationFunctions::Tanh(T(&amp;input)[rows][cols])'],['../class_activation_functions.html#aa7fe666b2a6d0561c2b7d867ee0cd704',1,'ActivationFunctions::Tanh(T(&amp;input)[rows])']]],
-  ['tanh_2',['tanh',['../classmodules_1_1_attentive_statistics_pooling.html#ae1e9a5bc8d79e2ba27cf96504be42504',1,'modules::AttentiveStatisticsPooling']]],
-  ['tdnn_3',['tdnn',['../classmodules_1_1_attentive_statistics_pooling.html#ad9a53b72398a34c1eaccae5e4a79f4e3',1,'modules::AttentiveStatisticsPooling']]],
-  ['tdnn1_4',['tdnn1',['../classmodules_1_1_s_e_res2_net_block.html#abd53471042b64ead1d0b7c204cbbc4ee',1,'modules::SERes2NetBlock']]],
-  ['tdnn2_5',['tdnn2',['../classmodules_1_1_s_e_res2_net_block.html#a8895ef35f308fc6b478c21af17a59dde',1,'modules::SERes2NetBlock']]],
-  ['tdnnblock_6',['TDNNBlock',['../class_model_generator_1_1_t_d_n_n_block.html',1,'ModelGenerator.TDNNBlock'],['../classmodules_1_1_t_d_n_n_block.html',1,'modules.TDNNBlock'],['../class_t_d_n_n_block.html',1,'TDNNBlock&lt; kernel, stride, channel_in, channel_out, dilation, input_width, out_width, input_pad, T &gt;'],['../class_t_d_n_n_block.html#a1936b934f575160e97c1e3c6e5474aa0',1,'TDNNBlock::TDNNBlock()']]],
+  ['tanh_2',['tanh',['../classecapa__classifier_1_1_attentive_statistics_pooling.html#ae4526fbed7e5dfb1807ea650aa70d02e',1,'ecapa_classifier.AttentiveStatisticsPooling.tanh'],['../classmodules_1_1_attentive_statistics_pooling.html#ae1e9a5bc8d79e2ba27cf96504be42504',1,'modules.AttentiveStatisticsPooling.tanh']]],
+  ['tdnn_3',['tdnn',['../classecapa__classifier_1_1_attentive_statistics_pooling.html#a3dd758bad200810c746dd6f019a0bd9b',1,'ecapa_classifier.AttentiveStatisticsPooling.tdnn'],['../classmodules_1_1_attentive_statistics_pooling.html#ad9a53b72398a34c1eaccae5e4a79f4e3',1,'modules.AttentiveStatisticsPooling.tdnn']]],
+  ['tdnn1_4',['tdnn1',['../classecapa__classifier_1_1_s_e_res2_net_block.html#a6cf2a181e028ad8690722737878682fa',1,'ecapa_classifier.SERes2NetBlock.tdnn1'],['../classmodules_1_1_s_e_res2_net_block.html#abd53471042b64ead1d0b7c204cbbc4ee',1,'modules.SERes2NetBlock.tdnn1']]],
+  ['tdnn2_5',['tdnn2',['../classecapa__classifier_1_1_s_e_res2_net_block.html#af719372196a36b7b26b91523a58b4572',1,'ecapa_classifier.SERes2NetBlock.tdnn2'],['../classmodules_1_1_s_e_res2_net_block.html#a8895ef35f308fc6b478c21af17a59dde',1,'modules.SERes2NetBlock.tdnn2']]],
+  ['tdnnblock_6',['TDNNBlock',['../classecapa__classifier_1_1_t_d_n_n_block.html',1,'ecapa_classifier.TDNNBlock'],['../class_model_generator_1_1_t_d_n_n_block.html',1,'ModelGenerator.TDNNBlock'],['../classmodules_1_1_t_d_n_n_block.html',1,'modules.TDNNBlock'],['../class_t_d_n_n_block.html',1,'TDNNBlock&lt; kernel, stride, channel_in, channel_out, dilation, input_width, out_width, input_pad, T &gt;'],['../class_t_d_n_n_block.html#a1936b934f575160e97c1e3c6e5474aa0',1,'TDNNBlock::TDNNBlock()']]],
   ['tdnnblock_2ecpp_7',['tdnnblock.cpp',['../tdnnblock_8cpp.html',1,'']]],
   ['tdnnblock_2eh_8',['tdnnblock.h',['../tdnnblock_8h.html',1,'']]],
   ['tdnnblock_3c_201_2c_201_2c_203_20_2a8_2c_2016_2c_201_2c_2064_2c_2064_2c_200_2c_20float_20_3e_9',['TDNNBlock&lt; 1, 1, 3 *8, 16, 1, 64, 64, 0, float &gt;',['../class_t_d_n_n_block.html',1,'']]],
@@ -27,6 +27,7 @@ var searchData=
   ['time_2eh_24',['time.h',['../time_8h.html',1,'']]],
   ['trainers_25',['trainers',['../namespacetrainers.html',1,'']]],
   ['trainers_2epy_26',['trainers.py',['../trainers_8py.html',1,'']]],
-  ['tt_20blocksave_20tt_20class_20within_20python_5flib_20saveasfile_27',['Utilise the &lt;tt&gt;BlockSave&lt;/tt&gt; Class within python_lib/saveasfile',['../md__r_e_a_d_m_e.html#autotoc_md5',1,'']]],
-  ['tt_20class_20within_20python_5flib_20saveasfile_28',['Utilise the &lt;tt&gt;BlockSave&lt;/tt&gt; Class within python_lib/saveasfile',['../md__r_e_a_d_m_e.html#autotoc_md5',1,'']]]
+  ['transpose_27',['Transpose',['../class_matrix_functions.html#adee2f36233dd563dbc1cf11fd63632cf',1,'MatrixFunctions']]],
+  ['tt_20blocksave_20tt_20class_20within_20python_5flib_20saveasfile_28',['Utilise the &lt;tt&gt;BlockSave&lt;/tt&gt; Class within python_lib/saveasfile',['../md__r_e_a_d_m_e.html#autotoc_md5',1,'']]],
+  ['tt_20class_20within_20python_5flib_20saveasfile_29',['Utilise the &lt;tt&gt;BlockSave&lt;/tt&gt; Class within python_lib/saveasfile',['../md__r_e_a_d_m_e.html#autotoc_md5',1,'']]]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['loaders_0',['loaders',['../namespaceloaders.html',1,'']]]
+  ['ecapa_5fclassifier_0',['ecapa_classifier',['../namespaceecapa__classifier.html',1,'']]]
 ];

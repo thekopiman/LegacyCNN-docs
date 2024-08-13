@@ -3,6 +3,17 @@ var annotated_dup =
     [ "BasicModel", "namespace_basic_model.html", [
       [ "BasicModel", "class_basic_model_1_1_basic_model.html", "class_basic_model_1_1_basic_model" ]
     ] ],
+    [ "ecapa_classifier", "namespaceecapa__classifier.html", [
+      [ "AttentiveStatisticsPooling", "classecapa__classifier_1_1_attentive_statistics_pooling.html", "classecapa__classifier_1_1_attentive_statistics_pooling" ],
+      [ "BatchNorm1d", "classecapa__classifier_1_1_batch_norm1d.html", "classecapa__classifier_1_1_batch_norm1d" ],
+      [ "Classifier", "classecapa__classifier_1_1_classifier.html", "classecapa__classifier_1_1_classifier" ],
+      [ "Conv1d", "classecapa__classifier_1_1_conv1d.html", "classecapa__classifier_1_1_conv1d" ],
+      [ "ECAPA_TDNN", "classecapa__classifier_1_1_e_c_a_p_a___t_d_n_n.html", "classecapa__classifier_1_1_e_c_a_p_a___t_d_n_n" ],
+      [ "Res2NetBlock", "classecapa__classifier_1_1_res2_net_block.html", "classecapa__classifier_1_1_res2_net_block" ],
+      [ "SEBlock", "classecapa__classifier_1_1_s_e_block.html", "classecapa__classifier_1_1_s_e_block" ],
+      [ "SERes2NetBlock", "classecapa__classifier_1_1_s_e_res2_net_block.html", "classecapa__classifier_1_1_s_e_res2_net_block" ],
+      [ "TDNNBlock", "classecapa__classifier_1_1_t_d_n_n_block.html", "classecapa__classifier_1_1_t_d_n_n_block" ]
+    ] ],
     [ "loaders", "namespaceloaders.html", [
       [ "RadChar_Dataset", "classloaders_1_1_rad_char___dataset.html", "classloaders_1_1_rad_char___dataset" ]
     ] ],
@@ -40,9 +51,12 @@ var annotated_dup =
     [ "BasicBlock", "class_basic_block.html", "class_basic_block" ],
     [ "BasicCNNModel", "class_basic_c_n_n_model.html", "class_basic_c_n_n_model" ],
     [ "BatchNorm1d", "class_batch_norm1d.html", "class_batch_norm1d" ],
+    [ "CDist", "class_c_dist.html", "class_c_dist" ],
     [ "Conv1d", "class_conv1d.html", "class_conv1d" ],
+    [ "CosineSimilarity", "class_cosine_similarity.html", "class_cosine_similarity" ],
     [ "Dense", "class_dense.html", "class_dense" ],
     [ "ECAPA_TDNN", "class_e_c_a_p_a___t_d_n_n.html", "class_e_c_a_p_a___t_d_n_n" ],
+    [ "ECAPA_TDNN_classifier", "class_e_c_a_p_a___t_d_n_n__classifier.html", "class_e_c_a_p_a___t_d_n_n__classifier" ],
     [ "Helper", "class_helper.html", null ],
     [ "MatrixFunctions", "class_matrix_functions.html", null ],
     [ "Res2NetBlock", "class_res2_net_block.html", "class_res2_net_block" ],

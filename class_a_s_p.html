@@ -27,7 +27,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">LegacyCNN<span id="projectnumber">&#160;v0.2</span>
+   <div id="projectname">LegacyCNN<span id="projectnumber">&#160;0.3</span>
    </div>
    <div id="projectbrief">Toolbox for creating Neural Networks in Cpp</div>
   </td>
@@ -118,8 +118,14 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a090f752837ab507cc55092cb276c0f01"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy the asp&lt;channels, attention channels, input width, out dim, t&gt;::asp object.  <br /></td></tr>
 <tr class="separator:a090f752837ab507cc55092cb276c0f01"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a800fb7c84f0d56060449e0b6c6a911ad" id="r_a800fb7c84f0d56060449e0b6c6a911ad"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a800fb7c84f0d56060449e0b6c6a911ad">forward</a> (T(&amp;input)[channels][input_width], T(&amp;output)[channels *2][1])</td></tr>
-<tr class="memdesc:a800fb7c84f0d56060449e0b6c6a911ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Conputes the forward feed.  <br /></td></tr>
+<tr class="memdesc:a800fb7c84f0d56060449e0b6c6a911ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the forward feed.  <br /></td></tr>
 <tr class="separator:a800fb7c84f0d56060449e0b6c6a911ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8fde2743bbabdf55020dcc68fea7b2ef" id="r_a8fde2743bbabdf55020dcc68fea7b2ef"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8fde2743bbabdf55020dcc68fea7b2ef">forward</a> (T(&amp;input)[channels][input_width], T &amp;lengths, T(&amp;output)[channels *2][1])</td></tr>
+<tr class="memdesc:a8fde2743bbabdf55020dcc68fea7b2ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the forward feed.  <br /></td></tr>
+<tr class="separator:a8fde2743bbabdf55020dcc68fea7b2ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed953f2018296d0489e14b33482a1427" id="r_aed953f2018296d0489e14b33482a1427"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aed953f2018296d0489e14b33482a1427">forward</a> (T(&amp;input)[channels][input_width], T(&amp;lengths)[channels], T(&amp;output)[channels *2][1])</td></tr>
+<tr class="memdesc:aed953f2018296d0489e14b33482a1427"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the forward feed.  <br /></td></tr>
+<tr class="separator:aed953f2018296d0489e14b33482a1427"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1b300a45083c3b13aafea6e0a0e47131" id="r_a1b300a45083c3b13aafea6e0a0e47131"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1b300a45083c3b13aafea6e0a0e47131">loadweights</a> (std::string pathname)</td></tr>
 <tr class="memdesc:a1b300a45083c3b13aafea6e0a0e47131"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loadweights via pathname.  <br /></td></tr>
 <tr class="separator:a1b300a45083c3b13aafea6e0a0e47131"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -141,8 +147,6 @@ class ASP&lt; channels, attention_channels, input_width, out_width, T &gt;</div>
   </table>
   </dd>
 </dl>
-
-<p class="definition">Definition at line <a class="el" href="asp_8h_source.html#l00036">36</a> of file <a class="el" href="asp_8h_source.html">asp.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ac93f6024caf59cb2f6898cf45a1592fd" name="ac93f6024caf59cb2f6898cf45a1592fd"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac93f6024caf59cb2f6898cf45a1592fd">&#9670;&#160;</a></span>ASP()</h2>
@@ -172,8 +176,6 @@ template&lt;int channels, int attention_channels, int input_width, int out_width
   </table>
   </dd>
 </dl>
-
-<p class="definition">Definition at line <a class="el" href="asp_8cpp_source.html#l00023">23</a> of file <a class="el" href="asp_8cpp_source.html">asp.cpp</a>.</p>
 
 </div>
 </div>
@@ -206,13 +208,109 @@ template&lt;int channels, int attention_channels, int input_width, int out_width
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="asp_8cpp_source.html#l00035">35</a> of file <a class="el" href="asp_8cpp_source.html">asp.cpp</a>.</p>
-
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a8fde2743bbabdf55020dcc68fea7b2ef" name="a8fde2743bbabdf55020dcc68fea7b2ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8fde2743bbabdf55020dcc68fea7b2ef">&#9670;&#160;</a></span>forward() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;int channels, int attention_channels, int input_width, int out_width, typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_a_s_p.html">ASP</a>&lt; channels, attention_channels, input_width, out_width, T &gt;::forward </td>
+          <td>(</td>
+          <td class="paramtype">T(&amp;)</td>          <td class="paramname"><span class="paramname"><em>input</em></span>[channels][input_width], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T &amp;</td>          <td class="paramname"><span class="paramname"><em>lengths</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T(&amp;)</td>          <td class="paramname"><span class="paramname"><em>output</em></span>[channels *2][1]&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Computes the forward feed. </p>
+<p>Since Batch = 1, dim(lengths) == 1</p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">channels</td><td></td></tr>
+    <tr><td class="paramname">attention_channels</td><td></td></tr>
+    <tr><td class="paramname">input_width</td><td></td></tr>
+    <tr><td class="paramname">out_width</td><td></td></tr>
+    <tr><td class="paramname">T</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">input</td><td></td></tr>
+    <tr><td class="paramname">lengths</td><td></td></tr>
+    <tr><td class="paramname">output</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aed953f2018296d0489e14b33482a1427" name="aed953f2018296d0489e14b33482a1427"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed953f2018296d0489e14b33482a1427">&#9670;&#160;</a></span>forward() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;int channels, int attention_channels, int input_width, int out_width, typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_a_s_p.html">ASP</a>&lt; channels, attention_channels, input_width, out_width, T &gt;::forward </td>
+          <td>(</td>
+          <td class="paramtype">T(&amp;)</td>          <td class="paramname"><span class="paramname"><em>input</em></span>[channels][input_width], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T(&amp;)</td>          <td class="paramname"><span class="paramname"><em>lengths</em></span>[channels], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T(&amp;)</td>          <td class="paramname"><span class="paramname"><em>output</em></span>[channels *2][1]&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Computes the forward feed. </p>
+<p>Since Batch = 1, dim(lengths) == 1</p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">channels</td><td></td></tr>
+    <tr><td class="paramname">attention_channels</td><td></td></tr>
+    <tr><td class="paramname">input_width</td><td></td></tr>
+    <tr><td class="paramname">out_width</td><td></td></tr>
+    <tr><td class="paramname">T</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">input</td><td></td></tr>
+    <tr><td class="paramname">lengths</td><td></td></tr>
+    <tr><td class="paramname">output</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a800fb7c84f0d56060449e0b6c6a911ad" name="a800fb7c84f0d56060449e0b6c6a911ad"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a800fb7c84f0d56060449e0b6c6a911ad">&#9670;&#160;</a></span>forward()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a800fb7c84f0d56060449e0b6c6a911ad">&#9670;&#160;</a></span>forward() <span class="overload">[3/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -232,7 +330,7 @@ template&lt;int channels, int attention_channels, int input_width, int out_width
       </table>
 </div><div class="memdoc">
 
-<p>Conputes the forward feed. </p>
+<p>Computes the forward feed. </p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">channels</td><td></td></tr>
@@ -250,8 +348,6 @@ template&lt;int channels, int attention_channels, int input_width, int out_width
   </table>
   </dd>
 </dl>
-
-<p class="definition">Definition at line <a class="el" href="asp_8cpp_source.html#l00049">49</a> of file <a class="el" href="asp_8cpp_source.html">asp.cpp</a>.</p>
 
 </div>
 </div>
@@ -290,8 +386,6 @@ template&lt;int channels, int attention_channels, int input_width, int out_width
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="asp_8cpp_source.html#l00169">169</a> of file <a class="el" href="asp_8cpp_source.html">asp.cpp</a>.</p>
-
 </div>
 </div>
 <a id="a1b300a45083c3b13aafea6e0a0e47131" name="a1b300a45083c3b13aafea6e0a0e47131"></a>
@@ -328,8 +422,6 @@ template&lt;int channels, int attention_channels, int input_width, int out_width
   </table>
   </dd>
 </dl>
-
-<p class="definition">Definition at line <a class="el" href="asp_8cpp_source.html#l00143">143</a> of file <a class="el" href="asp_8cpp_source.html">asp.cpp</a>.</p>
 
 </div>
 </div>

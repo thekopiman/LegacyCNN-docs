@@ -27,7 +27,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">LegacyCNN<span id="projectnumber">&#160;v0.2</span>
+   <div id="projectname">LegacyCNN<span id="projectnumber">&#160;0.3</span>
    </div>
    <div id="projectbrief">Toolbox for creating Neural Networks in Cpp</div>
   </td>
@@ -146,91 +146,214 @@ $(function(){initNavTree('asp_8cpp_source.html',''); initResizable(true); });
 <div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    <span class="comment">// Helper::print(this-&gt;attn2);</span></div>
 <div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span> </div>
 <div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    <span class="comment">// Obtain Pooled statistics</span></div>
-<div class="foldopen" id="foldopen00081" data-start="{" data-end="}">
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno"><a class="line" href="class_a_s_p.html#a1b300a45083c3b13aafea6e0a0e47131">   81</a></span>    compute_statistics(input, attn2);</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    compute_statistics(input, attn2);</div>
 <div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span> </div>
 <div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; channels; i++)</div>
 <div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    {</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>        output[i][0] = this-&gt;mean[i];</div>
+<div class="foldopen" id="foldopen00085" data-start="{" data-end="}">
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno"><a class="line" href="class_a_s_p.html#a8fde2743bbabdf55020dcc68fea7b2ef">   85</a></span>        output[i][0] = this-&gt;mean[i];</div>
 <div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>        output[channels + i][0] = this-&gt;std[i];</div>
 <div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    }</div>
 <div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>};</div>
 <div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span> </div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span><span class="keyword">template</span> &lt;<span class="keywordtype">int</span> channels, <span class="keywordtype">int</span> attention_channels, <span class="keywordtype">int</span> input_w<span class="keywordtype">id</span>th, <span class="keywordtype">int</span> out_w<span class="keywordtype">id</span>th, <span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span><span class="keywordtype">void</span> <a class="code hl_class" href="class_a_s_p.html">ASP&lt;channels, attention_channels, input_width, out_width, T&gt;::compute_statistics</a>(T (&amp;x)[channels][input_width], T (&amp;m)[channels][input_width])</div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>{</div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>    T temp[channels][input_width];</div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span> </div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>    <span class="comment">// Obtain Mean here</span></div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>    <a class="code hl_function" href="class_matrix_functions.html#a7f5da89c6c9bb4a6f8f04aeb1757dc41">MatrixFunctions::HadamardProduct</a>(x, m, temp);</div>
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; channels; i++)</div>
-<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>    {</div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>        this-&gt;mean[i] = <a class="code hl_function" href="class_matrix_functions.html#af8c8b43a7befe030fb2b71b7084507c3">MatrixFunctions::Sum</a>(temp[i]);</div>
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>    }</div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span> </div>
-<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>    <span class="comment">// Obtain Population Std here</span></div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span><span class="keyword">template</span> &lt;<span class="keywordtype">int</span> channels, <span class="keywordtype">int</span> attention_channels, <span class="keywordtype">int</span> input_w<span class="keywordtype">id</span>th, <span class="keywordtype">int</span> out_w<span class="keywordtype">id</span>th, <span class="keyword">typename</span> T&gt;</div>
+<div class="foldopen" id="foldopen00105" data-start="{" data-end="}">
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno"><a class="line" href="class_a_s_p.html#a8fde2743bbabdf55020dcc68fea7b2ef">  105</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="class_a_s_p.html#a800fb7c84f0d56060449e0b6c6a911ad">ASP&lt;channels, attention_channels, input_width, out_width, T&gt;::forward</a>(T (&amp;input)[channels][input_width], T &amp;lengths, T (&amp;output)[channels * 2][1])</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>{</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>    T tempLengths[channels];</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>    assert(lengths &gt; 0 &amp;&amp; <span class="stringliteral">&quot;Make sure that lengths contain at least a Natural number to prevent division by 0.&quot;</span>);</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span> </div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; channels; i++)</div>
+<div class="foldopen" id="foldopen00111" data-start="{" data-end="}">
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno"><a class="line" href="class_a_s_p.html#a1b300a45083c3b13aafea6e0a0e47131">  111</a></span>    {</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>        tempLengths[i] = lengths;</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>    }</div>
 <div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span> </div>
-<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; channels; i++)</div>
-<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>    {</div>
-<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = 0; j &lt; input_width; j++)</div>
-<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>        {</div>
-<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>            x[i][j] -= this-&gt;mean[i]; <span class="comment">// x - mean</span></div>
-<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>            x[i][j] *= x[i][j];       <span class="comment">// pow(2)</span></div>
-<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>        }</div>
-<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>    }</div>
-<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span> </div>
-<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>    <a class="code hl_function" href="class_matrix_functions.html#a7f5da89c6c9bb4a6f8f04aeb1757dc41">MatrixFunctions::HadamardProduct</a>(x, m, temp);</div>
-<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; channels; i++)</div>
-<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>    {</div>
-<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>        this-&gt;std[i] = <a class="code hl_function" href="class_matrix_functions.html#aa1c8eae04ff4fa86491e5f180fb28d8e">MatrixFunctions::Clamp</a>(<a class="code hl_function" href="class_matrix_functions.html#af8c8b43a7befe030fb2b71b7084507c3">MatrixFunctions::Sum</a>(temp[i]), (T)1e-12);</div>
-<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>        this-&gt;std[i] = std::sqrt(this-&gt;std[i]);</div>
-<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>    }</div>
-<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>}</div>
-<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span> </div>
-<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span><span class="keyword">template</span> &lt;<span class="keywordtype">int</span> channels, <span class="keywordtype">int</span> attention_channels, <span class="keywordtype">int</span> input_w<span class="keywordtype">id</span>th, <span class="keywordtype">int</span> out_w<span class="keywordtype">id</span>th, <span class="keyword">typename</span> T&gt;</div>
-<div class="foldopen" id="foldopen00143" data-start="{" data-end="}">
-<div class="line"><a id="l00143" name="l00143"></a><span class="lineno"><a class="line" href="class_a_s_p.html#a1b300a45083c3b13aafea6e0a0e47131">  143</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="class_a_s_p.html#a1b300a45083c3b13aafea6e0a0e47131">ASP&lt;channels, attention_channels, input_width, out_width, T&gt;::loadweights</a>(std::string pathname)</div>
-<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>{</div>
-<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>    std::ifstream infile(pathname, std::ios::binary);</div>
-<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>    <span class="keywordflow">if</span> (!infile)</div>
-<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>    {</div>
-<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>        std::cout &lt;&lt; <span class="stringliteral">&quot;Error opening file!&quot;</span> &lt;&lt; std::endl;</div>
-<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>        <span class="keywordflow">return</span>;</div>
-<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>    }</div>
-<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span> </div>
-<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>    tdnn.loadweights(infile);</div>
-<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>    conv.loadweights(infile);</div>
-<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span> </div>
-<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>    infile.close();</div>
-<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>};</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>    forward(input, tempLengths, output);</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>}</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span> </div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span><span class="keyword">template</span> &lt;<span class="keywordtype">int</span> channels, <span class="keywordtype">int</span> attention_channels, <span class="keywordtype">int</span> input_w<span class="keywordtype">id</span>th, <span class="keywordtype">int</span> out_w<span class="keywordtype">id</span>th, <span class="keyword">typename</span> T&gt;</div>
+<div class="foldopen" id="foldopen00133" data-start="{" data-end="}">
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno"><a class="line" href="class_a_s_p.html#aed953f2018296d0489e14b33482a1427">  133</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="class_a_s_p.html#a800fb7c84f0d56060449e0b6c6a911ad">ASP&lt;channels, attention_channels, input_width, out_width, T&gt;::forward</a>(T (&amp;input)[channels][input_width], T (&amp;lengths)[channels], T (&amp;output)[channels * 2][1])</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>{</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>    resetMask();</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span> </div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>    <span class="keywordtype">bool</span> ExistNonZero = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; channels; i++)</div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>    {</div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>        <span class="keywordflow">if</span> (lengths[i] &gt; 0)</div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>        {</div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>            ExistNonZero = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>        }</div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>    }</div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span> </div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>    assert(ExistNonZero &amp;&amp; <span class="stringliteral">&quot;Make sure that lengths contain at least a Natural number to prevent division by 0.&quot;</span>);</div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span> </div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>    <span class="comment">// Mask here has a dim of [N, C, L] instead of the one [N, 1, L]. Where N = 1</span></div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>    <span class="comment">// This is because Hadamard Product in MatrixFunctions requires same dimensions.</span></div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span> </div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>    <span class="comment">// Length to mask</span></div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>    <span class="comment">// https://speechbrain.readthedocs.io/en/latest/_modules/speechbrain/dataio/dataio.html#length_to_mask</span></div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span> </div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; channels; i++)</div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>    {</div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = 0; j &lt; std::ceil(lengths[i] * input_width) &amp;&amp; j &lt; input_width; j++)</div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>        {</div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>            this-&gt;mask[i][j] = 1;</div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>        }</div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>        this-&gt;total[i] = <a class="code hl_function" href="class_matrix_functions.html#af8c8b43a7befe030fb2b71b7084507c3">MatrixFunctions::Sum</a>(this-&gt;mask[i]);</div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>    }</div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span> </div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>    <span class="comment">// mask / total</span></div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span> </div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; channels; i++)</div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>    {</div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = 0; j &lt; input_width; j++)</div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>        {</div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>            this-&gt;mask[i][j] /= this-&gt;total[i];</div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>        }</div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>    }</div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span> </div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>    <span class="comment">// mean, std = _compute_statistics(x, mask / total)</span></div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>    compute_statistics(input, this-&gt;mask);</div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span> </div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>    <span class="comment">// attn = torch.cat([x, mean, std], dim=1)</span></div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; channels; i++)</div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>    {</div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = 0; j &lt; input_width; j++)</div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>        {</div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>            this-&gt;attn[i][j] = input[i][j];</div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>            this-&gt;attn[channels + i][j] = this-&gt;mean[i];    <span class="comment">// mean = mean.unsqueeze(2).repeat(1, 1, L)</span></div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>            this-&gt;attn[2 * channels + i][j] = this-&gt;std[i]; <span class="comment">// std = std.unsqueeze(2).repeat(1, 1, L)</span></div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>        }</div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>    }</div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span> </div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>    <span class="comment">// Helper::print(this-&gt;attn);</span></div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span> </div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>    <span class="comment">// apply layers</span></div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>    this-&gt;tdnn.forward(this-&gt;attn, this-&gt;attn1);</div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>    <a class="code hl_function" href="class_activation_functions.html#a55c708daa0845dc33e4a8e66e204244a">ActivationFunctions::Tanh</a>(this-&gt;attn1);</div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>    this-&gt;conv.forward(this-&gt;attn1, this-&gt;attn2);</div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span> </div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>    <span class="comment">// Filter out zero-paddings</span></div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = 0; j &lt; input_width; j++)</div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>    {</div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>        <span class="keywordflow">if</span> (this-&gt;mask[0][j] == 0)</div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>        {</div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; channels; i++)</div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>            {</div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>                this-&gt;attn2[i][j] = std::numeric_limits&lt;T&gt;::lowest();</div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>            }</div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>        }</div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>    }</div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span> </div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>    <span class="comment">// Helper::print(this-&gt;attn2);</span></div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span> </div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>    <a class="code hl_function" href="class_activation_functions.html#a87fe74f0fab63bbff7c029a0ba7cb5af">ActivationFunctions::Softmax</a>(this-&gt;attn2);</div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span> </div>
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>    <span class="comment">// Helper::print(this-&gt;attn2);</span></div>
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span> </div>
+<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span>    <span class="comment">// Obtain Pooled statistics</span></div>
+<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span>    compute_statistics(input, attn2);</div>
+<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span> </div>
+<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; channels; i++)</div>
+<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span>    {</div>
+<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span>        output[i][0] = this-&gt;mean[i];</div>
+<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>        output[channels + i][0] = this-&gt;std[i];</div>
+<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span>    }</div>
+<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span>}</div>
+</div>
+<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span> </div>
+<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span><span class="keyword">template</span> &lt;<span class="keywordtype">int</span> channels, <span class="keywordtype">int</span> attention_channels, <span class="keywordtype">int</span> input_w<span class="keywordtype">id</span>th, <span class="keywordtype">int</span> out_w<span class="keywordtype">id</span>th, <span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span><span class="keywordtype">void</span> <a class="code hl_class" href="class_a_s_p.html">ASP&lt;channels, attention_channels, input_width, out_width, T&gt;::resetMask</a>()</div>
+<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>{</div>
+<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; channels; i++)</div>
+<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>    {</div>
+<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = 0; j &lt; input_width; j++)</div>
+<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>        {</div>
+<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>            this-&gt;mask[i][j] = 0;</div>
+<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span>        }</div>
+<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>        this-&gt;total[i] = 0;</div>
+<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>    }</div>
+<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>}</div>
+<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span> </div>
+<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span><span class="keyword">template</span> &lt;<span class="keywordtype">int</span> channels, <span class="keywordtype">int</span> attention_channels, <span class="keywordtype">int</span> input_w<span class="keywordtype">id</span>th, <span class="keywordtype">int</span> out_w<span class="keywordtype">id</span>th, <span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span><span class="keywordtype">void</span> <a class="code hl_class" href="class_a_s_p.html">ASP&lt;channels, attention_channels, input_width, out_width, T&gt;::compute_statistics</a>(T (&amp;x)[channels][input_width], T (&amp;m)[channels][input_width])</div>
+<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span>{</div>
+<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span>    T temp[channels][input_width];</div>
+<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span> </div>
+<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span>    <span class="comment">// Obtain Mean here</span></div>
+<div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span>    <a class="code hl_function" href="class_matrix_functions.html#a7f5da89c6c9bb4a6f8f04aeb1757dc41">MatrixFunctions::HadamardProduct</a>(x, m, temp);</div>
+<div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; channels; i++)</div>
+<div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span>    {</div>
+<div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span>        this-&gt;mean[i] = <a class="code hl_function" href="class_matrix_functions.html#af8c8b43a7befe030fb2b71b7084507c3">MatrixFunctions::Sum</a>(temp[i]);</div>
+<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span>    }</div>
+<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span> </div>
+<div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span>    <span class="comment">// Obtain Population Std here</span></div>
+<div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span> </div>
+<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; channels; i++)</div>
+<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span>    {</div>
+<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = 0; j &lt; input_width; j++)</div>
+<div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span>        {</div>
+<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span>            x[i][j] -= this-&gt;mean[i]; <span class="comment">// x - mean</span></div>
+<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span>            x[i][j] *= x[i][j];       <span class="comment">// pow(2)</span></div>
+<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span>        }</div>
+<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span>    }</div>
+<div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span> </div>
+<div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span>    <a class="code hl_function" href="class_matrix_functions.html#a7f5da89c6c9bb4a6f8f04aeb1757dc41">MatrixFunctions::HadamardProduct</a>(x, m, temp);</div>
+<div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; channels; i++)</div>
+<div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span>    {</div>
+<div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span>        this-&gt;std[i] = <a class="code hl_function" href="class_matrix_functions.html#aa1c8eae04ff4fa86491e5f180fb28d8e">MatrixFunctions::Clamp</a>(<a class="code hl_function" href="class_matrix_functions.html#af8c8b43a7befe030fb2b71b7084507c3">MatrixFunctions::Sum</a>(temp[i]), (T)1e-12);</div>
+<div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span>        this-&gt;std[i] = std::sqrt(this-&gt;std[i]);</div>
+<div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span>    }</div>
+<div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span>}</div>
+<div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span> </div>
+<div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span><span class="keyword">template</span> &lt;<span class="keywordtype">int</span> channels, <span class="keywordtype">int</span> attention_channels, <span class="keywordtype">int</span> input_w<span class="keywordtype">id</span>th, <span class="keywordtype">int</span> out_w<span class="keywordtype">id</span>th, <span class="keyword">typename</span> T&gt;</div>
+<div class="foldopen" id="foldopen00297" data-start="{" data-end="}">
+<div class="line"><a id="l00297" name="l00297"></a><span class="lineno"><a class="line" href="class_a_s_p.html#a1b300a45083c3b13aafea6e0a0e47131">  297</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="class_a_s_p.html#a1b300a45083c3b13aafea6e0a0e47131">ASP&lt;channels, attention_channels, input_width, out_width, T&gt;::loadweights</a>(std::string pathname)</div>
+<div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span>{</div>
+<div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span>    std::ifstream infile(pathname, std::ios::binary);</div>
+<div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span>    <span class="keywordflow">if</span> (!infile)</div>
+<div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span>    {</div>
+<div class="line"><a id="l00302" name="l00302"></a><span class="lineno">  302</span>        std::cout &lt;&lt; <span class="stringliteral">&quot;Error opening file!&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><a id="l00303" name="l00303"></a><span class="lineno">  303</span>        <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00304" name="l00304"></a><span class="lineno">  304</span>    }</div>
+<div class="line"><a id="l00305" name="l00305"></a><span class="lineno">  305</span> </div>
+<div class="line"><a id="l00306" name="l00306"></a><span class="lineno">  306</span>    tdnn.loadweights(infile);</div>
+<div class="line"><a id="l00307" name="l00307"></a><span class="lineno">  307</span>    conv.loadweights(infile);</div>
+<div class="line"><a id="l00308" name="l00308"></a><span class="lineno">  308</span> </div>
+<div class="line"><a id="l00309" name="l00309"></a><span class="lineno">  309</span>    infile.close();</div>
+<div class="line"><a id="l00310" name="l00310"></a><span class="lineno">  310</span>};</div>
 </div>
 </div>
-<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span> </div>
-<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span><span class="keyword">template</span> &lt;<span class="keywordtype">int</span> channels, <span class="keywordtype">int</span> attention_channels, <span class="keywordtype">int</span> input_w<span class="keywordtype">id</span>th, <span class="keywordtype">int</span> out_w<span class="keywordtype">id</span>th, <span class="keyword">typename</span> T&gt;</div>
-<div class="foldopen" id="foldopen00169" data-start="{" data-end="}">
-<div class="line"><a id="l00169" name="l00169"></a><span class="lineno"><a class="line" href="class_a_s_p.html#a1fe9e4759bb5e62c5516f46822216caa">  169</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="class_a_s_p.html#a1b300a45083c3b13aafea6e0a0e47131">ASP&lt;channels, attention_channels, input_width, out_width, T&gt;::loadweights</a>(std::ifstream &amp;infile)</div>
-<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>{</div>
-<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>    tdnn.loadweights(infile);</div>
-<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>    conv.loadweights(infile);</div>
-<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>};</div>
+<div class="line"><a id="l00311" name="l00311"></a><span class="lineno">  311</span> </div>
+<div class="line"><a id="l00322" name="l00322"></a><span class="lineno">  322</span><span class="keyword">template</span> &lt;<span class="keywordtype">int</span> channels, <span class="keywordtype">int</span> attention_channels, <span class="keywordtype">int</span> input_w<span class="keywordtype">id</span>th, <span class="keywordtype">int</span> out_w<span class="keywordtype">id</span>th, <span class="keyword">typename</span> T&gt;</div>
+<div class="foldopen" id="foldopen00323" data-start="{" data-end="}">
+<div class="line"><a id="l00323" name="l00323"></a><span class="lineno"><a class="line" href="class_a_s_p.html#a1fe9e4759bb5e62c5516f46822216caa">  323</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="class_a_s_p.html#a1b300a45083c3b13aafea6e0a0e47131">ASP&lt;channels, attention_channels, input_width, out_width, T&gt;::loadweights</a>(std::ifstream &amp;infile)</div>
+<div class="line"><a id="l00324" name="l00324"></a><span class="lineno">  324</span>{</div>
+<div class="line"><a id="l00325" name="l00325"></a><span class="lineno">  325</span>    tdnn.loadweights(infile);</div>
+<div class="line"><a id="l00326" name="l00326"></a><span class="lineno">  326</span>    conv.loadweights(infile);</div>
+<div class="line"><a id="l00327" name="l00327"></a><span class="lineno">  327</span>};</div>
+</div>
+</div>
 </div>
 </div>
 </div>
 </div>
 </div>
 <div class="ttc" id="aasp_8h_html"><div class="ttname"><a href="asp_8h.html">asp.h</a></div></div>
-<div class="ttc" id="aclass_a_s_p_html"><div class="ttname"><a href="class_a_s_p.html">ASP</a></div><div class="ttdoc">Attentive Statistical Pooling.</div><div class="ttdef"><b>Definition</b> <a href="asp_8h_source.html#l00036">asp.h:37</a></div></div>
-<div class="ttc" id="aclass_a_s_p_html_a090f752837ab507cc55092cb276c0f01"><div class="ttname"><a href="class_a_s_p.html#a090f752837ab507cc55092cb276c0f01">ASP::~ASP</a></div><div class="ttdeci">~ASP()</div><div class="ttdoc">Destroy the asp&lt;channels, attention channels, input width, out dim, t&gt;::asp object.</div><div class="ttdef"><b>Definition</b> <a href="#l00035">asp.cpp:35</a></div></div>
-<div class="ttc" id="aclass_a_s_p_html_a1b300a45083c3b13aafea6e0a0e47131"><div class="ttname"><a href="class_a_s_p.html#a1b300a45083c3b13aafea6e0a0e47131">ASP::loadweights</a></div><div class="ttdeci">void loadweights(std::string pathname)</div><div class="ttdoc">Loadweights via pathname.</div><div class="ttdef"><b>Definition</b> <a href="#l00143">asp.cpp:143</a></div></div>
-<div class="ttc" id="aclass_a_s_p_html_a800fb7c84f0d56060449e0b6c6a911ad"><div class="ttname"><a href="class_a_s_p.html#a800fb7c84f0d56060449e0b6c6a911ad">ASP::forward</a></div><div class="ttdeci">void forward(T(&amp;input)[channels][input_width], T(&amp;output)[channels *2][1])</div><div class="ttdoc">Conputes the forward feed.</div><div class="ttdef"><b>Definition</b> <a href="#l00049">asp.cpp:49</a></div></div>
-<div class="ttc" id="aclass_a_s_p_html_ac93f6024caf59cb2f6898cf45a1592fd"><div class="ttname"><a href="class_a_s_p.html#ac93f6024caf59cb2f6898cf45a1592fd">ASP::ASP</a></div><div class="ttdeci">ASP()</div><div class="ttdoc">Construct a new asp&lt;channels, attention channels, input width, out dim, t&gt;::asp object.</div><div class="ttdef"><b>Definition</b> <a href="#l00023">asp.cpp:23</a></div></div>
-<div class="ttc" id="aclass_activation_functions_html_a55c708daa0845dc33e4a8e66e204244a"><div class="ttname"><a href="class_activation_functions.html#a55c708daa0845dc33e4a8e66e204244a">ActivationFunctions::Tanh</a></div><div class="ttdeci">static void Tanh(T(&amp;input)[rows][cols])</div><div class="ttdoc">Perform Tanh It will edit the pointer content directly.</div><div class="ttdef"><b>Definition</b> <a href="activationfunctions_8cpp_source.html#l00170">activationfunctions.cpp:170</a></div></div>
-<div class="ttc" id="aclass_activation_functions_html_a87fe74f0fab63bbff7c029a0ba7cb5af"><div class="ttname"><a href="class_activation_functions.html#a87fe74f0fab63bbff7c029a0ba7cb5af">ActivationFunctions::Softmax</a></div><div class="ttdeci">static void Softmax(T(&amp;input)[rows][cols])</div><div class="ttdoc">Perform Softmax It will edit the pointer content directly.</div><div class="ttdef"><b>Definition</b> <a href="activationfunctions_8cpp_source.html#l00031">activationfunctions.cpp:31</a></div></div>
-<div class="ttc" id="aclass_matrix_functions_html_a1c38e1dc5ac60a26324e76a75f58bb69"><div class="ttname"><a href="class_matrix_functions.html#a1c38e1dc5ac60a26324e76a75f58bb69">MatrixFunctions::Std</a></div><div class="ttdeci">static void Std(T(&amp;input)[dim1][dim2], T(&amp;output)[dim1])</div><div class="ttdoc">Computes the population std of input by channel.</div><div class="ttdef"><b>Definition</b> <a href="matrixfunctions_8cpp_source.html#l00480">matrixfunctions.cpp:480</a></div></div>
-<div class="ttc" id="aclass_matrix_functions_html_a7c16622175c414528a40ed3b85d59054"><div class="ttname"><a href="class_matrix_functions.html#a7c16622175c414528a40ed3b85d59054">MatrixFunctions::Mean</a></div><div class="ttdeci">static void Mean(T(&amp;input)[dim1][dim2], T(&amp;output)[dim1])</div><div class="ttdoc">Computes the mean on dim2. Here output has a shape of (dim1)</div><div class="ttdef"><b>Definition</b> <a href="matrixfunctions_8cpp_source.html#l00322">matrixfunctions.cpp:322</a></div></div>
-<div class="ttc" id="aclass_matrix_functions_html_a7f5da89c6c9bb4a6f8f04aeb1757dc41"><div class="ttname"><a href="class_matrix_functions.html#a7f5da89c6c9bb4a6f8f04aeb1757dc41">MatrixFunctions::HadamardProduct</a></div><div class="ttdeci">static void HadamardProduct(T(&amp;mat1)[dim1][dim2], T(&amp;mat2)[dim1][dim2], T(&amp;output)[dim1][dim2])</div><div class="ttdoc">Perform PyTorch default &quot;Product&quot; between 2 matrices. A * B https://en.wikipedia.org/wiki/Hadamard_pr...</div><div class="ttdef"><b>Definition</b> <a href="matrixfunctions_8cpp_source.html#l00273">matrixfunctions.cpp:273</a></div></div>
-<div class="ttc" id="aclass_matrix_functions_html_aa1c8eae04ff4fa86491e5f180fb28d8e"><div class="ttname"><a href="class_matrix_functions.html#aa1c8eae04ff4fa86491e5f180fb28d8e">MatrixFunctions::Clamp</a></div><div class="ttdeci">static void Clamp(T(&amp;input)[dim1][dim2], T min, T max)</div><div class="ttdoc">yi​=min(max(xi​,min_valuei​),max_valuei​)</div><div class="ttdef"><b>Definition</b> <a href="matrixfunctions_8cpp_source.html#l00366">matrixfunctions.cpp:366</a></div></div>
-<div class="ttc" id="aclass_matrix_functions_html_af8c8b43a7befe030fb2b71b7084507c3"><div class="ttname"><a href="class_matrix_functions.html#af8c8b43a7befe030fb2b71b7084507c3">MatrixFunctions::Sum</a></div><div class="ttdeci">static T Sum(T(&amp;input)[rows][cols])</div><div class="ttdoc">Computes the sum of a 2d matrix and returns it.</div><div class="ttdef"><b>Definition</b> <a href="matrixfunctions_8cpp_source.html#l00022">matrixfunctions.cpp:22</a></div></div>
+<div class="ttc" id="aclass_a_s_p_html"><div class="ttname"><a href="class_a_s_p.html">ASP</a></div><div class="ttdoc">Attentive Statistical Pooling.</div><div class="ttdef"><b>Definition</b> asp.h:37</div></div>
+<div class="ttc" id="aclass_a_s_p_html_a090f752837ab507cc55092cb276c0f01"><div class="ttname"><a href="class_a_s_p.html#a090f752837ab507cc55092cb276c0f01">ASP::~ASP</a></div><div class="ttdeci">~ASP()</div><div class="ttdoc">Destroy the asp&lt;channels, attention channels, input width, out dim, t&gt;::asp object.</div><div class="ttdef"><b>Definition</b> asp.cpp:35</div></div>
+<div class="ttc" id="aclass_a_s_p_html_a1b300a45083c3b13aafea6e0a0e47131"><div class="ttname"><a href="class_a_s_p.html#a1b300a45083c3b13aafea6e0a0e47131">ASP::loadweights</a></div><div class="ttdeci">void loadweights(std::string pathname)</div><div class="ttdoc">Loadweights via pathname.</div><div class="ttdef"><b>Definition</b> asp.cpp:297</div></div>
+<div class="ttc" id="aclass_a_s_p_html_a800fb7c84f0d56060449e0b6c6a911ad"><div class="ttname"><a href="class_a_s_p.html#a800fb7c84f0d56060449e0b6c6a911ad">ASP::forward</a></div><div class="ttdeci">void forward(T(&amp;input)[channels][input_width], T(&amp;output)[channels *2][1])</div><div class="ttdoc">Computes the forward feed.</div><div class="ttdef"><b>Definition</b> asp.cpp:49</div></div>
+<div class="ttc" id="aclass_a_s_p_html_ac93f6024caf59cb2f6898cf45a1592fd"><div class="ttname"><a href="class_a_s_p.html#ac93f6024caf59cb2f6898cf45a1592fd">ASP::ASP</a></div><div class="ttdeci">ASP()</div><div class="ttdoc">Construct a new asp&lt;channels, attention channels, input width, out dim, t&gt;::asp object.</div><div class="ttdef"><b>Definition</b> asp.cpp:23</div></div>
+<div class="ttc" id="aclass_activation_functions_html_a55c708daa0845dc33e4a8e66e204244a"><div class="ttname"><a href="class_activation_functions.html#a55c708daa0845dc33e4a8e66e204244a">ActivationFunctions::Tanh</a></div><div class="ttdeci">static void Tanh(T(&amp;input)[rows][cols])</div><div class="ttdoc">Perform Tanh It will edit the pointer content directly.</div><div class="ttdef"><b>Definition</b> activationfunctions.cpp:170</div></div>
+<div class="ttc" id="aclass_activation_functions_html_a87fe74f0fab63bbff7c029a0ba7cb5af"><div class="ttname"><a href="class_activation_functions.html#a87fe74f0fab63bbff7c029a0ba7cb5af">ActivationFunctions::Softmax</a></div><div class="ttdeci">static void Softmax(T(&amp;input)[rows][cols])</div><div class="ttdoc">Perform Softmax It will edit the pointer content directly.</div><div class="ttdef"><b>Definition</b> activationfunctions.cpp:31</div></div>
+<div class="ttc" id="aclass_matrix_functions_html_a1c38e1dc5ac60a26324e76a75f58bb69"><div class="ttname"><a href="class_matrix_functions.html#a1c38e1dc5ac60a26324e76a75f58bb69">MatrixFunctions::Std</a></div><div class="ttdeci">static void Std(T(&amp;input)[dim1][dim2], T(&amp;output)[dim1])</div><div class="ttdoc">Computes the population std of input by channel.</div><div class="ttdef"><b>Definition</b> matrixfunctions.cpp:480</div></div>
+<div class="ttc" id="aclass_matrix_functions_html_a7c16622175c414528a40ed3b85d59054"><div class="ttname"><a href="class_matrix_functions.html#a7c16622175c414528a40ed3b85d59054">MatrixFunctions::Mean</a></div><div class="ttdeci">static void Mean(T(&amp;input)[dim1][dim2], T(&amp;output)[dim1])</div><div class="ttdoc">Computes the mean on dim2. Here output has a shape of (dim1)</div><div class="ttdef"><b>Definition</b> matrixfunctions.cpp:322</div></div>
+<div class="ttc" id="aclass_matrix_functions_html_a7f5da89c6c9bb4a6f8f04aeb1757dc41"><div class="ttname"><a href="class_matrix_functions.html#a7f5da89c6c9bb4a6f8f04aeb1757dc41">MatrixFunctions::HadamardProduct</a></div><div class="ttdeci">static void HadamardProduct(T(&amp;mat1)[dim1][dim2], T(&amp;mat2)[dim1][dim2], T(&amp;output)[dim1][dim2])</div><div class="ttdoc">Perform PyTorch default &quot;Product&quot; between 2 matrices. A * B https://en.wikipedia.org/wiki/Hadamard_pr...</div><div class="ttdef"><b>Definition</b> matrixfunctions.cpp:273</div></div>
+<div class="ttc" id="aclass_matrix_functions_html_aa1c8eae04ff4fa86491e5f180fb28d8e"><div class="ttname"><a href="class_matrix_functions.html#aa1c8eae04ff4fa86491e5f180fb28d8e">MatrixFunctions::Clamp</a></div><div class="ttdeci">static void Clamp(T(&amp;input)[dim1][dim2], T min, T max)</div><div class="ttdoc">yi​=min(max(xi​,min_valuei​),max_valuei​)</div><div class="ttdef"><b>Definition</b> matrixfunctions.cpp:366</div></div>
+<div class="ttc" id="aclass_matrix_functions_html_af8c8b43a7befe030fb2b71b7084507c3"><div class="ttname"><a href="class_matrix_functions.html#af8c8b43a7befe030fb2b71b7084507c3">MatrixFunctions::Sum</a></div><div class="ttdeci">static T Sum(T(&amp;input)[rows][cols])</div><div class="ttdoc">Computes the sum of a 2d matrix and returns it.</div><div class="ttdef"><b>Definition</b> matrixfunctions.cpp:22</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

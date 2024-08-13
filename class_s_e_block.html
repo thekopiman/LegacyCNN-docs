@@ -27,7 +27,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">LegacyCNN<span id="projectnumber">&#160;v0.2</span>
+   <div id="projectname">LegacyCNN<span id="projectnumber">&#160;0.3</span>
    </div>
    <div id="projectbrief">Toolbox for creating Neural Networks in Cpp</div>
   </td>
@@ -117,6 +117,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ad418609d6fc8a874ec2357e5c39337a1" id="r_ad418609d6fc8a874ec2357e5c39337a1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad418609d6fc8a874ec2357e5c39337a1">forward</a> (T(&amp;input)[channel_in][input_width], T(&amp;output)[channel_out][out_width])</td></tr>
 <tr class="memdesc:ad418609d6fc8a874ec2357e5c39337a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform forward feed.  <br /></td></tr>
 <tr class="separator:ad418609d6fc8a874ec2357e5c39337a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a956a454e710be588a3ec270de36fe34d" id="r_a956a454e710be588a3ec270de36fe34d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a956a454e710be588a3ec270de36fe34d">forward</a> (T(&amp;input)[channel_in][input_width], T &amp;lengths, T(&amp;output)[channel_out][out_width])</td></tr>
+<tr class="memdesc:a956a454e710be588a3ec270de36fe34d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform forward feed.  <br /></td></tr>
+<tr class="separator:a956a454e710be588a3ec270de36fe34d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a923b18f914f37b3f1cc2704b0a5948b7" id="r_a923b18f914f37b3f1cc2704b0a5948b7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a923b18f914f37b3f1cc2704b0a5948b7">forward</a> (T(&amp;input)[channel_in][input_width], T(&amp;lengths)[channel_in], T(&amp;output)[channel_out][out_width])</td></tr>
+<tr class="memdesc:a923b18f914f37b3f1cc2704b0a5948b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform forward feed.  <br /></td></tr>
+<tr class="separator:a923b18f914f37b3f1cc2704b0a5948b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae181af408a49004afd7081c45b146e47" id="r_ae181af408a49004afd7081c45b146e47"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae181af408a49004afd7081c45b146e47">~SEBlock</a> ()</td></tr>
 <tr class="separator:ae181af408a49004afd7081c45b146e47"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a758373cae1c9bff4af036f04dfd7ec3f" id="r_a758373cae1c9bff4af036f04dfd7ec3f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a758373cae1c9bff4af036f04dfd7ec3f">loadweights</a> (std::string pathname)</td></tr>
@@ -141,8 +147,6 @@ class SEBlock&lt; channel_in, channel_se, channel_out, input_width, out_width, T
   </table>
   </dd>
 </dl>
-
-<p class="definition">Definition at line <a class="el" href="seblock_8h_source.html#l00036">36</a> of file <a class="el" href="seblock_8h_source.html">seblock.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ac951ced47ad8b0612098a5ab1e809ebb" name="ac951ced47ad8b0612098a5ab1e809ebb"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac951ced47ad8b0612098a5ab1e809ebb">&#9670;&#160;</a></span>SEBlock()</h2>
@@ -175,8 +179,6 @@ template&lt;int channel_in, int channel_se, int channel_out, int input_width, in
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="seblock_8cpp_source.html#l00026">26</a> of file <a class="el" href="seblock_8cpp_source.html">seblock.cpp</a>.</p>
-
 </div>
 </div>
 <a id="ae181af408a49004afd7081c45b146e47" name="ae181af408a49004afd7081c45b146e47"></a>
@@ -196,13 +198,109 @@ template&lt;int channel_in, int channel_se, int channel_out, int input_width, in
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="seblock_8cpp_source.html#l00062">62</a> of file <a class="el" href="seblock_8cpp_source.html">seblock.cpp</a>.</p>
-
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a956a454e710be588a3ec270de36fe34d" name="a956a454e710be588a3ec270de36fe34d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a956a454e710be588a3ec270de36fe34d">&#9670;&#160;</a></span>forward() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;int channel_in, int channel_se, int channel_out, int input_width, int out_width, typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_s_e_block.html">SEBlock</a>&lt; channel_in, channel_se, channel_out, input_width, out_width, T &gt;::forward </td>
+          <td>(</td>
+          <td class="paramtype">T(&amp;)</td>          <td class="paramname"><span class="paramname"><em>input</em></span>[channel_in][input_width], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T &amp;</td>          <td class="paramname"><span class="paramname"><em>lengths</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T(&amp;)</td>          <td class="paramname"><span class="paramname"><em>output</em></span>[channel_out][out_width]&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Perform forward feed. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">channel_in</td><td></td></tr>
+    <tr><td class="paramname">channel_se</td><td></td></tr>
+    <tr><td class="paramname">channel_out</td><td></td></tr>
+    <tr><td class="paramname">input_width</td><td></td></tr>
+    <tr><td class="paramname">out_width</td><td></td></tr>
+    <tr><td class="paramname">T</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">input</td><td></td></tr>
+    <tr><td class="paramname">lengths</td><td></td></tr>
+    <tr><td class="paramname">output</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a923b18f914f37b3f1cc2704b0a5948b7" name="a923b18f914f37b3f1cc2704b0a5948b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a923b18f914f37b3f1cc2704b0a5948b7">&#9670;&#160;</a></span>forward() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;int channel_in, int channel_se, int channel_out, int input_width, int out_width, typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_s_e_block.html">SEBlock</a>&lt; channel_in, channel_se, channel_out, input_width, out_width, T &gt;::forward </td>
+          <td>(</td>
+          <td class="paramtype">T(&amp;)</td>          <td class="paramname"><span class="paramname"><em>input</em></span>[channel_in][input_width], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T(&amp;)</td>          <td class="paramname"><span class="paramname"><em>lengths</em></span>[channel_in], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T(&amp;)</td>          <td class="paramname"><span class="paramname"><em>output</em></span>[channel_out][out_width]&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Perform forward feed. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">channel_in</td><td></td></tr>
+    <tr><td class="paramname">channel_se</td><td></td></tr>
+    <tr><td class="paramname">channel_out</td><td></td></tr>
+    <tr><td class="paramname">input_width</td><td></td></tr>
+    <tr><td class="paramname">out_width</td><td></td></tr>
+    <tr><td class="paramname">T</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">input</td><td></td></tr>
+    <tr><td class="paramname">lengths</td><td></td></tr>
+    <tr><td class="paramname">output</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="ad418609d6fc8a874ec2357e5c39337a1" name="ad418609d6fc8a874ec2357e5c39337a1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad418609d6fc8a874ec2357e5c39337a1">&#9670;&#160;</a></span>forward()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ad418609d6fc8a874ec2357e5c39337a1">&#9670;&#160;</a></span>forward() <span class="overload">[3/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -242,8 +340,6 @@ template&lt;int channel_in, int channel_se, int channel_out, int input_width, in
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="seblock_8cpp_source.html#l00048">48</a> of file <a class="el" href="seblock_8cpp_source.html">seblock.cpp</a>.</p>
-
 </div>
 </div>
 <a id="a1d45452121a167dff35e5c0297325044" name="a1d45452121a167dff35e5c0297325044"></a>
@@ -282,8 +378,6 @@ template&lt;int channel_in, int channel_se, int channel_out, int input_width, in
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="seblock_8cpp_source.html#l00101">101</a> of file <a class="el" href="seblock_8cpp_source.html">seblock.cpp</a>.</p>
-
 </div>
 </div>
 <a id="a758373cae1c9bff4af036f04dfd7ec3f" name="a758373cae1c9bff4af036f04dfd7ec3f"></a>
@@ -321,8 +415,6 @@ template&lt;int channel_in, int channel_se, int channel_out, int input_width, in
   </table>
   </dd>
 </dl>
-
-<p class="definition">Definition at line <a class="el" href="seblock_8cpp_source.html#l00076">76</a> of file <a class="el" href="seblock_8cpp_source.html">seblock.cpp</a>.</p>
 
 </div>
 </div>

@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['tdnnblock_0',['TDNNBlock',['../class_model_generator_1_1_t_d_n_n_block.html',1,'ModelGenerator.TDNNBlock'],['../classmodules_1_1_t_d_n_n_block.html',1,'modules.TDNNBlock'],['../class_t_d_n_n_block.html',1,'TDNNBlock&lt; kernel, stride, channel_in, channel_out, dilation, input_width, out_width, input_pad, T &gt;']]],
+  ['tdnnblock_0',['TDNNBlock',['../classecapa__classifier_1_1_t_d_n_n_block.html',1,'ecapa_classifier.TDNNBlock'],['../class_model_generator_1_1_t_d_n_n_block.html',1,'ModelGenerator.TDNNBlock'],['../classmodules_1_1_t_d_n_n_block.html',1,'modules.TDNNBlock'],['../class_t_d_n_n_block.html',1,'TDNNBlock&lt; kernel, stride, channel_in, channel_out, dilation, input_width, out_width, input_pad, T &gt;']]],
   ['tdnnblock_3c_201_2c_201_2c_203_20_2a8_2c_2016_2c_201_2c_2064_2c_2064_2c_200_2c_20float_20_3e_1',['TDNNBlock&lt; 1, 1, 3 *8, 16, 1, 64, 64, 0, float &gt;',['../class_t_d_n_n_block.html',1,'']]],
   ['tdnnblock_3c_201_2c_201_2c_20channel_5fin_2c_20channel_5fout_2c_201_2c_20input_5fwidth_2c_20out_5fwidth_2c_200_2c_20float_20_3e_2',['TDNNBlock&lt; 1, 1, channel_in, channel_out, 1, input_width, out_width, 0, float &gt;',['../class_t_d_n_n_block.html',1,'']]],
   ['tdnnblock_3c_201_2c_201_2c_20channel_5fin_2c_20channel_5fout_2c_201_2c_20input_5fwidth_2c_20out_5fwidth_2c_200_2c_20t_20_3e_3',['TDNNBlock&lt; 1, 1, channel_in, channel_out, 1, input_width, out_width, 0, T &gt;',['../class_t_d_n_n_block.html',1,'']]],

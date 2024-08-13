@@ -27,7 +27,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">LegacyCNN<span id="projectnumber">&#160;v0.2</span>
+   <div id="projectname">LegacyCNN<span id="projectnumber">&#160;0.3</span>
    </div>
    <div id="projectbrief">Toolbox for creating Neural Networks in Cpp</div>
   </td>
@@ -195,6 +195,34 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:af5f8e06d1d253b49802ccff7a75d5dc2"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#af5f8e06d1d253b49802ccff7a75d5dc2">Reshape</a> (T(&amp;input)[dim1][dim2], T(&amp;output)[dim1])</td></tr>
 <tr class="memdesc:af5f8e06d1d253b49802ccff7a75d5dc2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reshapes a input of size (dim1, 1) into output (dim1)  <br /></td></tr>
 <tr class="separator:af5f8e06d1d253b49802ccff7a75d5dc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a132829fdf70affce378f7b87331a6fb5" id="r_a132829fdf70affce378f7b87331a6fb5"><td class="memTemplParams" colspan="2">template&lt;size_t dim1, typename T &gt; </td></tr>
+<tr class="memitem:a132829fdf70affce378f7b87331a6fb5"><td class="memTemplItemLeft" align="right" valign="top">static T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a132829fdf70affce378f7b87331a6fb5">Norm</a> (T(&amp;A)[dim1], T(&amp;B)[dim1])</td></tr>
+<tr class="memdesc:a132829fdf70affce378f7b87331a6fb5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Performs Norm; Default: L2 Norm.  <br /></td></tr>
+<tr class="separator:a132829fdf70affce378f7b87331a6fb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51e71f25eacb5772f2d7ece6b78bb1a9" id="r_a51e71f25eacb5772f2d7ece6b78bb1a9"><td class="memTemplParams" colspan="2">template&lt;size_t dim1, typename T &gt; </td></tr>
+<tr class="memitem:a51e71f25eacb5772f2d7ece6b78bb1a9"><td class="memTemplItemLeft" align="right" valign="top">static T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a51e71f25eacb5772f2d7ece6b78bb1a9">Norm</a> (T(&amp;A)[dim1], T(&amp;B)[dim1], int p)</td></tr>
+<tr class="memdesc:a51e71f25eacb5772f2d7ece6b78bb1a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Performs Norm; L_{p} Norm.  <br /></td></tr>
+<tr class="separator:a51e71f25eacb5772f2d7ece6b78bb1a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a366285b2e061b76997700cb7eb001f95" id="r_a366285b2e061b76997700cb7eb001f95"><td class="memTemplParams" colspan="2">template&lt;size_t dim1, size_t dim2, typename T &gt; </td></tr>
+<tr class="memitem:a366285b2e061b76997700cb7eb001f95"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a366285b2e061b76997700cb7eb001f95">L2Normalisation</a> (T(&amp;input)[dim1][dim2])</td></tr>
+<tr class="memdesc:a366285b2e061b76997700cb7eb001f95"><td class="mdescLeft">&#160;</td><td class="mdescRight">Performs L2Normalisation; Inplace.  <br /></td></tr>
+<tr class="separator:a366285b2e061b76997700cb7eb001f95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adee2f36233dd563dbc1cf11fd63632cf" id="r_adee2f36233dd563dbc1cf11fd63632cf"><td class="memTemplParams" colspan="2">template&lt;size_t dim1, size_t dim2, typename T &gt; </td></tr>
+<tr class="memitem:adee2f36233dd563dbc1cf11fd63632cf"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#adee2f36233dd563dbc1cf11fd63632cf">Transpose</a> (T(&amp;input)[dim1][dim2], T(&amp;output)[dim2][dim1])</td></tr>
+<tr class="memdesc:adee2f36233dd563dbc1cf11fd63632cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Performs Transposition.  <br /></td></tr>
+<tr class="separator:adee2f36233dd563dbc1cf11fd63632cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc12e3384024fdf83e173cf1f6280c02" id="r_acc12e3384024fdf83e173cf1f6280c02"><td class="memTemplParams" colspan="2">template&lt;size_t dim1, size_t dim2, size_t dim3, typename T &gt; </td></tr>
+<tr class="memitem:acc12e3384024fdf83e173cf1f6280c02"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#acc12e3384024fdf83e173cf1f6280c02">DotProduct</a> (T(&amp;A)[dim1][dim2], T(&amp;B)[dim2][dim3], T(&amp;output)[dim1][dim3])</td></tr>
+<tr class="memdesc:acc12e3384024fdf83e173cf1f6280c02"><td class="mdescLeft">&#160;</td><td class="mdescRight">Performs Dot Product (2D)  <br /></td></tr>
+<tr class="separator:acc12e3384024fdf83e173cf1f6280c02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b5a740221d9c74dbf362b44bd2f5064" id="r_a1b5a740221d9c74dbf362b44bd2f5064"><td class="memTemplParams" colspan="2">template&lt;size_t dim1, size_t dim2, size_t dim3, typename T &gt; </td></tr>
+<tr class="memitem:a1b5a740221d9c74dbf362b44bd2f5064"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a1b5a740221d9c74dbf362b44bd2f5064">CDist</a> (T(&amp;A)[dim1][dim2], T(&amp;B)[dim3][dim2], T(&amp;output)[dim1][dim3])</td></tr>
+<tr class="memdesc:a1b5a740221d9c74dbf362b44bd2f5064"><td class="mdescLeft">&#160;</td><td class="mdescRight">Performs cdist (2D) :  <br /></td></tr>
+<tr class="separator:a1b5a740221d9c74dbf362b44bd2f5064"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05ba9ad66fb7b875cd0981c256d30a08" id="r_a05ba9ad66fb7b875cd0981c256d30a08"><td class="memTemplParams" colspan="2">template&lt;size_t dim1, size_t dim2, size_t dim3, typename T &gt; </td></tr>
+<tr class="memitem:a05ba9ad66fb7b875cd0981c256d30a08"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a05ba9ad66fb7b875cd0981c256d30a08">CDist</a> (T(&amp;A)[dim1][dim2], T(&amp;B)[dim3][dim2], T(&amp;output)[dim1][dim3], int p)</td></tr>
+<tr class="memdesc:a05ba9ad66fb7b875cd0981c256d30a08"><td class="mdescLeft">&#160;</td><td class="mdescRight">Performs cdist (2D)  <br /></td></tr>
+<tr class="separator:a05ba9ad66fb7b875cd0981c256d30a08"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="class_matrix_functions.html" title="MatrixFunctions include.">MatrixFunctions</a> include. </p>
@@ -209,10 +237,13 @@ Static Public Member Functions</h2></td></tr>
 <li>Mean</li>
 <li>Clamp</li>
 <li>Std</li>
-<li>Reshape </li>
+<li>Reshape</li>
+<li>Norm</li>
+<li>L2Normalisation</li>
+<li>Transpose</li>
+<li>DotProduct</li>
+<li><a class="el" href="class_c_dist.html" title="Performs CDist.">CDist</a> </li>
 </ul>
-
-<p class="definition">Definition at line <a class="el" href="matrixfunctions_8h_source.html#l00035">35</a> of file <a class="el" href="matrixfunctions_8h_source.html">matrixfunctions.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="aae8bb46abda5224d9835dd6b97054232" name="aae8bb46abda5224d9835dd6b97054232"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aae8bb46abda5224d9835dd6b97054232">&#9670;&#160;</a></span>Cat()</h2>
@@ -261,7 +292,161 @@ template&lt;size_t dim1, size_t dim2, size_t chunk, typename T &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="matrixfunctions_8cpp_source.html#l00176">176</a> of file <a class="el" href="matrixfunctions_8cpp_source.html">matrixfunctions.cpp</a>.</p>
+</div>
+</div>
+<a id="a1b5a740221d9c74dbf362b44bd2f5064" name="a1b5a740221d9c74dbf362b44bd2f5064"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b5a740221d9c74dbf362b44bd2f5064">&#9670;&#160;</a></span>CDist() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;size_t dim1, size_t dim2, size_t dim3, typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MatrixFunctions::CDist </td>
+          <td>(</td>
+          <td class="paramtype">T(&amp;)</td>          <td class="paramname"><span class="paramname"><em>A</em></span>[dim1][dim2], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T(&amp;)</td>          <td class="paramname"><span class="paramname"><em>B</em></span>[dim3][dim2], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T(&amp;)</td>          <td class="paramname"><span class="paramname"><em>output</em></span>[dim1][dim3]&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Performs cdist (2D) : </p>
+<p>Performs cdist (2D) - p = 2.</p>
+<p><a href="https://pytorch.org/docs/stable/generated/torch.cdist.html">https://pytorch.org/docs/stable/generated/torch.cdist.html</a></p>
+<p>Make sure to check the shape properly</p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">dim1</td><td></td></tr>
+    <tr><td class="paramname">dim2</td><td></td></tr>
+    <tr><td class="paramname">T</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">A</td><td></td></tr>
+    <tr><td class="paramname">B</td><td></td></tr>
+    <tr><td class="paramname">output</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<p><a href="https://pytorch.org/docs/stable/generated/torch.cdist.html">https://pytorch.org/docs/stable/generated/torch.cdist.html</a></p>
+<p>Make sure to check the shape properly</p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">dim11</td><td></td></tr>
+    <tr><td class="paramname">dim2</td><td></td></tr>
+    <tr><td class="paramname">T</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">A</td><td></td></tr>
+    <tr><td class="paramname">B</td><td></td></tr>
+    <tr><td class="paramname">output</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a05ba9ad66fb7b875cd0981c256d30a08" name="a05ba9ad66fb7b875cd0981c256d30a08"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a05ba9ad66fb7b875cd0981c256d30a08">&#9670;&#160;</a></span>CDist() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;size_t dim1, size_t dim2, size_t dim3, typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MatrixFunctions::CDist </td>
+          <td>(</td>
+          <td class="paramtype">T(&amp;)</td>          <td class="paramname"><span class="paramname"><em>A</em></span>[dim1][dim2], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T(&amp;)</td>          <td class="paramname"><span class="paramname"><em>B</em></span>[dim3][dim2], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T(&amp;)</td>          <td class="paramname"><span class="paramname"><em>output</em></span>[dim1][dim3], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>p</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Performs cdist (2D) </p>
+<p>Performs cdist (2D) - variable p.</p>
+<p><a href="https://pytorch.org/docs/stable/generated/torch.cdist.html">https://pytorch.org/docs/stable/generated/torch.cdist.html</a></p>
+<p>Make sure to check the shape properly</p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">dim1</td><td></td></tr>
+    <tr><td class="paramname">dim2</td><td></td></tr>
+    <tr><td class="paramname">T</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">A</td><td></td></tr>
+    <tr><td class="paramname">B</td><td></td></tr>
+    <tr><td class="paramname">output</td><td></td></tr>
+    <tr><td class="paramname">p</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<p><a href="https://pytorch.org/docs/stable/generated/torch.cdist.html">https://pytorch.org/docs/stable/generated/torch.cdist.html</a></p>
+<p>Make sure to check the shape properly</p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">dim11</td><td></td></tr>
+    <tr><td class="paramname">dim2</td><td></td></tr>
+    <tr><td class="paramname">T</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">A</td><td></td></tr>
+    <tr><td class="paramname">B</td><td></td></tr>
+    <tr><td class="paramname">output</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -312,8 +497,6 @@ template&lt;size_t dim1, size_t dim2, size_t chunk, typename T &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="matrixfunctions_8cpp_source.html#l00150">150</a> of file <a class="el" href="matrixfunctions_8cpp_source.html">matrixfunctions.cpp</a>.</p>
-
 </div>
 </div>
 <a id="a05f24fa14a47f7bbf8cec9b37ebab357" name="a05f24fa14a47f7bbf8cec9b37ebab357"></a>
@@ -362,8 +545,6 @@ template&lt;typename T &gt; </div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>T </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="matrixfunctions_8cpp_source.html#l00455">455</a> of file <a class="el" href="matrixfunctions_8cpp_source.html">matrixfunctions.cpp</a>.</p>
 
 </div>
 </div>
@@ -420,8 +601,6 @@ template&lt;size_t dim1, typename T &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="matrixfunctions_8cpp_source.html#l00427">427</a> of file <a class="el" href="matrixfunctions_8cpp_source.html">matrixfunctions.cpp</a>.</p>
-
 </div>
 </div>
 <a id="a01c57af9d1a7961a4d1475fa9bf7d6a3" name="a01c57af9d1a7961a4d1475fa9bf7d6a3"></a>
@@ -472,8 +651,6 @@ template&lt;size_t dim1, size_t dim2, typename T &gt; </div>
   </table>
   </dd>
 </dl>
-
-<p class="definition">Definition at line <a class="el" href="matrixfunctions_8cpp_source.html#l00399">399</a> of file <a class="el" href="matrixfunctions_8cpp_source.html">matrixfunctions.cpp</a>.</p>
 
 </div>
 </div>
@@ -531,8 +708,6 @@ template&lt;size_t dim1, size_t dim2, typename T &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="matrixfunctions_8cpp_source.html#l00366">366</a> of file <a class="el" href="matrixfunctions_8cpp_source.html">matrixfunctions.cpp</a>.</p>
-
 </div>
 </div>
 <a id="a29ad000b5227512770d758bcbeac0cf6" name="a29ad000b5227512770d758bcbeac0cf6"></a>
@@ -580,8 +755,6 @@ template&lt;size_t dim1, typename T &gt; </div>
   </table>
   </dd>
 </dl>
-
-<p class="definition">Definition at line <a class="el" href="matrixfunctions_8cpp_source.html#l00251">251</a> of file <a class="el" href="matrixfunctions_8cpp_source.html">matrixfunctions.cpp</a>.</p>
 
 </div>
 </div>
@@ -631,8 +804,6 @@ template&lt;size_t dim1, size_t dim2, typename T &gt; </div>
   </table>
   </dd>
 </dl>
-
-<p class="definition">Definition at line <a class="el" href="matrixfunctions_8cpp_source.html#l00229">229</a> of file <a class="el" href="matrixfunctions_8cpp_source.html">matrixfunctions.cpp</a>.</p>
 
 </div>
 </div>
@@ -684,7 +855,61 @@ template&lt;size_t dim1, size_t dim2, size_t dim3, typename T &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="matrixfunctions_8cpp_source.html#l00203">203</a> of file <a class="el" href="matrixfunctions_8cpp_source.html">matrixfunctions.cpp</a>.</p>
+</div>
+</div>
+<a id="acc12e3384024fdf83e173cf1f6280c02" name="acc12e3384024fdf83e173cf1f6280c02"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc12e3384024fdf83e173cf1f6280c02">&#9670;&#160;</a></span>DotProduct()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;size_t dim1, size_t dim2, size_t dim3, typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MatrixFunctions::DotProduct </td>
+          <td>(</td>
+          <td class="paramtype">T(&amp;)</td>          <td class="paramname"><span class="paramname"><em>A</em></span>[dim1][dim2], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T(&amp;)</td>          <td class="paramname"><span class="paramname"><em>B</em></span>[dim2][dim3], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T(&amp;)</td>          <td class="paramname"><span class="paramname"><em>output</em></span>[dim1][dim3]&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Performs Dot Product (2D) </p>
+<p>output = A dot B</p>
+<p>Make sure to check the shape properly</p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">dim1</td><td></td></tr>
+    <tr><td class="paramname">dim2</td><td></td></tr>
+    <tr><td class="paramname">T</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">A</td><td></td></tr>
+    <tr><td class="paramname">B</td><td></td></tr>
+    <tr><td class="paramname">output</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -742,8 +967,6 @@ template&lt;size_t rows, size_t cols, typename T &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="matrixfunctions_8cpp_source.html#l00063">63</a> of file <a class="el" href="matrixfunctions_8cpp_source.html">matrixfunctions.cpp</a>.</p>
-
 </div>
 </div>
 <a id="a70d2bb9be8a56d1c3f4ef794c9626d42" name="a70d2bb9be8a56d1c3f4ef794c9626d42"></a>
@@ -800,8 +1023,6 @@ template&lt;size_t dim1, size_t dim2, typename T &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="matrixfunctions_8cpp_source.html#l00300">300</a> of file <a class="el" href="matrixfunctions_8cpp_source.html">matrixfunctions.cpp</a>.</p>
-
 </div>
 </div>
 <a id="a7f5da89c6c9bb4a6f8f04aeb1757dc41" name="a7f5da89c6c9bb4a6f8f04aeb1757dc41"></a>
@@ -857,7 +1078,48 @@ template&lt;size_t dim1, size_t dim2, typename T &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="matrixfunctions_8cpp_source.html#l00273">273</a> of file <a class="el" href="matrixfunctions_8cpp_source.html">matrixfunctions.cpp</a>.</p>
+</div>
+</div>
+<a id="a366285b2e061b76997700cb7eb001f95" name="a366285b2e061b76997700cb7eb001f95"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a366285b2e061b76997700cb7eb001f95">&#9670;&#160;</a></span>L2Normalisation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;size_t dim1, size_t dim2, typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MatrixFunctions::L2Normalisation </td>
+          <td>(</td>
+          <td class="paramtype">T(&amp;)</td>          <td class="paramname"><span class="paramname"><em>input</em></span>[dim1][dim2]</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Performs L2Normalisation; Inplace. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">dim1</td><td></td></tr>
+    <tr><td class="paramname">dim2</td><td></td></tr>
+    <tr><td class="paramname">T</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">input</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -906,8 +1168,6 @@ template&lt;size_t dim1, typename T &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="matrixfunctions_8cpp_source.html#l00130">130</a> of file <a class="el" href="matrixfunctions_8cpp_source.html">matrixfunctions.cpp</a>.</p>
-
 </div>
 </div>
 <a id="a3fd21025c72c6af0cc297513137503b3" name="a3fd21025c72c6af0cc297513137503b3"></a>
@@ -955,8 +1215,6 @@ template&lt;size_t dim1, size_t dim2, typename T &gt; </div>
   </table>
   </dd>
 </dl>
-
-<p class="definition">Definition at line <a class="el" href="matrixfunctions_8cpp_source.html#l00110">110</a> of file <a class="el" href="matrixfunctions_8cpp_source.html">matrixfunctions.cpp</a>.</p>
 
 </div>
 </div>
@@ -1007,8 +1265,6 @@ template&lt;size_t dim1, size_t dim2, size_t dim3, typename T &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="matrixfunctions_8cpp_source.html#l00086">86</a> of file <a class="el" href="matrixfunctions_8cpp_source.html">matrixfunctions.cpp</a>.</p>
-
 </div>
 </div>
 <a id="a7c16622175c414528a40ed3b85d59054" name="a7c16622175c414528a40ed3b85d59054"></a>
@@ -1056,8 +1312,6 @@ template&lt;size_t dim1, size_t dim2, typename T &gt; </div>
   </table>
   </dd>
 </dl>
-
-<p class="definition">Definition at line <a class="el" href="matrixfunctions_8cpp_source.html#l00322">322</a> of file <a class="el" href="matrixfunctions_8cpp_source.html">matrixfunctions.cpp</a>.</p>
 
 </div>
 </div>
@@ -1108,7 +1362,108 @@ template&lt;size_t dim1, size_t dim2, size_t dim3, typename T &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="matrixfunctions_8cpp_source.html#l00342">342</a> of file <a class="el" href="matrixfunctions_8cpp_source.html">matrixfunctions.cpp</a>.</p>
+</div>
+</div>
+<a id="a132829fdf70affce378f7b87331a6fb5" name="a132829fdf70affce378f7b87331a6fb5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a132829fdf70affce378f7b87331a6fb5">&#9670;&#160;</a></span>Norm() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;size_t dim1, typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">T MatrixFunctions::Norm </td>
+          <td>(</td>
+          <td class="paramtype">T(&amp;)</td>          <td class="paramname"><span class="paramname"><em>A</em></span>[dim1], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T(&amp;)</td>          <td class="paramname"><span class="paramname"><em>B</em></span>[dim1]&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Performs Norm; Default: L2 Norm. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">dim1</td><td></td></tr>
+    <tr><td class="paramname">T</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">A</td><td></td></tr>
+    <tr><td class="paramname">B</td><td></td></tr>
+    <tr><td class="paramname">output</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a51e71f25eacb5772f2d7ece6b78bb1a9" name="a51e71f25eacb5772f2d7ece6b78bb1a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a51e71f25eacb5772f2d7ece6b78bb1a9">&#9670;&#160;</a></span>Norm() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;size_t dim1, typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">T MatrixFunctions::Norm </td>
+          <td>(</td>
+          <td class="paramtype">T(&amp;)</td>          <td class="paramname"><span class="paramname"><em>A</em></span>[dim1], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T(&amp;)</td>          <td class="paramname"><span class="paramname"><em>B</em></span>[dim1], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>p</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Performs Norm; L_{p} Norm. </p>
+<p>Performs Norm; L2 Norm.</p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">dim1</td><td></td></tr>
+    <tr><td class="paramname">T</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">A</td><td></td></tr>
+    <tr><td class="paramname">B</td><td></td></tr>
+    <tr><td class="paramname">output</td><td></td></tr>
+    <tr><td class="paramname">p</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -1157,8 +1512,6 @@ template&lt;size_t dim1, size_t dim2, typename T &gt; </div>
   </table>
   </dd>
 </dl>
-
-<p class="definition">Definition at line <a class="el" href="matrixfunctions_8cpp_source.html#l00523">523</a> of file <a class="el" href="matrixfunctions_8cpp_source.html">matrixfunctions.cpp</a>.</p>
 
 </div>
 </div>
@@ -1209,8 +1562,6 @@ template&lt;size_t dim1, size_t dim2, typename T &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="matrixfunctions_8cpp_source.html#l00480">480</a> of file <a class="el" href="matrixfunctions_8cpp_source.html">matrixfunctions.cpp</a>.</p>
-
 </div>
 </div>
 <a id="a8e4ce50a19d1b17f556ea2e84c484ecb" name="a8e4ce50a19d1b17f556ea2e84c484ecb"></a>
@@ -1254,8 +1605,6 @@ template&lt;size_t rows, typename T &gt; </div>
   </table>
   </dd>
 </dl>
-
-<p class="definition">Definition at line <a class="el" href="matrixfunctions_8cpp_source.html#l00045">45</a> of file <a class="el" href="matrixfunctions_8cpp_source.html">matrixfunctions.cpp</a>.</p>
 
 </div>
 </div>
@@ -1301,7 +1650,54 @@ template&lt;size_t rows, size_t cols, typename T &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="matrixfunctions_8cpp_source.html#l00022">22</a> of file <a class="el" href="matrixfunctions_8cpp_source.html">matrixfunctions.cpp</a>.</p>
+</div>
+</div>
+<a id="adee2f36233dd563dbc1cf11fd63632cf" name="adee2f36233dd563dbc1cf11fd63632cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adee2f36233dd563dbc1cf11fd63632cf">&#9670;&#160;</a></span>Transpose()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;size_t dim1, size_t dim2, typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MatrixFunctions::Transpose </td>
+          <td>(</td>
+          <td class="paramtype">T(&amp;)</td>          <td class="paramname"><span class="paramname"><em>input</em></span>[dim1][dim2], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T(&amp;)</td>          <td class="paramname"><span class="paramname"><em>output</em></span>[dim2][dim1]&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Performs Transposition. </p>
+<p>output = input.T</p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">dim1</td><td></td></tr>
+    <tr><td class="paramname">dim2</td><td></td></tr>
+    <tr><td class="paramname">T</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">input</td><td></td></tr>
+    <tr><td class="paramname">output</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
